@@ -32,12 +32,16 @@ const DefaultHeader = () => {
     }
   };
 
-  const handleInfoButtonClick = () => {
+  const handleCartButtonClick = () => {
     if (isQrMenuPage) {
       setShowQrComingSoon(true);
       return;
     }
 
+    setMiniCart(!miniCart);
+  };
+
+  const handleInfoButtonClick = () => {
     setMiniSidebar(!miniSidebar);
   };
 
@@ -87,7 +91,7 @@ const DefaultHeader = () => {
                     </nav>
                     <div className="sb-buttons-frame">
                     {/* button */}
-                    <div className={`sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0 sb-btn-cart ${miniCart ? "sb-active" : ""}`} onClick={() => setMiniCart(!miniCart)}>
+                    <div className={`sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0 sb-btn-cart ${(isQrMenuPage ? showQrComingSoon : miniCart) ? "sb-active" : ""}`} onClick={handleCartButtonClick}>
                         <span className="sb-icon">
                             <img src="/img/ui/icons/cart.svg" alt="icon" />
                         </span>
@@ -97,7 +101,7 @@ const DefaultHeader = () => {
                     {/* menu btn */}
                     <div className={`sb-menu-btn ${mobileMenu ? "sb-active" : ""}`} onClick={() => setMobileMenu(!mobileMenu)}><span></span></div>
                     {/* info btn */}
-                    <div className={`sb-info-btn ${(isQrMenuPage ? showQrComingSoon : miniSidebar) ? "sb-active" : "" }`} onClick={handleInfoButtonClick}><span></span></div>
+                    <div className={`sb-info-btn ${miniSidebar ? "sb-active" : "" }`} onClick={handleInfoButtonClick}><span></span></div>
                     </div>
                 </div>
                 </div>
