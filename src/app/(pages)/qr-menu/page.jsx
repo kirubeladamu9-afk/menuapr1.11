@@ -5,11 +5,12 @@ import MenuData from "@data/menu.json";
 import ContactData from "@data/sections/contact-info.json";
 import QrMenuGrid from "@components/menu/QrMenuGrid";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Navigation } from "swiper";
+import { Autoplay, FreeMode, Navigation } from "swiper";
 import "swiper/css";
 
 const QrMenu = () => {
   const [activeCategory, setActiveCategory] = useState(0);
+  const heroSlides = MenuData.categories.map((category) => category.items[0]).filter(Boolean).slice(0, 4);
 
   const handleCategoryChange = (index) => {
     setActiveCategory(index);
@@ -17,11 +18,50 @@ const QrMenu = () => {
 
   return (
     <div className="qr-menu-container">
-      {/* Header Section */}
-      <div className="qr-menu-header">
-        <h1 className="qr-menu-title">Our Menu</h1>
-        <p className="qr-menu-subtitle">Browse our delicious offerings</p>
-      </div>
+      {/* Hero Section */}
+      <section className="qr-hero-section">
+        <div className="qr-hero-layout">
+          <div className="qr-hero-copy">
+            <span className="qr-hero-eyebrow">QR Code Menu</span>
+            <h1 className="qr-hero-title">Fresh dishes, ready to browse</h1>
+            <p className="qr-hero-text">
+              Explore featured plates with an auto-sliding image showcase, then tap a tab below to filter the full menu.
+            </p>
+            <div className="qr-hero-chip">Featured menu highlights</div>
+          </div>
+
+          <div className="qr-hero-slider-frame">
+            <Swiper
+              modules={[Autoplay]}
+              slidesPerView={1}
+              loop={true}
+              speed={800}
+              autoplay={{
+                delay: 3000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
+              }}
+              className="qr-hero-swiper"
+            >
+              {heroSlides.map((item, idx) => (
+                <SwiperSlide key={`hero-slide-${idx}`} className="qr-hero-slide">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="qr-hero-slide-image"
+                    loading={idx === 0 ? "eager" : "lazy"}
+                  />
+                  <div className="qr-hero-slide-overlay">
+                    <span className="qr-hero-slide-tag">Featured dish</span>
+                    <h2 className="qr-hero-slide-title">{item.title}</h2>
+                    <p className="qr-hero-slide-text">{item.text}</p>
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </div>
+        </div>
+      </section>
 
       {/* Category Tabs Swiper */}
       <div className="qr-category-tabs">
