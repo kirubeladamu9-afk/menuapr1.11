@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import MenuData from "@data/menu.json";
 import ContactData from "@data/sections/contact-info.json";
 import QrMenuGrid from "@components/menu/QrMenuGrid";
@@ -10,11 +10,9 @@ import "swiper/css";
 
 const QrMenu = () => {
   const [activeCategory, setActiveCategory] = useState(0);
-  const swiperRef = useRef(null);
 
   const handleCategoryChange = (index) => {
     setActiveCategory(index);
-    swiperRef.current?.slideTo(index, 500);
   };
 
   return (
@@ -36,13 +34,7 @@ const QrMenu = () => {
           spaceBetween={12}
           freeMode={true}
           grabCursor={true}
-          preventClicks={false}
-          preventClicksPropagation={false}
-          onSwiper={(swiper) => {
-            swiperRef.current = swiper;
-          }}
           className="qr-tabs-swiper"
-          initialSlide={0}
         >
           {MenuData.categories.map((category, idx) => (
             <SwiperSlide key={`tab-${idx}`} className="qr-tab-slide">
