@@ -13,9 +13,13 @@ const QrMenu = () => {
 
   const handleCategoryChange = (index) => {
     setActiveCategory(index);
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideTo(index);
+    if (swiperRef.current?.swiper) {
+      swiperRef.current.swiper.slideTo(index, 500);
     }
+  };
+
+  const handleSwiperSlideChange = (swiper) => {
+    setActiveCategory(swiper.activeIndex);
   };
 
   return (
@@ -35,8 +39,9 @@ const QrMenu = () => {
           ref={swiperRef}
           slidesPerView="auto"
           spaceBetween={12}
-          onSlideChange={(swiper) => setActiveCategory(swiper.activeIndex)}
+          onSlideChange={handleSwiperSlideChange}
           className="qr-tabs-swiper"
+          initialSlide={0}
         >
           {MenuData.categories.map((category, idx) => (
             <SwiperSlide key={`tab-${idx}`} className="qr-tab-slide">
@@ -45,6 +50,7 @@ const QrMenu = () => {
                   activeCategory === idx ? "qr-active" : ""
                 }`}
                 onClick={() => handleCategoryChange(idx)}
+                type="button"
               >
                 {category.name}
               </button>
