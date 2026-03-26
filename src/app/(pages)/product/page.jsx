@@ -4,7 +4,6 @@ import dynamic from "next/dynamic";
 import AppData from "@data/app.json";
 import ProductsData from "@data/products.json";
 
-import PageBanner from "@components/PageBanner";
 import ReviewItem from "@components/reviews/ReviewItem";
 import ProductImage from "@components/products/ProductImage";
 import ProductButtons from "@components/products/ProductButtons";
@@ -125,8 +124,6 @@ const Products = () => {
 
   return (
     <>
-      <PageBanner pageTitle={"Product Detail"} breadTitle={"Product Detail"} type={1} />
-
       {/* product */}
       <section className="sb-p-90-0">
         <div className="container">
