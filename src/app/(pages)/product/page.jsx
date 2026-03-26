@@ -137,7 +137,6 @@ const Products = () => {
             <div className="col-lg-6">
               <div className="sb-product-description sb-mb-90">
                 <div className="sb-price-frame sb-mb-30">
-                  <h3>Saumon Gravlax</h3>
                   <div className="sb-price"><sub>$</sub> 19</div>
                 </div>
                 <ul className="sb-stars sb-mb-25">
