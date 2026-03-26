@@ -5,7 +5,6 @@ import Link from "next/link";
 import AppData from "@data/app.json";
 import ProductsData from "@data/products.json";
 
-import ReviewItem from "@components/reviews/ReviewItem";
 import ProductImage from "@components/products/ProductImage";
 import ProductButtons from "@components/products/ProductButtons";
 import CallToActionTwoSection from "@components/sections/CallToActionTwo";
@@ -68,58 +67,11 @@ const Products = () => {
     );
   };
 
-  async function ProductDescription() {
-    return (
-      <>
-        <div className="sb-text">
-          <p>Facilis ratione veritatis asperiores doloremque molestiae delectus iure officia earum dolores sit fugiat, repellendus, neque laboriosam optio culpa quibusdam, magnam totam quos. Mollitia dolorem, culpa, dignissimos quas et voluptates architecto in sit totam, quae animi ratione adipisci nulla ab quasi perferendis quo pariatur dolor magnam inventore. Sequi nisi ex excepturi non harum, asperiores laboriosam ipsum voluptate doloribus incidunt nam eveniet similique unde esse voluptatem minus necessitatibus eaque temporibus quaerat accusantium amet deserunt. Iste, facilis? Illo tenetur, libero, non dicta asperiores quisquam voluptas natus aperiam, at perspiciatis repellat voluptate. Autem non reprehenderit, perferendis.</p>
-          <p>Consectetur adipisicing elit. Delectus quibusdam repellendus nesciunt cumque fugit numquam adipisci voluptatum quam, sapiente doloribus ut eaque natus laudantium alias illum quos maiores, quia perferendis.</p>
-        </div>
-      </>
-    );
-  };
-
-  async function ProductReviews() {
-    const ReviewsData = [
-      {
-        "title": "Very tasty",
-        "name": "Emma Newman",
-        "rating": 5,
-        "image": "/img/faces/1.jpg",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugiat totam nobis quas unde excepturi inventore possimus laudantium provident, rem eligendi velit. Aut molestias, ipsa itaque laborum, natus tempora, ut soluta animi ducimus dignissimos deserunt doloribus in reprehenderit rem accusamus! Quibusdam labore, aliquam dolor harum!"
-      },
-      {
-        "title": "I have lunch here every day",
-        "name": "Paul Trueman",
-        "rating": 5,
-        "image": "/img/faces/2.jpg",
-        "text": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis fugiat totam nobis quas unde excepturi inventore possimus laudantium provident, rem eligendi velit. Aut molestias, ipsa itaque laborum, natus tempora, ut soluta animi ducimus dignissimos deserunt doloribus in reprehenderit rem accusamus! Quibusdam labore, aliquam dolor harum!"
-      }
-    ];
-    
-    return (
-        <div className="row">
-          {ReviewsData.map((item, key) => (
-          <div className="col-lg-6" key={`product-reviews-item-${key}`}>
-            <ReviewItem item={item} key={key} marginBottom={60} />
-          </div>
-          ))}
-        </div>
-    );
-  };
 
   const tabs = [
     {
       "slug": "ingredients",
       "name": "Ingredients"
-    },
-    {
-      "slug": "details",
-      "name": "Product details"
-    },
-    {
-      "slug": "reviews",
-      "name": "Reviews"
     }
   ];
 
@@ -165,8 +117,6 @@ const Products = () => {
             <div className={`sb-grid-item sb-${tab.slug}-tab`} key={`product-tab-${key}`}>
               <div className="sb-tab">
                 {tab.slug == 'ingredients' && <ProductAtts />}
-                {tab.slug == 'details' && <ProductDescription />}
-                {tab.slug == 'reviews' && <ProductReviews />}
               </div>
             </div>
             ))}
