@@ -1,4 +1,10 @@
 import Header from "@layouts/headers/Index";
+import AppData from "@data/app.json";
+
+export const metadata = {
+  title: "Menu - QR Code",
+  description: AppData.settings.siteDescription,
+};
 
 const QrMenuLayout = ({ children }) => {
   return (

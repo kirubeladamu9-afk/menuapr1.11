@@ -1,15 +1,25 @@
-import React from "react";
-import AppData from "@data/app.json";
+"use client";
+
+import React, { useState, useRef } from "react";
 import MenuData from "@data/menu.json";
 import ContactData from "@data/sections/contact-info.json";
 import QrMenuGrid from "@components/menu/QrMenuGrid";
-
-export const metadata = {
-  title: "Menu - QR Code",
-  description: AppData.settings.siteDescription,
-};
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
 
 const QrMenu = () => {
+  const [activeCategory, setActiveCategory] = useState(0);
+  const swiperRef = useRef(null);
+
+  const handleCategoryChange = (index) => {
+    setActiveCategory(index);
+    if (swiperRef.current && swiperRef.current.swiper) {
+      swiperRef.current.swiper.slideTo(index);
+    }
+  };
+
   return (
     <div className="qr-menu-container">
       {/* Header Section */}
@@ -21,22 +31,55 @@ const QrMenu = () => {
         <p className="qr-menu-subtitle">Browse our delicious offerings</p>
       </div>
 
-      {/* Menu Sections */}
-      <div className="qr-menu-sections">
-        {MenuData.categories.map((category, idx) => (
-          <section className="qr-category-section" key={`category-${idx}`}>
+      {/* Category Tabs Swiper */}
+      <div className="qr-category-tabs">
+        <Swiper
+          ref={swiperRef}
+          modules={[Navigation]}
+          slidesPerView="auto"
+          spaceBetween={10}
+          onSlideChange={(swiper) => setActiveCategory(swiper.activeIndex)}
+          className="qr-tabs-swiper"
+          scrollbar={{ draggable: true }}
+        >
+          {MenuData.categories.map((category, idx) => (
+            <SwiperSlide key={`tab-${idx}`} className="qr-tab-slide">
+              <button
+                className={`qr-category-tab ${
+                  activeCategory === idx ? "qr-active" : ""
+                }`}
+                onClick={() => handleCategoryChange(idx)}
+              >
+                {category.name}
+              </button>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
+
+      {/* Menu Content */}
+      <div className="qr-menu-content">
+        {MenuData.categories[activeCategory] && (
+          <section className="qr-category-section">
             <div className="qr-category-header">
-              <h2 className="qr-category-title">{category.name}</h2>
-              {category.description && (
+              <h2 className="qr-category-title">
+                {MenuData.categories[activeCategory].name}
+              </h2>
+              {MenuData.categories[activeCategory].description && (
                 <p
                   className="qr-category-description"
-                  dangerouslySetInnerHTML={{ __html: category.description }}
+                  dangerouslySetInnerHTML={{
+                    __html:
+                      MenuData.categories[activeCategory].description,
+                  }}
                 />
               )}
             </div>
-            <QrMenuGrid items={category.items} />
+            <QrMenuGrid
+              items={MenuData.categories[activeCategory].items}
+            />
           </section>
-        ))}
+        )}
       </div>
 
       {/* Contact Section */}
