@@ -4,7 +4,7 @@ const QrMenuHeader = () => {
   return (
     <header className="qr-menu-header-nav">
       <div className="qr-menu-header-content">
-        <Link href="/" className="qr-menu-home-link">
+        <Link href="/qr-menu" className="qr-menu-home-link">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
