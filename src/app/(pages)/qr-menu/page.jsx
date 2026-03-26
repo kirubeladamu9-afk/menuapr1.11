@@ -36,6 +36,8 @@ const QrMenu = () => {
           spaceBetween={12}
           freeMode={true}
           grabCursor={true}
+          preventClicks={false}
+          preventClicksPropagation={false}
           onSwiper={(swiper) => {
             swiperRef.current = swiper;
           }}
