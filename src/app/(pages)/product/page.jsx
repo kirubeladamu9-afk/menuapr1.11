@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 
@@ -6,55 +8,51 @@ import AppData from "@data/app.json";
 import ProductsData from "@data/products.json";
 
 import ProductImage from "@components/products/ProductImage";
+import ProductAddOns from "@components/products/ProductAddOns";
 import ProductButtons from "@components/products/ProductButtons";
 
 const ProductsSlider = dynamic( () => import("@components/sliders/Products"), { ssr: false } );
 const ProductTabs = dynamic( () => import("@components/products/ProductTabs"), { ssr: false } );
 
-export const metadata = {
-  title: {
-		default: "Product page",
-	},
-  description: AppData.settings.siteDescription,
-}
-
 const Products = () => {
-  async function ProductAtts() {
-    const AttsData = [
-      {
-        "label": "Numquam",
-        "value": "1 pack"
-      },
-      {
-        "label": "Cupiditate",
-        "value": "150g"
-      },
-      {
-        "label": "Adipisicing",
-        "value": "500g"
-      },
-      {
-        "label": "Dolorem obcaecati",
-        "value": "3 Teaspoon"
-      },
-      {
-        "label": "Porro",
-        "value": "2 pack"
-      },
-      {
-        "label": "Facilis",
-        "value": "1kg"
-      },
-      {
-        "label": "Goluptatem",
-        "value": "1 Teaspoon"
-      },
-      {
-        "label": "Vel fuga",
-        "value": "300g"
-      }
-    ];
+  const [selectedAddOns, setSelectedAddOns] = useState([]);
 
+  const AttsData = [
+    {
+      "label": "Numquam",
+      "value": "1 pack"
+    },
+    {
+      "label": "Cupiditate",
+      "value": "150g"
+    },
+    {
+      "label": "Adipisicing",
+      "value": "500g"
+    },
+    {
+      "label": "Dolorem obcaecati",
+      "value": "3 Teaspoon"
+    },
+    {
+      "label": "Porro",
+      "value": "2 pack"
+    },
+    {
+      "label": "Facilis",
+      "value": "1kg"
+    },
+    {
+      "label": "Goluptatem",
+      "value": "1 Teaspoon"
+    },
+    {
+      "label": "Vel fuga",
+      "value": "300g"
+    }
+  ];
+
+  async function ProductAtts() {
     return (
       <>
         <ul className="sb-list">
@@ -99,7 +97,8 @@ const Products = () => {
                   <li><i className="fas fa-star"></i></li>
                   <li><span>(4 ratings)</span></li>
                 </ul>
-                <ProductButtons />
+                <ProductAddOns selectedAddOns={selectedAddOns} setSelectedAddOns={setSelectedAddOns} ingredients={AttsData} />
+                <ProductButtons selectedAddOns={selectedAddOns} />
               </div>
             </div>
           </div>

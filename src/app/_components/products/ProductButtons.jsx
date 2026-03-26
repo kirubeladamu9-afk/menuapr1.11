@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 
 import CartData from "@data/cart.json";
 
-const ProductButtons = () => {
+const ProductButtons = ({ selectedAddOns = [] }) => {
   const [cartTotal, setCartTotal] = useState(CartData.total);
   const [quantity, setQuantity] = useState(1);
   const minQuantity = 1;
@@ -18,11 +18,23 @@ const ProductButtons = () => {
   const addToCart = (e) => {
     e.preventDefault();
     const cartNumberEl = document.querySelector('.sb-cart-number');
+
+    // Store cart item with add-ons
+    const cartItem = {
+      product: "Chevrefrit au miel",
+      quantity: quantity,
+      addOns: selectedAddOns,
+      timestamp: new Date().toISOString()
+    };
+
+    // Log to console (in real app, would update cart state/storage)
+    console.log("Added to cart:", cartItem);
+
     setCartTotal(cartTotal + quantity);
 
     cartNumberEl.classList.add('sb-added');
     e.currentTarget.classList.add('sb-added');
-    
+
     setTimeout(() => {
         cartNumberEl.classList.remove('sb-added');
     }, 600);
