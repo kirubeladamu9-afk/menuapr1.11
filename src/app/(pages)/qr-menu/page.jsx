@@ -14,13 +14,7 @@ const QrMenu = () => {
 
   const handleCategoryChange = (index) => {
     setActiveCategory(index);
-    if (swiperRef.current?.swiper) {
-      swiperRef.current.swiper.slideTo(index, 500);
-    }
-  };
-
-  const handleSwiperSlideChange = (swiper) => {
-    setActiveCategory(swiper.activeIndex);
+    swiperRef.current?.slideTo(index, 500);
   };
 
   return (
@@ -37,13 +31,14 @@ const QrMenu = () => {
       {/* Category Tabs Swiper */}
       <div className="qr-category-tabs">
         <Swiper
-          ref={swiperRef}
           modules={[FreeMode, Navigation]}
           slidesPerView="auto"
           spaceBetween={12}
           freeMode={true}
           grabCursor={true}
-          onSlideChange={handleSwiperSlideChange}
+          onSwiper={(swiper) => {
+            swiperRef.current = swiper;
+          }}
           className="qr-tabs-swiper"
           initialSlide={0}
         >
