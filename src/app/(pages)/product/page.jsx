@@ -136,7 +136,20 @@ const Products = () => {
               <ProductImage src={"/img/menu/4.jpg"} alt={"Saumon Gravlax"} badge={"<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"} />
             </div>
             <div className="col-lg-6">
-              <ProductButtons />
+              <div className="sb-product-description sb-mb-90">
+                <div className="sb-price-frame sb-mb-30">
+                  <div className="sb-price"><sub>$</sub> 19</div>
+                </div>
+                <ul className="sb-stars sb-mb-25">
+                  <li><i className="fas fa-star"></i></li>
+                  <li><i className="fas fa-star"></i></li>
+                  <li><i className="fas fa-star"></i></li>
+                  <li><i className="fas fa-star"></i></li>
+                  <li><i className="fas fa-star"></i></li>
+                  <li><span>(4 ratings)</span></li>
+                </ul>
+                <ProductButtons />
+              </div>
             </div>
           </div>
 
