@@ -149,35 +149,7 @@ const Products = () => {
                   <li><span>(4 ratings)</span></li>
                 </ul>
                 <p className="sb-text sb-mb-30"><span>tomatoes</span>, <span>nori</span>, <span>feta cheese</span>, <span>mushrooms</span>, <span>rice noodles</span>, <span>corn</span>, <span>shrimp</span>.</p>
-                <div className="row">
-                  <div className="col-lg-4">
-                    <div className="sb-features-item sb-features-item-sm sb-mb-30">
-                      <div className="sb-number">01</div>
-                      <div className="sb-feature-text">
-                        <h4 className="sb-mb-15">Add to the cart and place an order</h4>
-                        <p className="sb-text sb-text-sm">Porro comirton pera nemo veniam</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4">
-                    <div className="sb-features-item sb-features-item-sm sb-mb-30">
-                      <div className="sb-number">02</div>
-                      <div className="sb-feature-text">
-                        <h4 className="sb-mb-15">Enter your phone number and address</h4>
-                        <p className="sb-text sb-text-sm">Eligendi adipisci numquam.</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4">
-                    <div className="sb-features-item sb-features-item-sm sb-mb-30">
-                      <div className="sb-number">03</div>
-                      <div className="sb-feature-text">
-                        <h4 className="sb-mb-15">Enjoy your favorite food at home!</h4>
-                        <p className="sb-text sb-text-sm">Nnecessitatibus praesentium</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
                 
                 <ProductButtons />
               </div>
