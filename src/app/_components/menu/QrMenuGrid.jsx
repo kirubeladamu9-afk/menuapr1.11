@@ -1,17 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import Lightbox from "yet-another-react-lightbox";
-import "yet-another-react-lightbox/styles.css";
+import Link from "next/link";
 
 const QrMenuGrid = ({ items }) => {
-  const [img, setImg] = useState(false);
-  const [imgValue, setImgValue] = useState([]);
   const [showComingSoon, setShowComingSoon] = useState(false);
 
-  const handleImageClick = (image, title) => {
-    setImg(true);
-    setImgValue([{ src: image, alt: title }]);
+  const getProductUrl = (item, index) => {
+    const slug = item.title.toLowerCase().replace(/\s+/g, "-");
+    return `/product?id=${slug}&idx=${index}`;
   };
 
   return (
@@ -19,22 +16,23 @@ const QrMenuGrid = ({ items }) => {
       <div className="qr-menu-items">
         {items.map((item, key) => (
           <div className="qr-menu-item" key={`qr-menu-item-${key}`}>
-            <button
-              className="qr-item-image-btn"
-              onClick={() => handleImageClick(item.image, item.title)}
-            >
-              <img src={item.image} alt={item.title} />
-              {item.badge && (
-                <div
-                  className="qr-item-badge"
-                  dangerouslySetInnerHTML={{ __html: item.badge }}
-                />
-              )}
-            </button>
+            <Link href={getProductUrl(item, key)} className="qr-item-image-link">
+              <div className="qr-item-image-btn">
+                <img src={item.image} alt={item.title} />
+                {item.badge && (
+                  <div
+                    className="qr-item-badge"
+                    dangerouslySetInnerHTML={{ __html: item.badge }}
+                  />
+                )}
+              </div>
+            </Link>
 
             <div className="qr-item-content">
               <div className="qr-item-header">
-                <h3 className="qr-item-title">{item.title}</h3>
+                <Link href={getProductUrl(item, key)} className="qr-item-title-link">
+                  <h3 className="qr-item-title">{item.title}</h3>
+                </Link>
                 <div className="qr-item-price">
                   <sub>{item.currency}</sub>
                   {item.price}
@@ -64,17 +62,6 @@ const QrMenuGrid = ({ items }) => {
           </div>
         ))}
       </div>
-
-      <Lightbox
-        open={img}
-        close={() => setImg(false)}
-        slides={imgValue}
-        styles={{ container: { backgroundColor: "rgba(38, 31, 65, .85)" } }}
-        render={{
-          buttonPrev: imgValue.length <= 1 ? () => null : undefined,
-          buttonNext: imgValue.length <= 1 ? () => null : undefined,
-        }}
-      />
 
       {showComingSoon && (
         <div className="qr-coming-soon-overlay" onClick={() => setShowComingSoon(false)}>
