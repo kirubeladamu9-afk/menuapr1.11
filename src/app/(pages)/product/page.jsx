@@ -128,15 +128,15 @@ const Products = () => {
       {/* product */}
       <section className="sb-p-90-0">
         <div className="container">
+          <Link href="/qr-menu" className="sb-back-btn sb-mb-30">
+            <i className="fas fa-arrow-left"></i> Back to Menu
+          </Link>
           <div className="row align-items-center">
             <div className="col-lg-6">
               <ProductImage src={"/img/menu/4.jpg"} alt={"Saumon Gravlax"} badge={"<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"} />
             </div>
             <div className="col-lg-6">
               <div className="sb-product-description sb-mb-90">
-                <Link href="/qr-menu" className="sb-back-btn sb-mb-20">
-                  <i className="fas fa-arrow-left"></i> Back to Menu
-                </Link>
                 <div className="sb-price-frame sb-mb-30">
                   <div className="sb-price"><sub>$</sub> 19</div>
                 </div>
