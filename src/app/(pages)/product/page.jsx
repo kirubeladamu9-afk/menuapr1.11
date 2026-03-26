@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 
@@ -8,14 +8,12 @@ import AppData from "@data/app.json";
 import ProductsData from "@data/products.json";
 
 import ProductImage from "@components/products/ProductImage";
-import ProductAddOns from "@components/products/ProductAddOns";
 import ProductButtons from "@components/products/ProductButtons";
 
 const ProductsSlider = dynamic( () => import("@components/sliders/Products"), { ssr: false } );
 const ProductTabs = dynamic( () => import("@components/products/ProductTabs"), { ssr: false } );
 
 const Products = () => {
-  const [selectedAddOns, setSelectedAddOns] = useState([]);
 
   const AttsData = [
     {
@@ -97,8 +95,7 @@ const Products = () => {
                   <li><i className="fas fa-star"></i></li>
                   <li><span>(4 ratings)</span></li>
                 </ul>
-                <ProductAddOns selectedAddOns={selectedAddOns} setSelectedAddOns={setSelectedAddOns} ingredients={AttsData} />
-                <ProductButtons selectedAddOns={selectedAddOns} />
+                <ProductButtons />
               </div>
             </div>
           </div>
