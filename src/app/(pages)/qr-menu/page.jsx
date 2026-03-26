@@ -34,6 +34,8 @@ const QrMenu = () => {
           spaceBetween={12}
           freeMode={true}
           grabCursor={true}
+          preventClicks={false}
+          preventClicksPropagation={false}
           className="qr-tabs-swiper"
         >
           {MenuData.categories.map((category, idx) => (
