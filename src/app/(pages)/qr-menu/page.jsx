@@ -19,9 +19,6 @@ const QrMenu = () => {
     <div className="qr-menu-container">
       {/* Header Section */}
       <div className="qr-menu-header">
-        <div className="qr-menu-logo">
-          <img src="https://cdn.builder.io/api/v1/image/assets%2F6d2520c8db524db4a1ab3a2ac30eaf4c%2F5e08437dd6a4431898c64aae83e6de38?format=webp&width=800&height=1200" alt="Restaurant Logo" />
-        </div>
         <h1 className="qr-menu-title">Our Menu</h1>
         <p className="qr-menu-subtitle">Browse our delicious offerings</p>
       </div>
