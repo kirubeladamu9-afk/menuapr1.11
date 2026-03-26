@@ -126,7 +126,7 @@ const Products = () => {
   return (
     <>
       {/* product */}
-      <section className="sb-p-90-0">
+      <section className="sb-p-90-0 sb-product-page">
         <div className="container">
           <Link href="/qr-menu" className="sb-back-btn sb-mb-30">
             <i className="fas fa-arrow-left"></i> Back to Menu

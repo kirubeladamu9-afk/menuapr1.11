@@ -1252,6 +1252,14 @@ spaces
   padding-top: 90px !important;
 }
 
+.sb-product-page {
+  padding-top: 120px !important;
+
+  @media (max-width: 992px) {
+    padding-top: 90px !important;
+  }
+}
+
 .sb-p-0-90 {
   padding-bottom: 90px !important;
 }
