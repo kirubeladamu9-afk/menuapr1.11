@@ -34,7 +34,7 @@ const QrMenu = () => {
         <Swiper
           ref={swiperRef}
           slidesPerView="auto"
-          spaceBetween={10}
+          spaceBetween={12}
           onSlideChange={(swiper) => setActiveCategory(swiper.activeIndex)}
           className="qr-tabs-swiper"
         >
