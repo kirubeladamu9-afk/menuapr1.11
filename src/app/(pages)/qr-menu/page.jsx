@@ -5,7 +5,7 @@ import MenuData from "@data/menu.json";
 import ContactData from "@data/sections/contact-info.json";
 import QrMenuGrid from "@components/menu/QrMenuGrid";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode } from "swiper";
+import { FreeMode, Navigation } from "swiper";
 import "swiper/css";
 
 const QrMenu = () => {
@@ -38,7 +38,7 @@ const QrMenu = () => {
       <div className="qr-category-tabs">
         <Swiper
           ref={swiperRef}
-          modules={[FreeMode]}
+          modules={[FreeMode, Navigation]}
           slidesPerView="auto"
           spaceBetween={12}
           freeMode={true}
