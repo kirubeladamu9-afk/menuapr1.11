@@ -7,7 +7,6 @@ import ProductsData from "@data/products.json";
 
 import ProductImage from "@components/products/ProductImage";
 import ProductButtons from "@components/products/ProductButtons";
-import CallToActionTwoSection from "@components/sections/CallToActionTwo";
 
 const ProductsSlider = dynamic( () => import("@components/sliders/Products"), { ssr: false } );
 const ProductTabs = dynamic( () => import("@components/products/ProductTabs"), { ssr: false } );
@@ -126,16 +125,14 @@ const Products = () => {
       </section>
       {/* product end */}
 
-      <ProductsSlider 
-        items={ProductsData.items} 
-        title={'It is usually bought together with this product'} 
-        description={'Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.'} 
+      <ProductsSlider
+        items={ProductsData.items}
+        title={'It is usually bought together with this product'}
+        description={'Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.'}
         button={0}
         slidesPerView={4}
-        itemType={'product'} 
+        itemType={'product'}
       />
-
-      <CallToActionTwoSection />
     </>
   );
 };
