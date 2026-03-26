@@ -23,11 +23,6 @@ const QrMenu = () => {
         <div className="qr-hero-layout">
           <div className="qr-hero-copy">
             <span className="qr-hero-eyebrow">QR Code Menu</span>
-            <h1 className="qr-hero-title">Fresh dishes, ready to browse</h1>
-            <p className="qr-hero-text">
-              Explore featured plates with an auto-sliding image showcase, then tap a tab below to filter the full menu.
-            </p>
-            <div className="qr-hero-chip">Featured menu highlights</div>
           </div>
 
           <div className="qr-hero-slider-frame">
