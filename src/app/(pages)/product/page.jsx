@@ -1,5 +1,6 @@
 import React from "react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 import AppData from "@data/app.json";
 import ProductsData from "@data/products.json";
@@ -133,6 +134,9 @@ const Products = () => {
             </div>
             <div className="col-lg-6">
               <div className="sb-product-description sb-mb-90">
+                <Link href="/qr-menu" className="sb-back-btn sb-mb-20">
+                  <i className="fas fa-arrow-left"></i> Back to Menu
+                </Link>
                 <div className="sb-price-frame sb-mb-30">
                   <div className="sb-price"><sub>$</sub> 19</div>
                 </div>
