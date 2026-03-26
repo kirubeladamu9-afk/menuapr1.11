@@ -1,15 +1,15 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useCallback, memo } from "react";
 import Link from "next/link";
 
-const QrMenuGrid = ({ items }) => {
+const QrMenuGrid = memo(({ items }) => {
   const [showComingSoon, setShowComingSoon] = useState(false);
 
-  const getProductUrl = (item, index) => {
+  const getProductUrl = useCallback((item, index) => {
     const slug = item.title.toLowerCase().replace(/\s+/g, "-");
     return `/product?id=${slug}&idx=${index}`;
-  };
+  }, []);
 
   return (
     <>
@@ -18,7 +18,7 @@ const QrMenuGrid = ({ items }) => {
           <div className="qr-menu-item" key={`qr-menu-item-${key}`}>
             <Link href={getProductUrl(item, key)} className="qr-item-image-link">
               <div className="qr-item-image-btn">
-                <img src={item.image} alt={item.title} />
+                <img src={item.image} alt={item.title} loading="lazy" />
                 {item.badge && (
                   <div
                     className="qr-item-badge"
@@ -99,6 +99,6 @@ const QrMenuGrid = ({ items }) => {
       )}
     </>
   );
-};
+});
 
 export default QrMenuGrid;
