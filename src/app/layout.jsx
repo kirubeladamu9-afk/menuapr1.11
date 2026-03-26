@@ -19,9 +19,6 @@ import "@styles/css/plugins/bootstrap.min.css";
 import "@styles/css/plugins/swiper.min.css";
 import "@styles/css/plugins/font-awesome.min.css";
 
-import { register } from "swiper/element/bundle";
-// register Swiper custom elements
-register();
 
 import '@styles/scss/style.scss';
 import "./globals.css";

@@ -40,9 +40,7 @@ export function getAllTagsIds() {
   const fileNames = fs.readdirSync(tagsDirectory)
   return fileNames.map(fileName => {
     return {
-      params: {
-        id: fileName.replace(/\.md$/, '')
-      }
+      id: fileName.replace(/\.md$/, '')
     }
   })
 }

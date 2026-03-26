@@ -62,7 +62,12 @@ async function BlogPage( { params } ) {
 export default BlogPage;
 
 export async function generateStaticParams() {
-  return Array.from({ length: 5 }).map((_, i) => `/blog/page/${i + 2}`)
+  const { total } = getPaginatedPostsData(AppData.settings.perPage, 1)
+  const totalPages = Math.ceil(total / AppData.settings.perPage)
+
+  return Array.from({ length: Math.max(totalPages - 1, 0) }, (_, i) => ({
+    page: String(i + 2)
+  }))
 }
 
 async function getAllPupulars() {

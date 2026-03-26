@@ -40,9 +40,7 @@ export function getAllCategoriesIds() {
   const fileNames = fs.readdirSync(categoriesDirectory)
   return fileNames.map(fileName => {
     return {
-      params: {
-        id: fileName.replace(/\.md$/, '')
-      }
+      id: fileName.replace(/\.md$/, '')
     }
   })
 }

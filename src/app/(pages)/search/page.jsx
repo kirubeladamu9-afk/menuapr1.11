@@ -15,12 +15,8 @@ export const metadata = {
   description: AppData.settings.siteDescription,
 }
 
-import { promises as fs } from 'fs';
-
 async function Search() {
-  const generateJsonPosts = await generateJsonPostsData();
-  const file = await fs.readFile(process.cwd() + '/src/data/.json/posts.json', 'utf8');
-  const posts = JSON.parse(file);
+  const posts = await generateJsonPostsData();
 
   return (
     <>
