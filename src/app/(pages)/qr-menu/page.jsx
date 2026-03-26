@@ -5,9 +5,7 @@ import MenuData from "@data/menu.json";
 import ContactData from "@data/sections/contact-info.json";
 import QrMenuGrid from "@components/menu/QrMenuGrid";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
 import "swiper/css";
-import "swiper/css/navigation";
 
 const QrMenu = () => {
   const [activeCategory, setActiveCategory] = useState(0);
@@ -35,12 +33,10 @@ const QrMenu = () => {
       <div className="qr-category-tabs">
         <Swiper
           ref={swiperRef}
-          modules={[Navigation]}
           slidesPerView="auto"
           spaceBetween={10}
           onSlideChange={(swiper) => setActiveCategory(swiper.activeIndex)}
           className="qr-tabs-swiper"
-          scrollbar={{ draggable: true }}
         >
           {MenuData.categories.map((category, idx) => (
             <SwiperSlide key={`tab-${idx}`} className="qr-tab-slide">
