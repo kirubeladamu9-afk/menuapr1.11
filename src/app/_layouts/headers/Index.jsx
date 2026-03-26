@@ -1,4 +1,5 @@
 import HeaderLayoutDefault from "./LayoutDefault";
+import HeaderLayoutQrMenu from "./LayoutQrMenu";
 
 const Header = ({ layout }) => {
   switch (layout) {
@@ -7,6 +8,9 @@ const Header = ({ layout }) => {
 
     case 2:
       return;
+
+    case "qr-menu":
+      return <HeaderLayoutQrMenu />;
 
     default:
       return (

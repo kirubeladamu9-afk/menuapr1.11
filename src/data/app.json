@@ -75,6 +75,10 @@
                 "link": "/menu",
                 "children": [
                     {
+                        "label": "QR Code Menu",
+                        "link": "/qr-menu"
+                    },
+                    {
                         "label": "Menu 1",
                         "link": "/menu"
                     },

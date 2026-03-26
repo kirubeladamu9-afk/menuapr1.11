@@ -7,7 +7,7 @@
     "title": "We do not <span>cook</span>, <br>we <span>create</span> your <br>emotions!",
     "description": "Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.",
     "button1": {
-        "link": "/menu",
+        "link": "/qr-menu",
         "icon": "/img/ui/icons/menu.svg",
         "label": "Our menu"
     },
