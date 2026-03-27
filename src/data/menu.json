@@ -329,6 +329,84 @@
                     "text": "tomatoes, nori, feta cheese, mushrooms, rice noodles, corn, shrimp."
                 }
             ]
+        },
+        {
+            "name": "Ethiopian Dishes",
+            "slug": "ethiopian-dishes",
+            "description": "Authentic Ethiopian flavors featuring traditional spiced stews,<br>flatbreads, and bold aromatic ingredients.",
+            "items": [
+                {
+                    "image": "/img/menu/1.jpg",
+                    "title": "Doro Wat",
+                    "price": "18",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Spiced chicken stew with onions, ginger, garlic, and Ethiopian spices served with injera bread.",
+                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
+                },
+                {
+                    "image": "/img/menu/2.jpg",
+                    "title": "Misir Wat",
+                    "price": "12",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Red lentil stew with onions, tomatoes, and aromatic spices, slow-cooked to perfection.",
+                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
+                },
+                {
+                    "image": "/img/menu/3.jpg",
+                    "title": "Gomen",
+                    "price": "10",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Collard greens sautéed with garlic, ginger, and traditional Ethiopian spices.",
+                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
+                },
+                {
+                    "image": "/img/menu/4.jpg",
+                    "title": "Kitfo",
+                    "price": "16",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Minced raw beef mixed with mitmita spice blend, butter, and finely chopped red onions.",
+                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
+                },
+                {
+                    "image": "/img/menu/5.jpg",
+                    "title": "Tibs",
+                    "price": "17",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Sautéed diced meat with peppers, onions, tomatoes, and Ethiopian spices, cooked over a slow flame."
+                },
+                {
+                    "image": "/img/menu/6.jpg",
+                    "title": "Shiro",
+                    "price": "11",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Creamy chickpea flour paste with onions, ginger, garlic, and Ethiopian spices.",
+                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
+                },
+                {
+                    "image": "/img/menu/7.jpg",
+                    "title": "Injera Platter",
+                    "price": "9",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Traditional spongy flatbread made from teff flour, served as base or with honey butter.",
+                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
+                },
+                {
+                    "image": "/img/menu/8.jpg",
+                    "title": "Beacon",
+                    "price": "14",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Ethiopian-style sautéed meat with peppers, onions, and smoked spices.",
+                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
+                }
+            ]
         }
     ]
 }
