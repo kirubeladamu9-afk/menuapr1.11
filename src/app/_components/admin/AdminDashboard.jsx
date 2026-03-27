@@ -13,7 +13,16 @@ const AdminDashboard = ({ sessionToken, onLogout }) => {
   const [initializing, setInitializing] = useState(false);
 
   useEffect(() => {
-    fetchData();
+    const init = async () => {
+      // Try to initialize database on first load
+      try {
+        await fetch('/api/admin/init-db', { method: 'POST' });
+      } catch (e) {
+        console.log('Init attempted');
+      }
+      fetchData();
+    };
+    init();
   }, []);
 
   const initializeDatabase = async () => {
