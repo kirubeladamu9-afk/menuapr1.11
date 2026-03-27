@@ -33,6 +33,9 @@ export const metadata = {
 		template: "%s | " + AppData.settings.siteName,
 	},
   description: AppData.settings.siteDescription,
+  icons: {
+    icon: AppData.header.logo.image,
+  },
 }
 
 const Layouts = ({
