@@ -1,7 +1,7 @@
 "use client";
 
 import React, { Suspense, useMemo } from "react";
-import dynamic from "next/dynamic";
+import dynamicImport from "next/dynamic";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 
@@ -12,8 +12,8 @@ import ProductsData from "@data/products.json";
 import ProductImage from "@components/products/ProductImage";
 import ProductButtons from "@components/products/ProductButtons";
 
-const ProductsSlider = dynamic( () => import("@components/sliders/Products"), { ssr: false } );
-const ProductTabs = dynamic( () => import("@components/products/ProductTabs"), { ssr: false } );
+const ProductsSlider = dynamicImport( () => import("@components/sliders/Products"), { ssr: false } );
+const ProductTabs = dynamicImport( () => import("@components/products/ProductTabs"), { ssr: false } );
 
 const ProductContent = () => {
   const searchParams = useSearchParams();
