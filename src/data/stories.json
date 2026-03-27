@@ -1,0 +1,22 @@
+{
+    "stories": [
+        {
+            "id": 1,
+            "title": "Our Ethiopian Heritage",
+            "image": "/img/ethiopian-dishes/beyaynetu.webp",
+            "description": "We celebrate authentic Ethiopian culinary traditions, bringing you time-honored recipes and preparation methods passed down through generations."
+        },
+        {
+            "id": 2,
+            "title": "Fresh Ingredients Daily",
+            "image": "/img/ethiopian-dishes/misir-wot.webp",
+            "description": "Every dish is prepared with the freshest ingredients sourced from local suppliers, ensuring quality and authentic flavors in every bite."
+        },
+        {
+            "id": 3,
+            "title": "Community & Culture",
+            "image": "/img/ethiopian-dishes/gomen-besiga.webp",
+            "description": "At Ekd Tech, we're more than a restaurant. We're a gathering place where family, friends, and community come together to share meals and create lasting memories."
+        }
+    ]
+}
