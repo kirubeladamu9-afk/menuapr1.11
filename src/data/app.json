@@ -19,7 +19,7 @@
         },
         "menu": [
             {
-                "label": "Starters",
+                "label": "Ethiopian Dishes",
                 "link": "/qr-menu?category=0",
                 "children": []
             },
@@ -72,33 +72,33 @@
     ],
     "instagram": [
         {
-            "image": "/img/instagram/1.jpg",
-            "title": "Image #1",
+            "image": "/img/ethiopian-dishes/beyaynetu.webp",
+            "title": "Beyaynetu (Fasting Combo)",
             "link": "https://instagram.com/"
         },
         {
-            "image": "/img/instagram/2.jpg",
-            "title": "Image #2",
+            "image": "/img/ethiopian-dishes/misir-wot.webp",
+            "title": "Misir Wat",
             "link": "https://instagram.com/"
         },
         {
-            "image": "/img/instagram/3.jpg",
-            "title": "Image #3",
+            "image": "/img/ethiopian-dishes/gomen-besiga.webp",
+            "title": "Gomen Besiga",
             "link": "https://instagram.com/"
         },
         {
-            "image": "/img/instagram/4.jpg",
-            "title": "Image #3",
+            "image": "/img/ethiopian-dishes/firfir.webp",
+            "title": "Firfir (Injera Stir Fry)",
             "link": "https://instagram.com/"
         },
         {
-            "image": "/img/instagram/5.jpg",
-            "title": "Image #5",
+            "image": "/img/ethiopian-dishes/dulet.webp",
+            "title": "Dulet",
             "link": "https://instagram.com/"
         },
         {
-            "image": "/img/instagram/6.jpg",
-            "title": "Image #6",
+            "image": "/img/ethiopian-dishes/chechebsa.webp",
+            "title": "Chechebsa",
             "link": "https://instagram.com/"
         }
     ]

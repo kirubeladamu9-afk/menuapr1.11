@@ -1,9 +1,10 @@
 import AppData from "@data/app.json";
+import MenuData from "@data/menu.json";
 import Link from "next/link";
 
-import PostsData from "@data/.json/posts";
-
 const MiniSidebar = () => {
+    const ethiopianDishes = MenuData.categories[0]?.items.slice(0, 3) || [];
+
     return (
         <>
             <div className="sb-infobar-content">
@@ -28,14 +29,14 @@ const MiniSidebar = () => {
                 <div className="sb-ib-title-frame sb-mb-30">
                     <h4>Our Stories</h4><i className="fas fa-arrow-down"></i>
                 </div>
-                {PostsData.slice(0, 3).map((item, key) => (
-                <Link href={`/blog/${item.id}`} className="sb-blog-card sb-blog-card-sm sb-mb-30" key={`mini-sidebar-posts-item-${key}`}>
+                {ethiopianDishes.map((item, key) => (
+                <Link href={`/qr-menu?category=0`} className="sb-blog-card sb-blog-card-sm sb-mb-30" key={`mini-sidebar-featured-item-${key}`}>
                     <div className="sb-cover-frame">
                         <img src={item.image} alt={item.title} />
                     </div>
                     <div className="sb-blog-card-descr">
                         <h5 className="sb-mb-5">{item.title}</h5>
-                        <p className="sb-text sb-text-sm">{item.short}</p>
+                        <p className="sb-text sb-text-sm">{item.text.substring(0, 80)}...</p>
                     </div>
                 </Link>
                 ))}
