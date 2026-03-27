@@ -1,4 +1,5 @@
 import mysql from 'mysql2/promise';
+import { hashPassword } from './password.js';
 
 let connectionPool = null;
 let initialized = false;
@@ -85,11 +86,12 @@ export async function initializeDatabase() {
 
     // Create default admin user if it doesn't exist
     if (existingUsers[0].count === 0) {
+      const hashedPassword = await hashPassword('admin123');
       await connection.execute(
         'INSERT INTO users (username, password, email, role) VALUES (?, ?, ?, ?)',
-        ['admin', 'admin123', 'admin@starbelly.com', 'admin']
+        ['admin', hashedPassword, 'admin@starbelly.com', 'admin']
       );
-      console.log('Default admin user created');
+      console.log('Default admin user created with encrypted password');
     } else {
       console.log('Admin user already exists');
     }

@@ -1,4 +1,5 @@
 import { createAdminSession } from '@lib/adminAuth';
+import { comparePassword } from '@lib/password';
 import { queryDatabase } from '@lib/db';
 
 export async function POST(request) {
@@ -15,11 +16,21 @@ export async function POST(request) {
 
     // Query user from database (will auto-initialize if needed via getConnection)
     const users = await queryDatabase(
-      'SELECT * FROM users WHERE username = ? AND password = ?',
-      [username, password]
+      'SELECT * FROM users WHERE username = ?',
+      [username]
     );
 
     if (users.length === 0) {
+      return new Response(
+        JSON.stringify({ error: 'Invalid username or password' }),
+        { status: 401 }
+      );
+    }
+
+    // Compare provided password with hashed password
+    const passwordMatch = await comparePassword(password, users[0].password);
+
+    if (!passwordMatch) {
       return new Response(
         JSON.stringify({ error: 'Invalid username or password' }),
         { status: 401 }
