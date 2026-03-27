@@ -2,7 +2,7 @@
     "collection": {
         "popular": [
             {
-                "image": "/img/menu/10.jpg",
+                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F5453e89080fd4e10a88225b7c9f045a5?format=webp&width=800&height=1200",
                 "title": "Beyaynetu (Fasting Combo)",
                 "price": "18",
                 "currency": "$",
@@ -10,7 +10,7 @@
                 "text": "A colorful platter of assorted vegan dishes served on injera, perfect for fasting and sharing."
             },
             {
-                "image": "/img/menu/1.jpg",
+                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F5453e89080fd4e10a88225b7c9f045a5?format=webp&width=800&height=1200",
                 "title": "Sambusa (Ethiopian Appetizer)",
                 "price": "9",
                 "currency": "$",
@@ -18,7 +18,7 @@
                 "text": "Crispy pastry filled with spiced lentils or minced meat, deep-fried to golden perfection."
             },
             {
-                "image": "/img/menu/6.jpg",
+                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F9920537934f544d6aea2a2f8a17dfcef?format=webp&width=800&height=1200",
                 "title": "Chicken Alfredo Pasta",
                 "price": "14",
                 "currency": "$",
@@ -26,7 +26,7 @@
                 "text": "Creamy pasta dish with grilled chicken and rich Alfredo sauce."
             },
             {
-                "image": "/img/menu/11.jpg",
+                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F5453e89080fd4e10a88225b7c9f045a5?format=webp&width=800&height=1200",
                 "title": "Misir Wat",
                 "price": "12",
                 "currency": "$",
@@ -35,7 +35,7 @@
                 "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
             },
             {
-                "image": "/img/menu/5.jpg",
+                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F484b15c8862841f5a22accc3349fa6bd?format=webp&width=800&height=1200",
                 "title": "Avocado Salad",
                 "price": "10",
                 "currency": "$",
@@ -44,7 +44,7 @@
                 "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
             },
             {
-                "image": "/img/menu/14.jpg",
+                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F996d676ad2e2409f87c6909d2d8d285b?format=webp&width=800&height=1200",
                 "title": "Ethiopian Coffee",
                 "price": "5",
                 "currency": "$",
@@ -55,7 +55,7 @@
         ],
         "bestseller": [
             {
-                "image": "/img/menu/12.jpg",
+                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F97b3fc55dfec4ddd839643534d189e59?format=webp&width=800&height=1200",
                 "title": "Gomen Besiga",
                 "price": "15",
                 "currency": "$",
@@ -63,7 +63,7 @@
                 "text": "Collard greens cooked with tender beef and Ethiopian spices."
             },
             {
-                "image": "/img/menu/8.jpg",
+                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Fe91e63106f1a46289f6843565443c638?format=webp&width=800&height=1200",
                 "title": "French Fries with Chicken Wings",
                 "price": "15",
                 "currency": "$",
@@ -71,7 +71,7 @@
                 "text": "Crispy fries served with spicy fried chicken wings."
             },
             {
-                "image": "/img/menu/13.jpg",
+                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F4fac9702c0ed482495c4def503f0715b?format=webp&width=800&height=1200",
                 "title": "Firfir (Injera Stir Fry)",
                 "price": "14",
                 "currency": "$",
@@ -80,7 +80,7 @@
                 "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
             },
             {
-                "image": "/img/menu/7.jpg",
+                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F231a74c042124fcca43ef53e46e3c152?format=webp&width=800&height=1200",
                 "title": "Margherita Pizza",
                 "price": "13",
                 "currency": "$",
@@ -88,7 +88,7 @@
                 "text": "Classic Italian pizza with tomato sauce, mozzarella, and fresh basil."
             },
             {
-                "image": "/img/menu/2.jpg",
+                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F97b3fc55dfec4ddd839643534d189e59?format=webp&width=800&height=1200",
                 "title": "Chicken Soup",
                 "price": "8",
                 "currency": "$",
@@ -96,7 +96,7 @@
                 "text": "Warm and comforting soup with tender chicken, vegetables, and herbs."
             },
             {
-                "image": "/img/menu/15.jpg",
+                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F1ba7d8f664aa46309358b5fc50525482?format=webp&width=800&height=1200",
                 "title": "Chechebsa",
                 "price": "13",
                 "currency": "$",
@@ -107,7 +107,7 @@
     },
     "items": [
         {
-            "image": "/img/menu/1.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F5453e89080fd4e10a88225b7c9f045a5?format=webp&width=800&height=1200",
             "title": "Sambusa (Ethiopian Appetizer)",
             "price": "9",
             "currency": "$",
@@ -115,7 +115,7 @@
             "text": "Crispy pastry filled with spiced lentils or minced meat, deep-fried to golden perfection. Ingredients: Sambusa wraps, lentils or minced meat, onion, garlic, oil, spices."
         },
         {
-            "image": "/img/menu/2.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F97b3fc55dfec4ddd839643534d189e59?format=webp&width=800&height=1200",
             "title": "Chicken Soup",
             "price": "8",
             "currency": "$",
@@ -123,7 +123,7 @@
             "text": "Warm and comforting soup with tender chicken, vegetables, and herbs. Ingredients: Chicken, carrot, potato, garlic, water, salt & pepper."
         },
         {
-            "image": "/img/menu/3.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F1ba7d8f664aa46309358b5fc50525482?format=webp&width=800&height=1200",
             "title": "Garlic Bread",
             "price": "7",
             "currency": "$",
@@ -132,7 +132,7 @@
             "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
         },
         {
-            "image": "/img/menu/4.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F4fac9702c0ed482495c4def503f0715b?format=webp&width=800&height=1200",
             "title": "Spring Rolls",
             "price": "9",
             "currency": "$",
@@ -140,7 +140,7 @@
             "text": "Crispy rolls stuffed with vegetables or chicken. Ingredients: Spring roll wrappers, vegetables, chicken (optional), oil, soy sauce."
         },
         {
-            "image": "/img/menu/5.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F484b15c8862841f5a22accc3349fa6bd?format=webp&width=800&height=1200",
             "title": "Avocado Salad",
             "price": "10",
             "currency": "$",
@@ -149,7 +149,7 @@
             "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
         },
         {
-            "image": "/img/menu/6.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F9920537934f544d6aea2a2f8a17dfcef?format=webp&width=800&height=1200",
             "title": "Chicken Alfredo Pasta",
             "price": "14",
             "currency": "$",
@@ -157,7 +157,7 @@
             "text": "Creamy pasta dish with grilled chicken and rich Alfredo sauce. Ingredients: Fettuccine pasta, chicken breast, cream, parmesan cheese, garlic."
         },
         {
-            "image": "/img/menu/7.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F231a74c042124fcca43ef53e46e3c152?format=webp&width=800&height=1200",
             "title": "Margherita Pizza",
             "price": "13",
             "currency": "$",
@@ -165,7 +165,7 @@
             "text": "Classic Italian pizza with tomato sauce, mozzarella, and fresh basil. Ingredients: Pizza dough, tomato sauce, mozzarella, basil leaves."
         },
         {
-            "image": "/img/menu/8.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Fe91e63106f1a46289f6843565443c638?format=webp&width=800&height=1200",
             "title": "French Fries with Chicken Wings",
             "price": "15",
             "currency": "$",
@@ -173,7 +173,7 @@
             "text": "Crispy fries served with spicy fried chicken wings. Ingredients: Potatoes, chicken wings, flour, oil, spices."
         },
         {
-            "image": "/img/menu/9.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Faed12bfff69646cbb9c72e0e599839ed?format=webp&width=800&height=1200",
             "title": "Club Sandwich",
             "price": "12",
             "currency": "$",
@@ -181,7 +181,7 @@
             "text": "Triple-layer sandwich with chicken, bacon, lettuce, and tomato. Ingredients: Bread, chicken, bacon, lettuce, mayonnaise."
         },
         {
-            "image": "/img/menu/10.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F547536aba40146588dbdfded737924ca?format=webp&width=800&height=1200",
             "title": "Fish and Chips",
             "price": "14",
             "currency": "$",
@@ -189,7 +189,7 @@
             "text": "Deep-fried fish served with crispy fries and tartar sauce. Ingredients: Fish fillet, potatoes, flour, oil, lemon."
         },
         {
-            "image": "/img/menu/11.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F84ba71aca2d34747a20bdb44f6ea3223?format=webp&width=800&height=1200",
             "title": "Caesar Salad",
             "price": "11",
             "currency": "$",
@@ -198,7 +198,7 @@
             "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
         },
         {
-            "image": "/img/menu/12.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Ff7b07756fd5a4082a34ea6d0cea6af60?format=webp&width=800&height=1200",
             "title": "Beef Shawarma Wrap",
             "price": "13",
             "currency": "$",
@@ -206,7 +206,7 @@
             "text": "Middle Eastern wrap filled with spiced beef and vegetables. Ingredients: Flatbread, beef strips, garlic sauce, tomato, lettuce."
         },
         {
-            "image": "/img/menu/13.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Fbe892b0108644a5090757bafbb87250e?format=webp&width=800&height=1200",
             "title": "Rice with Grilled Fish",
             "price": "16",
             "currency": "$",
@@ -214,7 +214,7 @@
             "text": "Steamed rice served with seasoned grilled fish and vegetables. Ingredients: Rice, fish, lemon, garlic, vegetables."
         },
         {
-            "image": "/img/menu/14.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F996d676ad2e2409f87c6909d2d8d285b?format=webp&width=800&height=1200",
             "title": "Ethiopian Coffee",
             "price": "5",
             "currency": "$",
@@ -223,7 +223,7 @@
             "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
         },
         {
-            "image": "/img/menu/1.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Faa8a57cad70d4d5cacd8e9195de02de7?format=webp&width=800&height=1200",
             "title": "Mango Juice",
             "price": "4",
             "currency": "$",
@@ -232,7 +232,7 @@
             "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
         },
         {
-            "image": "/img/menu/2.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Ffce080b4e7054f95ad3b29f207c936f0?format=webp&width=800&height=1200",
             "title": "Avocado Juice",
             "price": "6",
             "currency": "$",
@@ -241,7 +241,7 @@
             "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
         },
         {
-            "image": "/img/menu/3.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F3f3c4a1b5e6f7g8h9i0j?format=webp&width=800&height=1200",
             "title": "Soft Drinks",
             "price": "3",
             "currency": "$",
@@ -249,7 +249,7 @@
             "text": "Chilled carbonated beverages served cold. Ingredients: Soda, ice."
         },
         {
-            "image": "/img/menu/4.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Fbe3ca46e2a4a4568b9cf9d89b0719c13?format=webp&width=800&height=1200",
             "title": "Lemon Mint Juice",
             "price": "4",
             "currency": "$",
@@ -258,7 +258,7 @@
             "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
         },
         {
-            "image": "/img/menu/5.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F001df2a840564b1ca504f78c784cc0ea?format=webp&width=800&height=1200",
             "title": "Chocolate Cake",
             "price": "7",
             "currency": "$",
@@ -266,7 +266,7 @@
             "text": "Rich and moist chocolate cake topped with creamy frosting. Ingredients: Flour, cocoa powder, sugar, eggs, butter."
         },
         {
-            "image": "/img/menu/6.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F49e1f5fd47e04bdc96088ab5e1a1b43b?format=webp&width=800&height=1200",
             "title": "Fruit Salad",
             "price": "6",
             "currency": "$",
@@ -275,7 +275,7 @@
             "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
         },
         {
-            "image": "/img/menu/7.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Fc8f6e03b380249dba8011587ecb57f85?format=webp&width=800&height=1200",
             "title": "Ice Cream",
             "price": "5",
             "currency": "$",
@@ -283,7 +283,7 @@
             "text": "Creamy frozen dessert available in different flavors. Ingredients: Milk, cream, sugar, flavoring."
         },
         {
-            "image": "/img/menu/8.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F242fc256c55341dfb402e60dc42039dc?format=webp&width=800&height=1200",
             "title": "Baklava",
             "price": "8",
             "currency": "$",
@@ -291,7 +291,7 @@
             "text": "Sweet pastry layered with nuts and honey syrup. Ingredients: Phyllo dough, nuts, honey, butter."
         },
         {
-            "image": "/img/menu/9.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F6283e60cec744d66a83cd5132a1d9af0?format=webp&width=800&height=1200",
             "title": "Pancakes with Honey",
             "price": "6",
             "currency": "$",
@@ -300,7 +300,7 @@
             "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
         },
         {
-            "image": "/img/menu/10.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F5453e89080fd4e10a88225b7c9f045a5?format=webp&width=800&height=1200",
             "title": "Beyaynetu (Fasting Combo)",
             "price": "18",
             "currency": "$",
@@ -308,7 +308,7 @@
             "text": "A colorful platter of assorted vegan dishes served on injera, perfect for fasting and sharing. Ingredients: Injera, shiro, misir wat, gomen, tikil gomen, salad."
         },
         {
-            "image": "/img/menu/11.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F5453e89080fd4e10a88225b7c9f045a5?format=webp&width=800&height=1200",
             "title": "Misir Wat",
             "price": "12",
             "currency": "$",
@@ -317,7 +317,7 @@
             "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
         },
         {
-            "image": "/img/menu/12.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F97b3fc55dfec4ddd839643534d189e59?format=webp&width=800&height=1200",
             "title": "Gomen Besiga",
             "price": "15",
             "currency": "$",
@@ -325,7 +325,7 @@
             "text": "Collard greens cooked with tender beef and Ethiopian spices. Ingredients: Collard greens, beef, onion, garlic, oil."
         },
         {
-            "image": "/img/menu/13.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F4fac9702c0ed482495c4def503f0715b?format=webp&width=800&height=1200",
             "title": "Firfir (Injera Stir Fry)",
             "price": "14",
             "currency": "$",
@@ -334,7 +334,7 @@
             "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
         },
         {
-            "image": "/img/menu/14.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Faed12bfff69646cbb9c72e0e599839ed?format=webp&width=800&height=1200",
             "title": "Dulet",
             "price": "16",
             "currency": "$",
@@ -343,7 +343,7 @@
             "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
         },
         {
-            "image": "/img/menu/15.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F1ba7d8f664aa46309358b5fc50525482?format=webp&width=800&height=1200",
             "title": "Chechebsa",
             "price": "13",
             "currency": "$",
@@ -351,7 +351,7 @@
             "text": "Traditional Oromo breakfast dish made from flatbread pieces mixed with butter and berbere. Ingredients: Flatbread, niter kibbeh, berbere, honey."
         },
         {
-            "image": "/img/menu/1.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F484b15c8862841f5a22accc3349fa6bd?format=webp&width=800&height=1200",
             "title": "Genfo",
             "price": "12",
             "currency": "$",
@@ -359,7 +359,7 @@
             "text": "Thick porridge served with spiced butter and berbere sauce. Ingredients: Barley flour, water, niter kibbeh, berbere sauce."
         },
         {
-            "image": "/img/menu/2.jpg",
+            "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F996d676ad2e2409f87c6909d2d8d285b?format=webp&width=800&height=1200",
             "title": "Shiro",
             "price": "11",
             "currency": "$",
