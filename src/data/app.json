@@ -19,151 +19,29 @@
         },
         "menu": [
             {
-                "label": "Home",
-                "link": "/",
-                "children": [
-                    {
-                        "label": "Homepage 1",
-                        "link": "/"
-                    },
-                    {
-                        "label": "Homepage 2",
-                        "link": "/home-2"
-                    }
-                ]
-            },
-            {
-                "label": "Pages",
-                "link": "/about",
-                "children": [
-                    {
-                        "label": "About 1",
-                        "link": "/about"
-                    },
-                    {
-                        "label": "About 2",
-                        "link": "/about-2"
-                    },
-                    {
-                        "label": "Gallery 1",
-                        "link": "/gallery"
-                    },
-                    {
-                        "label": "Gallery 2",
-                        "link": "/gallery-2"
-                    },
-                    {
-                        "label": "Reviews",
-                        "link": "/reviews"
-                    },
-                    {
-                        "label": "Reservation",
-                        "link": "/reservation"
-                    },
-                    {
-                        "label": "FAQ",
-                        "link": "/faq"
-                    },
-                    {
-                        "label": "404",
-                        "link": "/404"
-                    }
-                ]
-            },
-            {
-                "label": "Menu",
+                "label": "Starters",
                 "link": "/menu",
-                "children": [
-                    {
-                        "label": "QR Code Menu",
-                        "link": "/qr-menu"
-                    },
-                    {
-                        "label": "Starters",
-                        "link": "/menu"
-                    },
-                    {
-                        "label": "Main Dishes",
-                        "link": "/menu-2"
-                    },
-                    {
-                        "label": "Drinks",
-                        "link": "/menu-3"
-                    },
-                    {
-                        "label": "Desserts",
-                        "link": "/menu-4"
-                    }
-                ]
+                "children": []
             },
             {
-                "label": "Blog",
-                "link": "/blog-3",
-                "children": [
-                    {
-                        "label": "Blog",
-                        "link": "/blog-3"
-                    },
-                    {
-                        "label": "Blog list",
-                        "link": "/blog"
-                    },
-                    {
-                        "label": "Blog list 2",
-                        "link": "/blog-2"
-                    },
-                    {
-                        "label": "Publication",
-                        "link": "/blog/beet-and-burrata-salad-with-fried-bread"
-                    },
-                    {
-                        "label": "Publication 2",
-                        "link": "/blog/creamy-kale-pasta"
-                    },
-                    {
-                        "label": "Publication 3",
-                        "link": "/blog/incredible-vegan-mac-and-cheese"
-                    }
-                ]
+                "label": "Main Dishes",
+                "link": "/menu-2",
+                "children": []
             },
             {
-                "label": "Shop",
-                "link": "/shop",
-                "children": [
-                    {
-                        "label": "Shop",
-                        "link": "/shop"
-                    },
-                    {
-                        "label": "Shop 2",
-                        "link": "/shop-2"
-                    },
-                    {
-                        "label": "Products",
-                        "link": "/products"
-                    },
-                    {
-                        "label": "Products 2",
-                        "link": "/products-2"
-                    },
-                    {
-                        "label": "Product page",
-                        "link": "/product"
-                    },
-                    {
-                        "label": "Cart",
-                        "link": "/cart"
-                    },
-                    {
-                        "label": "Checkout",
-                        "link": "/checkout"
-                    }
-                ]
+                "label": "Drinks",
+                "link": "/menu-3",
+                "children": []
+            },
+            {
+                "label": "Desserts",
+                "link": "/menu-4",
+                "children": []
             },
             {
                 "label": "Contact",
                 "link": "/contact",
-                "children": 0
+                "children": []
             }
         ]
     },
