@@ -1,5 +1,5 @@
 import { createAdminSession } from '@lib/adminAuth';
-import { queryDatabase, initializeDatabase } from '@lib/db';
+import { queryDatabase } from '@lib/db';
 
 export async function POST(request) {
   try {
@@ -13,14 +13,7 @@ export async function POST(request) {
       );
     }
 
-    // Initialize database if tables don't exist
-    try {
-      await initializeDatabase();
-    } catch (e) {
-      console.log('Database already initialized or initialization error:', e.message);
-    }
-
-    // Query user from database
+    // Query user from database (will auto-initialize if needed via getConnection)
     const users = await queryDatabase(
       'SELECT * FROM users WHERE username = ? AND password = ?',
       [username, password]

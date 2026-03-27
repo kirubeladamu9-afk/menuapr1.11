@@ -1,6 +1,7 @@
 import mysql from 'mysql2/promise';
 
 let connectionPool = null;
+let initialized = false;
 
 async function getConnection() {
   if (!connectionPool) {
@@ -14,6 +15,16 @@ async function getConnection() {
       connectionLimit: 10,
       queueLimit: 0,
     });
+
+    // Auto-initialize on first connection
+    if (!initialized) {
+      try {
+        await initializeDatabase();
+        initialized = true;
+      } catch (e) {
+        console.log('Auto-initialization attempt:', e.message);
+      }
+    }
   }
   return connectionPool;
 }
@@ -66,19 +77,27 @@ export async function initializeDatabase() {
       )
     `);
 
+    // Check if admin user exists
+    const [existingUsers] = await connection.execute(
+      'SELECT COUNT(*) as count FROM users WHERE username = ?',
+      ['admin']
+    );
+
     // Create default admin user if it doesn't exist
-    try {
+    if (existingUsers[0].count === 0) {
       await connection.execute(
         'INSERT INTO users (username, password, email, role) VALUES (?, ?, ?, ?)',
         ['admin', 'admin123', 'admin@starbelly.com', 'admin']
       );
       console.log('Default admin user created');
-    } catch (e) {
-      // User might already exist, that's fine
+    } else {
       console.log('Admin user already exists');
     }
 
     console.log('Database initialized successfully');
+  } catch (error) {
+    console.error('Database initialization error:', error.message);
+    throw error;
   } finally {
     connection.release();
   }
