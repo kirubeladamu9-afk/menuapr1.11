@@ -1,7 +1,18 @@
+"use client";
+
+import { usePathname } from 'next/navigation';
 import HeaderLayoutDefault from "./LayoutDefault";
 import HeaderLayoutQrMenu from "./LayoutQrMenu";
+import AdminHeader from "./AdminHeader";
 
 const Header = ({ layout }) => {
+  const pathname = usePathname();
+  const isAdminPage = pathname?.startsWith('/admin');
+
+  if (isAdminPage) {
+    return <AdminHeader />;
+  }
+
   switch (layout) {
     case 1:
       return;
