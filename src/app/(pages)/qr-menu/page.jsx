@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import MenuData from "@data/menu.json";
 import ContactData from "@data/sections/contact-info.json";
@@ -9,7 +9,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode, Navigation } from "swiper";
 import "swiper/css";
 
-const QrMenu = () => {
+const QrMenuContent = () => {
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get("category");
   const [activeCategory, setActiveCategory] = useState(categoryParam ? parseInt(categoryParam) : 0);
@@ -138,5 +138,15 @@ const QrMenu = () => {
     </div>
   );
 };
+
+const QrMenu = () => {
+  return (
+    <Suspense fallback={<div className="container"><p>Loading menu...</p></div>}>
+      <QrMenuContent />
+    </Suspense>
+  );
+};
+
+export const dynamic = "force-dynamic";
 
 export default QrMenu;

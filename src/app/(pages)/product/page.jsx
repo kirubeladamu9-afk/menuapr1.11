@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useMemo } from "react";
+import React, { Suspense, useMemo } from "react";
 import dynamic from "next/dynamic";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
@@ -15,7 +15,7 @@ import ProductButtons from "@components/products/ProductButtons";
 const ProductsSlider = dynamic( () => import("@components/sliders/Products"), { ssr: false } );
 const ProductTabs = dynamic( () => import("@components/products/ProductTabs"), { ssr: false } );
 
-const Products = () => {
+const ProductContent = () => {
   const searchParams = useSearchParams();
   const productId = searchParams.get("id");
   const productIdx = searchParams.get("idx");
@@ -43,7 +43,7 @@ const Products = () => {
     if (ingredientMatch) {
       const ingredientText = ingredientMatch[1];
       const ingredients = ingredientText.split(",").map(ing => ing.trim());
-      
+
       return ingredients.map((ingredient, idx) => ({
         label: ingredient.split("–")[0].trim(),
         value: ingredient.split("–")[1]?.trim() || ""
@@ -118,14 +118,14 @@ const Products = () => {
             </div>
           </div>
 
-          <ProductTabs 
+          <ProductTabs
             items={tabs}
             active={"ingredients"}
           />
 
           <div className="sb-masonry-grid sb-tabs">
             <div className="sb-grid-sizer" />
-            
+
             {tabs.map((tab, key) => (
             <div className={`sb-grid-item sb-${tab.slug}-tab`} key={`product-tab-${key}`}>
               <div className="sb-tab">
@@ -138,6 +138,16 @@ const Products = () => {
         </div>
       </section>
       {/* product end */}
+    </>
+  );
+};
+
+const Products = () => {
+  return (
+    <>
+      <Suspense fallback={<div className="container"><p>Loading...</p></div>}>
+        <ProductContent />
+      </Suspense>
 
       <ProductsSlider
         items={ProductsData.items}
@@ -150,4 +160,7 @@ const Products = () => {
     </>
   );
 };
+
+export const dynamic = "force-dynamic";
+
 export default Products;
