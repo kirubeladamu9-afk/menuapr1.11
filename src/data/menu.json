@@ -154,7 +154,7 @@
                     "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
                 },
                 {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F3f3c4a1b5e6f7g8h9i0j?format=webp&width=800&height=1200",
+                    "image": "/img/ethiopian-dishes/soft-drinks.webp",
                     "title": "Soft Drinks",
                     "price": "3",
                     "currency": "$",
