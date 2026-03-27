@@ -1,9 +1,9 @@
 {
     "title": "We are doing more than <br>you expect",
-    "description": "<p>Faudantium magnam error temporibus ipsam aliquid neque quibusdam dolorum, quia ea numquam assumenda mollitia dolorem impedit. Voluptate at quis exercitationem officia temporibus adipisci quae totam enim dolorum, assumenda. Sapiente soluta nostrum reprehenderit a velit obcaecati facilis vitae magnam tenetur neque vel itaque inventore eaque explicabo commodi maxime! Aliquam quasi, voluptates odio.</p><p>Consectetur adipisicing elit. Cupiditate nesciunt amet facilis numquam, nam adipisci qui voluptate voluptas enim obcaecati veritatis animi nulla, mollitia commodi quaerat ex, autem ea laborum.</p>",
+    "description": "<p>At our restaurant, we bring together the rich traditions of Ethiopian cuisine and the diverse flavors of international dishes to create a unique and memorable dining experience. We are passionate about using fresh, high-quality ingredients and authentic recipes, carefully prepared to deliver both taste and comfort in every bite. Whether you’re enjoying a traditional injera platter, a modern grilled dish, or a refreshing drink, our goal is to provide exceptional food, warm hospitality, and a welcoming atmosphere for families, friends, and special occasions.</p>",
     "image": {
-        "url": "/img/gallery/2.jpg",
-        "alt": "image"
+        "url": "https://cdn.builder.io/api/v1/image/assets%2F4fee7d0eddcd485cb968cfb9e8a3630a%2F66bd1ff6b87c4e2c83eddbf88180e8ff?format=webp&width=800&height=1200",
+        "alt": "About us logo"
     },
     "number": {
         "value": "17",

@@ -33,7 +33,6 @@ const MiniSidebar = () => {
                         <img src={AboutData.image.url} alt={AboutData.image.alt} />
                     </div>
                     <div className="sb-infobar-about-copy">
-                        <h5 className="sb-mb-10" dangerouslySetInnerHTML={{ __html: AboutData.title }} />
                         <div className="sb-text sb-text-sm" dangerouslySetInnerHTML={{ __html: aboutParagraph }} />
                     </div>
                 </div>
