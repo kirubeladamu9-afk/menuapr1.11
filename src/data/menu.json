@@ -1,50 +1,76 @@
 {
     "categories": [
         {
-            "name": "Starters",
-            "slug": "starters",
-            "description": "Begin your meal with our selection of appetizers<br>featuring crispy sambusas, fresh salads, and warm soups.",
+            "name": "Ethiopian Dishes",
+            "slug": "ethiopian-dishes",
+            "description": "Authentic Ethiopian flavors featuring traditional<br>spiced stews, flatbreads, and bold aromatic ingredients.",
             "items": [
                 {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F5453e89080fd4e10a88225b7c9f045a5?format=webp&width=800&height=1200",
-                    "title": "Sambusa (Ethiopian Appetizer)",
-                    "price": "9",
+                    "image": "/img/ethiopian-dishes/beyaynetu.webp",
+                    "title": "Beyaynetu (Fasting Combo)",
+                    "price": "18",
                     "currency": "$",
                     "rating": 5,
-                    "text": "Crispy pastry filled with spiced lentils or minced meat, deep-fried to golden perfection. Ingredients: Sambusa wraps, lentils or minced meat, onion, garlic, oil, spices."
+                    "text": "A colorful platter of assorted vegan dishes served on injera, perfect for fasting and sharing. Ingredients: Injera, shiro, misir wat, gomen, tikil gomen, salad."
                 },
                 {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F97b3fc55dfec4ddd839643534d189e59?format=webp&width=800&height=1200",
-                    "title": "Chicken Soup",
-                    "price": "8",
+                    "image": "/img/ethiopian-dishes/misir-wot.webp",
+                    "title": "Misir Wat",
+                    "price": "12",
                     "currency": "$",
                     "rating": 5,
-                    "text": "Warm and comforting soup with tender chicken, vegetables, and herbs. Ingredients: Chicken, carrot, potato, garlic, water, salt & pepper."
+                    "text": "Spicy red lentil stew cooked with berbere, onions, and garlic. Ingredients: Red lentils, onion, garlic, berbere, oil.",
+                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
                 },
                 {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F1ba7d8f664aa46309358b5fc50525482?format=webp&width=800&height=1200",
-                    "title": "Garlic Bread",
-                    "price": "7",
+                    "image": "/img/ethiopian-dishes/gomen-besiga.webp",
+                    "title": "Gomen Besiga",
+                    "price": "15",
                     "currency": "$",
                     "rating": 5,
-                    "text": "Toasted bread topped with garlic butter and herbs. Ingredients: Bread, butter, garlic, parsley.",
-                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
+                    "text": "Collard greens cooked with tender beef and Ethiopian spices. Ingredients: Collard greens, beef, onion, garlic, oil."
                 },
                 {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F4fac9702c0ed482495c4def503f0715b?format=webp&width=800&height=1200",
-                    "title": "Spring Rolls",
-                    "price": "9",
+                    "image": "/img/ethiopian-dishes/firfir.webp",
+                    "title": "Firfir (Injera Stir Fry)",
+                    "price": "14",
                     "currency": "$",
                     "rating": 5,
-                    "text": "Crispy rolls stuffed with vegetables or chicken. Ingredients: Spring roll wrappers, vegetables, chicken (optional), oil, soy sauce."
+                    "text": "Shredded injera mixed with spicy berbere sauce, often served with meat or vegetarian. Ingredients: Injera (torn), berbere sauce, onion, oil.",
+                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
                 },
                 {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F484b15c8862841f5a22accc3349fa6bd?format=webp&width=800&height=1200",
-                    "title": "Avocado Salad",
-                    "price": "10",
+                    "image": "/img/ethiopian-dishes/dulet.webp",
+                    "title": "Dulet",
+                    "price": "16",
                     "currency": "$",
                     "rating": 5,
-                    "text": "Fresh avocado mixed with vegetables and light dressing. Ingredients: Avocado, tomato, onion, lemon juice, olive oil.",
+                    "text": "Finely chopped tripe, liver, and beef mixed with spices and chili. Ingredients: Beef tripe, liver, minced beef, onion, chili.",
+                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
+                },
+                {
+                    "image": "/img/ethiopian-dishes/chechebsa.webp",
+                    "title": "Chechebsa",
+                    "price": "13",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Traditional Oromo breakfast dish made from flatbread pieces mixed with butter and berbere. Ingredients: Flatbread, niter kibbeh, berbere, honey."
+                },
+                {
+                    "image": "/img/ethiopian-dishes/genfo.webp",
+                    "title": "Genfo",
+                    "price": "12",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Thick porridge served with spiced butter and berbere sauce. Ingredients: Barley flour, water, niter kibbeh, berbere sauce."
+                },
+                {
+                    "image": "/img/ethiopian-dishes/shiro.webp",
+                    "title": "Shiro",
+                    "price": "11",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Creamy chickpea flour paste with onions, ginger, and Ethiopian spices. Ingredients: Chickpea flour, onion, ginger, garlic, oil.",
                     "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
                 }
             ]
@@ -222,76 +248,50 @@
             ]
         },
         {
-            "name": "Ethiopian Dishes",
-            "slug": "ethiopian-dishes",
-            "description": "Authentic Ethiopian flavors featuring traditional<br>spiced stews, flatbreads, and bold aromatic ingredients.",
+            "name": "Starters",
+            "slug": "starters",
+            "description": "Begin your meal with our selection of appetizers<br>featuring crispy sambusas, fresh salads, and warm soups.",
             "items": [
                 {
-                    "image": "/img/ethiopian-dishes/beyaynetu.webp",
-                    "title": "Beyaynetu (Fasting Combo)",
-                    "price": "18",
+                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F5453e89080fd4e10a88225b7c9f045a5?format=webp&width=800&height=1200",
+                    "title": "Sambusa (Ethiopian Appetizer)",
+                    "price": "9",
                     "currency": "$",
                     "rating": 5,
-                    "text": "A colorful platter of assorted vegan dishes served on injera, perfect for fasting and sharing. Ingredients: Injera, shiro, misir wat, gomen, tikil gomen, salad."
+                    "text": "Crispy pastry filled with spiced lentils or minced meat, deep-fried to golden perfection. Ingredients: Sambusa wraps, lentils or minced meat, onion, garlic, oil, spices."
                 },
                 {
-                    "image": "/img/ethiopian-dishes/misir-wot.webp",
-                    "title": "Misir Wat",
-                    "price": "12",
+                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F97b3fc55dfec4ddd839643534d189e59?format=webp&width=800&height=1200",
+                    "title": "Chicken Soup",
+                    "price": "8",
                     "currency": "$",
                     "rating": 5,
-                    "text": "Spicy red lentil stew cooked with berbere, onions, and garlic. Ingredients: Red lentils, onion, garlic, berbere, oil.",
-                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
+                    "text": "Warm and comforting soup with tender chicken, vegetables, and herbs. Ingredients: Chicken, carrot, potato, garlic, water, salt & pepper."
                 },
                 {
-                    "image": "/img/ethiopian-dishes/gomen-besiga.webp",
-                    "title": "Gomen Besiga",
-                    "price": "15",
+                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F1ba7d8f664aa46309358b5fc50525482?format=webp&width=800&height=1200",
+                    "title": "Garlic Bread",
+                    "price": "7",
                     "currency": "$",
                     "rating": 5,
-                    "text": "Collard greens cooked with tender beef and Ethiopian spices. Ingredients: Collard greens, beef, onion, garlic, oil."
+                    "text": "Toasted bread topped with garlic butter and herbs. Ingredients: Bread, butter, garlic, parsley.",
+                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
                 },
                 {
-                    "image": "/img/ethiopian-dishes/firfir.webp",
-                    "title": "Firfir (Injera Stir Fry)",
-                    "price": "14",
+                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F4fac9702c0ed482495c4def503f0715b?format=webp&width=800&height=1200",
+                    "title": "Spring Rolls",
+                    "price": "9",
                     "currency": "$",
                     "rating": 5,
-                    "text": "Shredded injera mixed with spicy berbere sauce, often served with meat or vegetarian. Ingredients: Injera (torn), berbere sauce, onion, oil.",
-                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
+                    "text": "Crispy rolls stuffed with vegetables or chicken. Ingredients: Spring roll wrappers, vegetables, chicken (optional), oil, soy sauce."
                 },
                 {
-                    "image": "/img/ethiopian-dishes/dulet.webp",
-                    "title": "Dulet",
-                    "price": "16",
+                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F484b15c8862841f5a22accc3349fa6bd?format=webp&width=800&height=1200",
+                    "title": "Avocado Salad",
+                    "price": "10",
                     "currency": "$",
                     "rating": 5,
-                    "text": "Finely chopped tripe, liver, and beef mixed with spices and chili. Ingredients: Beef tripe, liver, minced beef, onion, chili.",
-                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
-                },
-                {
-                    "image": "/img/ethiopian-dishes/chechebsa.webp",
-                    "title": "Chechebsa",
-                    "price": "13",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Traditional Oromo breakfast dish made from flatbread pieces mixed with butter and berbere. Ingredients: Flatbread, niter kibbeh, berbere, honey."
-                },
-                {
-                    "image": "/img/ethiopian-dishes/genfo.webp",
-                    "title": "Genfo",
-                    "price": "12",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Thick porridge served with spiced butter and berbere sauce. Ingredients: Barley flour, water, niter kibbeh, berbere sauce."
-                },
-                {
-                    "image": "/img/ethiopian-dishes/shiro.webp",
-                    "title": "Shiro",
-                    "price": "11",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Creamy chickpea flour paste with onions, ginger, and Ethiopian spices. Ingredients: Chickpea flour, onion, ginger, garlic, oil.",
+                    "text": "Fresh avocado mixed with vegetables and light dressing. Ingredients: Avocado, tomato, onion, lemon juice, olive oil.",
                     "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
                 }
             ]

@@ -10,22 +10,6 @@
                 "text": "A colorful platter of assorted vegan dishes served on injera, perfect for fasting and sharing."
             },
             {
-                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F5453e89080fd4e10a88225b7c9f045a5?format=webp&width=800&height=1200",
-                "title": "Sambusa (Ethiopian Appetizer)",
-                "price": "9",
-                "currency": "$",
-                "rating": 5,
-                "text": "Crispy pastry filled with spiced lentils or minced meat, deep-fried to golden perfection."
-            },
-            {
-                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F9920537934f544d6aea2a2f8a17dfcef?format=webp&width=800&height=1200",
-                "title": "Chicken Alfredo Pasta",
-                "price": "14",
-                "currency": "$",
-                "rating": 5,
-                "text": "Creamy pasta dish with grilled chicken and rich Alfredo sauce."
-            },
-            {
                 "image": "/img/ethiopian-dishes/misir-wot.webp",
                 "title": "Misir Wat",
                 "price": "12",
@@ -35,40 +19,12 @@
                 "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
             },
             {
-                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F484b15c8862841f5a22accc3349fa6bd?format=webp&width=800&height=1200",
-                "title": "Avocado Salad",
-                "price": "10",
-                "currency": "$",
-                "rating": 5,
-                "text": "Fresh avocado mixed with vegetables and light dressing.",
-                "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-            },
-            {
-                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F996d676ad2e2409f87c6909d2d8d285b?format=webp&width=800&height=1200",
-                "title": "Ethiopian Coffee",
-                "price": "5",
-                "currency": "$",
-                "rating": 5,
-                "text": "Traditional coffee brewed from freshly roasted beans with rich aroma.",
-                "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-            }
-        ],
-        "bestseller": [
-            {
                 "image": "/img/ethiopian-dishes/gomen-besiga.webp",
                 "title": "Gomen Besiga",
                 "price": "15",
                 "currency": "$",
                 "rating": 5,
                 "text": "Collard greens cooked with tender beef and Ethiopian spices."
-            },
-            {
-                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Fe91e63106f1a46289f6843565443c638?format=webp&width=800&height=1200",
-                "title": "French Fries with Chicken Wings",
-                "price": "15",
-                "currency": "$",
-                "rating": 5,
-                "text": "Crispy fries served with spicy fried chicken wings."
             },
             {
                 "image": "/img/ethiopian-dishes/firfir.webp",
@@ -78,6 +34,50 @@
                 "rating": 5,
                 "text": "Shredded injera mixed with spicy berbere sauce, often served with meat or vegetarian.",
                 "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
+            },
+            {
+                "image": "/img/ethiopian-dishes/shiro.webp",
+                "title": "Shiro",
+                "price": "11",
+                "currency": "$",
+                "rating": 5,
+                "text": "Creamy chickpea flour paste with onions, ginger, and Ethiopian spices.",
+                "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
+            },
+            {
+                "image": "/img/ethiopian-dishes/genfo.webp",
+                "title": "Genfo",
+                "price": "12",
+                "currency": "$",
+                "rating": 5,
+                "text": "Thick porridge served with spiced butter and berbere sauce."
+            }
+        ],
+        "bestseller": [
+            {
+                "image": "/img/ethiopian-dishes/dulet.webp",
+                "title": "Dulet",
+                "price": "16",
+                "currency": "$",
+                "rating": 5,
+                "text": "Finely chopped tripe, liver, and beef mixed with spices and chili.",
+                "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
+            },
+            {
+                "image": "/img/ethiopian-dishes/chechebsa.webp",
+                "title": "Chechebsa",
+                "price": "13",
+                "currency": "$",
+                "rating": 5,
+                "text": "Traditional Oromo breakfast dish made from flatbread pieces mixed with butter and berbere."
+            },
+            {
+                "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Fe91e63106f1a46289f6843565443c638?format=webp&width=800&height=1200",
+                "title": "French Fries with Chicken Wings",
+                "price": "15",
+                "currency": "$",
+                "rating": 5,
+                "text": "Crispy fries served with spicy fried chicken wings."
             },
             {
                 "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F231a74c042124fcca43ef53e46e3c152?format=webp&width=800&height=1200",
@@ -94,14 +94,6 @@
                 "currency": "$",
                 "rating": 5,
                 "text": "Warm and comforting soup with tender chicken, vegetables, and herbs."
-            },
-            {
-                "image": "/img/ethiopian-dishes/chechebsa.webp",
-                "title": "Chechebsa",
-                "price": "13",
-                "currency": "$",
-                "rating": 5,
-                "text": "Traditional Oromo breakfast dish made from flatbread pieces mixed with butter and berbere."
             }
         ]
     },
