@@ -20,22 +20,22 @@
         "menu": [
             {
                 "label": "Starters",
-                "link": "/menu",
+                "link": "/qr-menu?category=0",
                 "children": []
             },
             {
                 "label": "Main Dishes",
-                "link": "/menu-2",
+                "link": "/qr-menu?category=1",
                 "children": []
             },
             {
                 "label": "Drinks",
-                "link": "/menu-3",
+                "link": "/qr-menu?category=2",
                 "children": []
             },
             {
                 "label": "Desserts",
-                "link": "/menu-4",
+                "link": "/qr-menu?category=3",
                 "children": []
             },
             {

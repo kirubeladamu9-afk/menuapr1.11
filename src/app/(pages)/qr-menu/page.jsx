@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import MenuData from "@data/menu.json";
 import ContactData from "@data/sections/contact-info.json";
 import QrMenuGrid from "@components/menu/QrMenuGrid";
@@ -9,8 +10,16 @@ import { Autoplay, FreeMode, Navigation } from "swiper";
 import "swiper/css";
 
 const QrMenu = () => {
-  const [activeCategory, setActiveCategory] = useState(0);
+  const searchParams = useSearchParams();
+  const categoryParam = searchParams.get("category");
+  const [activeCategory, setActiveCategory] = useState(categoryParam ? parseInt(categoryParam) : 0);
   const heroSlides = MenuData.categories.map((category) => category.items[0]).filter(Boolean).slice(0, 4);
+
+  useEffect(() => {
+    if (categoryParam) {
+      setActiveCategory(parseInt(categoryParam));
+    }
+  }, [categoryParam]);
 
   const handleCategoryChange = (index) => {
     setActiveCategory(index);
