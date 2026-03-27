@@ -2,6 +2,8 @@ import AppData from "@data/app.json";
 import StoriesData from "@data/stories.json";
 
 const MiniSidebar = () => {
+    const [featuredStory, ...storyHighlights] = StoriesData.stories;
+
     return (
         <>
             <div className="sb-infobar-content">
@@ -24,19 +26,25 @@ const MiniSidebar = () => {
                 </ul>
                 <hr />
                 <div className="sb-ib-title-frame sb-mb-30">
-                    <h4>Our Stories</h4><i className="fas fa-arrow-down"></i>
+                    <h4>About Us</h4><i className="fas fa-arrow-down"></i>
                 </div>
-                {StoriesData.stories.map((item, key) => (
-                <div className="sb-blog-card sb-blog-card-sm sb-mb-30" key={`mini-sidebar-story-item-${key}`}>
-                    <div className="sb-cover-frame">
-                        <img src={item.image} alt={item.title} />
+                <div className="sb-infobar-about sb-mb-30">
+                    <div className="sb-infobar-about-visual sb-mb-20">
+                        <img src={featuredStory.image} alt={featuredStory.title} />
                     </div>
-                    <div className="sb-blog-card-descr">
-                        <h5 className="sb-mb-5">{item.title}</h5>
-                        <p className="sb-text sb-text-sm">{item.description}</p>
+                    <div className="sb-infobar-about-copy sb-mb-20">
+                        <h5 className="sb-mb-10">{featuredStory.title}</h5>
+                        <p className="sb-text sb-text-sm">{featuredStory.description}</p>
+                    </div>
+                    <div className="sb-infobar-about-highlights">
+                        {storyHighlights.map((item, key) => (
+                        <div className="sb-infobar-about-highlight" key={`mini-sidebar-story-item-${key + 1}`}>
+                            <h5 className="sb-mb-5">{item.title}</h5>
+                            <p className="sb-text sb-text-sm">{item.description}</p>
+                        </div>
+                        ))}
                     </div>
                 </div>
-                ))}
             </div>
             <div className="sb-info-bar-footer">
                 <ul className="sb-social">
