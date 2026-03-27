@@ -1,6 +1,6 @@
 {
     "settings": {
-        "siteName": "Starbelly",
+        "siteName": "Ekd Tech.",
         "siteDescription": "Restaurant React Next.JS Template",
         "formspreeURL": "https://formspree.io/f/your_api_key",
         "mapbox": {
@@ -46,7 +46,7 @@
         ]
     },
     "footer": {
-        "copy": "© 2024 Starbelly. All rights reserved."
+        "copy": "© 2026 Ekd Tech. All rights reserved."
     },
     "social": [
         {
