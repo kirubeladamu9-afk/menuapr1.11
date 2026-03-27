@@ -1,8 +1,8 @@
 import AppData from "@data/app.json";
-import StoriesData from "@data/stories.json";
+import AboutData from "@data/sections/about-2.json";
 
 const MiniSidebar = () => {
-    const [featuredStory, ...storyHighlights] = StoriesData.stories;
+    const aboutParagraph = AboutData.description.match(/<p>.*?<\/p>/)?.[0] || AboutData.description;
 
     return (
         <>
@@ -30,19 +30,11 @@ const MiniSidebar = () => {
                 </div>
                 <div className="sb-infobar-about sb-mb-30">
                     <div className="sb-infobar-about-visual sb-mb-20">
-                        <img src={featuredStory.image} alt={featuredStory.title} />
+                        <img src={AboutData.image.url} alt={AboutData.image.alt} />
                     </div>
-                    <div className="sb-infobar-about-copy sb-mb-20">
-                        <h5 className="sb-mb-10">{featuredStory.title}</h5>
-                        <p className="sb-text sb-text-sm">{featuredStory.description}</p>
-                    </div>
-                    <div className="sb-infobar-about-highlights">
-                        {storyHighlights.map((item, key) => (
-                        <div className="sb-infobar-about-highlight" key={`mini-sidebar-story-item-${key + 1}`}>
-                            <h5 className="sb-mb-5">{item.title}</h5>
-                            <p className="sb-text sb-text-sm">{item.description}</p>
-                        </div>
-                        ))}
+                    <div className="sb-infobar-about-copy">
+                        <h5 className="sb-mb-10" dangerouslySetInnerHTML={{ __html: AboutData.title }} />
+                        <div className="sb-text sb-text-sm" dangerouslySetInnerHTML={{ __html: aboutParagraph }} />
                     </div>
                 </div>
             </div>
