@@ -61,7 +61,7 @@
 /* Hero Section */
 .qr-hero-section {
   margin-top: 0;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
   padding: 0;
   background: linear-gradient(180deg, rgb(0 0 0 / 8%), rgba(255, 107, 53, 0));
   border-bottom: 2px solid var(--sb-border, #f0f0f0);
@@ -70,6 +70,7 @@
 
   @media (min-width: 768px) {
     height: 500px;
+    margin-bottom: 80px;
   }
 }
 
@@ -659,6 +660,7 @@
   .qr-hero-section {
     padding: 0;
     height: 300px;
+    margin-bottom: 50px;
   }
 
   .qr-hero-title {
