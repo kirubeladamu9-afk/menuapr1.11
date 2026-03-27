@@ -9,10 +9,34 @@ const AdminDashboard = ({ sessionToken, onLogout }) => {
   const [categories, setCategories] = useState([]);
   const [menuItems, setMenuItems] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [dbInitialized, setDbInitialized] = useState(false);
+  const [initializing, setInitializing] = useState(false);
 
   useEffect(() => {
     fetchData();
   }, []);
+
+  const initializeDatabase = async () => {
+    setInitializing(true);
+    try {
+      const response = await fetch('/api/admin/init-db', {
+        method: 'POST',
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setDbInitialized(true);
+        fetchData();
+      } else {
+        alert('Database initialization failed: ' + (data.error || 'Unknown error'));
+      }
+    } catch (error) {
+      console.error('Error initializing database:', error);
+      alert('Error initializing database: ' + error.message);
+    }
+    setInitializing(false);
+  };
 
   const fetchData = async () => {
     setLoading(true);
@@ -27,8 +51,10 @@ const AdminDashboard = ({ sessionToken, onLogout }) => {
 
       setCategories(Array.isArray(categoriesData) ? categoriesData : []);
       setMenuItems(Array.isArray(itemsData) ? itemsData : []);
+      setDbInitialized(true);
     } catch (error) {
       console.error('Error fetching data:', error);
+      setDbInitialized(false);
     }
     setLoading(false);
   };
@@ -50,6 +76,19 @@ const AdminDashboard = ({ sessionToken, onLogout }) => {
         </button>
       </div>
 
+      {!dbInitialized && !loading && (
+        <div className="admin-init-warning">
+          <p>Database tables need to be initialized. Click the button below to set up your database.</p>
+          <button
+            onClick={initializeDatabase}
+            disabled={initializing}
+            className="admin-btn admin-btn-primary"
+          >
+            {initializing ? 'Initializing...' : 'Initialize Database'}
+          </button>
+        </div>
+      )}
+
       <div className="admin-tabs">
         <button
           className={`admin-tab ${activeTab === 'categories' ? 'active' : ''}`}
@@ -68,6 +107,8 @@ const AdminDashboard = ({ sessionToken, onLogout }) => {
       <div className="admin-content">
         {loading ? (
           <div className="admin-loading">Loading...</div>
+        ) : !dbInitialized ? (
+          <div className="admin-loading">Please initialize the database first.</div>
         ) : activeTab === 'categories' ? (
           <CategoriesManager
             categories={categories}

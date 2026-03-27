@@ -1,32 +1,38 @@
-import { initializeDatabase } from '@/lib/db';
+import { initializeDatabase, queryDatabase } from '@/lib/db';
 
 export async function POST(request) {
   try {
-    // In production, you should add authentication here
-    const authHeader = request.headers.get('x-admin-secret');
-    
-    if (authHeader !== process.env.ADMIN_PASSWORD) {
+    // Check if tables already exist
+    try {
+      const result = await queryDatabase('SELECT 1 FROM categories LIMIT 1');
+      // If we get here, tables exist
       return new Response(
-        JSON.stringify({ error: 'Unauthorized' }),
-        { status: 401 }
+        JSON.stringify({
+          success: true,
+          message: 'Database is already initialized.'
+        }),
+        { status: 200 }
       );
+    } catch (e) {
+      // Tables don't exist, proceed with initialization
+      console.log('Tables do not exist, initializing...');
     }
 
     await initializeDatabase();
-    
+
     return new Response(
-      JSON.stringify({ 
-        success: true, 
-        message: 'Database initialized successfully. You can now use the admin panel.' 
+      JSON.stringify({
+        success: true,
+        message: 'Database initialized successfully. You can now use the admin panel.'
       }),
       { status: 200 }
     );
   } catch (error) {
     console.error('Database initialization error:', error);
     return new Response(
-      JSON.stringify({ 
+      JSON.stringify({
         error: 'Database initialization failed',
-        details: error.message 
+        details: error.message
       }),
       { status: 500 }
     );

@@ -254,6 +254,31 @@
   }
 }
 
+// Initialization Warning
+.admin-init-warning {
+  background-color: #fef3c7;
+  border: 1px solid #fcd34d;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+
+  p {
+    margin: 0;
+    color: #92400e;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  button {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
+
 // List/Table
 .admin-list {
   margin-top: 30px;
