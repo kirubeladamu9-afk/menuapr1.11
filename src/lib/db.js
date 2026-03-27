@@ -1,5 +1,6 @@
 import mysql from 'mysql2/promise';
 import { hashPassword } from './password.js';
+import { migratePasswords } from './dbMigration.js';
 
 let connectionPool = null;
 let initPromise = null;
@@ -77,6 +78,9 @@ export async function initializeDatabase() {
           FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE
         )
       `);
+
+      // Run password migration first (before creating admin user)
+      await migratePasswords(connection);
 
       // Check if admin user exists
       const [existingUsers] = await connection.execute(
