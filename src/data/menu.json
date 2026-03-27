@@ -227,7 +227,7 @@
             "description": "Authentic Ethiopian flavors featuring traditional<br>spiced stews, flatbreads, and bold aromatic ingredients.",
             "items": [
                 {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F5453e89080fd4e10a88225b7c9f045a5?format=webp&width=800&height=1200",
+                    "image": "/img/ethiopian-dishes/beyaynetu.webp",
                     "title": "Beyaynetu (Fasting Combo)",
                     "price": "18",
                     "currency": "$",
@@ -235,7 +235,7 @@
                     "text": "A colorful platter of assorted vegan dishes served on injera, perfect for fasting and sharing. Ingredients: Injera, shiro, misir wat, gomen, tikil gomen, salad."
                 },
                 {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F5453e89080fd4e10a88225b7c9f045a5?format=webp&width=800&height=1200",
+                    "image": "/img/ethiopian-dishes/misir-wot.webp",
                     "title": "Misir Wat",
                     "price": "12",
                     "currency": "$",
@@ -244,7 +244,7 @@
                     "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
                 },
                 {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F97b3fc55dfec4ddd839643534d189e59?format=webp&width=800&height=1200",
+                    "image": "/img/ethiopian-dishes/gomen-besiga.webp",
                     "title": "Gomen Besiga",
                     "price": "15",
                     "currency": "$",
@@ -252,7 +252,7 @@
                     "text": "Collard greens cooked with tender beef and Ethiopian spices. Ingredients: Collard greens, beef, onion, garlic, oil."
                 },
                 {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F4fac9702c0ed482495c4def503f0715b?format=webp&width=800&height=1200",
+                    "image": "/img/ethiopian-dishes/firfir.webp",
                     "title": "Firfir (Injera Stir Fry)",
                     "price": "14",
                     "currency": "$",
@@ -261,7 +261,7 @@
                     "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
                 },
                 {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Faed12bfff69646cbb9c72e0e599839ed?format=webp&width=800&height=1200",
+                    "image": "/img/ethiopian-dishes/dulet.webp",
                     "title": "Dulet",
                     "price": "16",
                     "currency": "$",
@@ -270,7 +270,7 @@
                     "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
                 },
                 {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F1ba7d8f664aa46309358b5fc50525482?format=webp&width=800&height=1200",
+                    "image": "/img/ethiopian-dishes/chechebsa.webp",
                     "title": "Chechebsa",
                     "price": "13",
                     "currency": "$",
@@ -278,7 +278,7 @@
                     "text": "Traditional Oromo breakfast dish made from flatbread pieces mixed with butter and berbere. Ingredients: Flatbread, niter kibbeh, berbere, honey."
                 },
                 {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F484b15c8862841f5a22accc3349fa6bd?format=webp&width=800&height=1200",
+                    "image": "/img/ethiopian-dishes/genfo.webp",
                     "title": "Genfo",
                     "price": "12",
                     "currency": "$",
