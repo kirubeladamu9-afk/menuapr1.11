@@ -79,28 +79,20 @@
                         "link": "/qr-menu"
                     },
                     {
-                        "label": "Menu 1",
+                        "label": "Starters",
                         "link": "/menu"
                     },
                     {
-                        "label": "Menu 2",
+                        "label": "Main Dishes",
                         "link": "/menu-2"
                     },
                     {
-                        "label": "Menu 3",
+                        "label": "Drinks",
                         "link": "/menu-3"
                     },
                     {
-                        "label": "Menu 4",
+                        "label": "Desserts",
                         "link": "/menu-4"
-                    },
-                    {
-                        "label": "Menu 5",
-                        "link": "/menu-5"
-                    },
-                    {
-                        "label": "Menu 6",
-                        "link": "/menu-6"
                     }
                 ]
             },
