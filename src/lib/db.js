@@ -20,8 +20,21 @@ async function getConnection() {
 export async function initializeDatabase() {
   const pool = await getConnection();
   const connection = await pool.getConnection();
-  
+
   try {
+    // Create users table
+    await connection.execute(`
+      CREATE TABLE IF NOT EXISTS users (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        username VARCHAR(255) NOT NULL UNIQUE,
+        password VARCHAR(255) NOT NULL,
+        email VARCHAR(255),
+        role VARCHAR(50) DEFAULT 'admin',
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+        updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+      )
+    `);
+
     // Create categories table
     await connection.execute(`
       CREATE TABLE IF NOT EXISTS categories (
@@ -51,6 +64,18 @@ export async function initializeDatabase() {
         FOREIGN KEY (category_id) REFERENCES categories(id) ON DELETE CASCADE
       )
     `);
+
+    // Create default admin user if it doesn't exist
+    try {
+      await connection.execute(
+        'INSERT INTO users (username, password, email, role) VALUES (?, ?, ?, ?)',
+        ['admin', 'admin123', 'admin@starbelly.com', 'admin']
+      );
+      console.log('Default admin user created');
+    } catch (e) {
+      // User might already exist, that's fine
+      console.log('Admin user already exists');
+    }
 
     console.log('Database initialized successfully');
   } finally {
