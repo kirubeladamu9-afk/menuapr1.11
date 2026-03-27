@@ -32,6 +32,10 @@ const QrMenu = () => {
         <div className="qr-hero-layout">
           <div className="qr-hero-copy">
             <span className="qr-hero-eyebrow">QR Code Menu</span>
+            <h1 className="qr-hero-title">QR Code Menu</h1>
+            <p className="qr-hero-text">
+              Browse our featured dishes and enjoy the flavors we serve every day.
+            </p>
           </div>
 
           <div className="qr-hero-slider-frame">
