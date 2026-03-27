@@ -26,7 +26,7 @@ const MiniSidebar = () => {
                 </ul>
                 <hr />
                 <div className="sb-ib-title-frame sb-mb-30">
-                    <h4>Latest publications</h4><i className="fas fa-arrow-down"></i>
+                    <h4>Our Stories</h4><i className="fas fa-arrow-down"></i>
                 </div>
                 {PostsData.slice(0, 3).map((item, key) => (
                 <Link href={`/blog/${item.id}`} className="sb-blog-card sb-blog-card-sm sb-mb-30" key={`mini-sidebar-posts-item-${key}`}>
