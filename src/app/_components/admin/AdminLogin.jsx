@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 const AdminLogin = ({ onLogin }) => {
+  const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
@@ -14,7 +15,7 @@ const AdminLogin = ({ onLogin }) => {
       const response = await fetch('/api/admin/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ password }),
+        body: JSON.stringify({ username, password }),
       });
 
       const data = await response.json();
@@ -36,9 +37,21 @@ const AdminLogin = ({ onLogin }) => {
     <div className="admin-login-wrapper">
       <div className="admin-login-box">
         <h1>Admin Panel</h1>
-        <p>Enter your password to continue</p>
+        <p>Enter your credentials to continue</p>
 
         <form onSubmit={handleSubmit}>
+          <div className="admin-form-group">
+            <label htmlFor="username">Username</label>
+            <input
+              type="text"
+              id="username"
+              value={username}
+              onChange={(e) => setUsername(e.target.value)}
+              placeholder="Enter username"
+              required
+            />
+          </div>
+
           <div className="admin-form-group">
             <label htmlFor="password">Password</label>
             <input
@@ -46,7 +59,7 @@ const AdminLogin = ({ onLogin }) => {
               id="password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              placeholder="Enter admin password"
+              placeholder="Enter password"
               required
             />
           </div>
