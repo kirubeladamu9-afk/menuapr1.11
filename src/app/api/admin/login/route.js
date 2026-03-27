@@ -1,4 +1,4 @@
-import { verifyAdminPassword, createAdminSession } from '@/lib/adminAuth';
+import { verifyAdminPassword, createAdminSession } from '@lib/adminAuth';
 
 export async function POST(request) {
   try {

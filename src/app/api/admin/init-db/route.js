@@ -1,4 +1,4 @@
-import { initializeDatabase, queryDatabase } from '@/lib/db';
+import { initializeDatabase, queryDatabase } from '@lib/db';
 
 export async function POST(request) {
   try {
