@@ -9,7 +9,7 @@ import Link from "next/link";
 import MenuItem from "@components/menu/MenuItem";
 import ProductItem from "@components/products/ProductItem";
 
-const ProductsSlider = ( {items, title, description, button = {}, slidesPerView, paddingTop = 0, bgType, itemType} ) => {
+const ProductsSlider = ( {items, title, description, button = {}, slidesPerView, paddingTop = 0, bgType, itemType, hideAddToCart} ) => {
   var moreType = '';
 
   if ( slidesPerView == 3 ) {
@@ -63,7 +63,7 @@ const ProductsSlider = ( {items, title, description, button = {}, slidesPerView,
                 {items.slice(0, 8).map((item, key) => (
                 <SwiperSlide className="swiper-slide" key={`products-slider-item-${key}`}>
                     {itemType == "product" ? (
-                    <ProductItem item={item} index={key} marginBottom={0} moreType={moreType} />
+                    <ProductItem item={item} index={key} marginBottom={0} moreType={moreType} hideAddToCart={hideAddToCart} />
                     ) : (
                     <MenuItem item={item} index={key} marginBottom={0} />
                     )}
@@ -80,7 +80,7 @@ const ProductsSlider = ( {items, title, description, button = {}, slidesPerView,
                 {items.slice(0, 6).map((item, key) => (
                 <SwiperSlide className="swiper-slide" key={`products-slider-item-${key}`}>
                     {itemType == "product" ? (
-                    <ProductItem item={item} index={key} marginBottom={0} moreType={moreType} />
+                    <ProductItem item={item} index={key} marginBottom={0} moreType={moreType} hideAddToCart={hideAddToCart} />
                     ) : (
                     <MenuItem item={item} index={key} marginBottom={0} />
                     )}

@@ -168,6 +168,7 @@ const Products = () => {
         button={0}
         slidesPerView={4}
         itemType={'product'}
+        hideAddToCart={true}
       />
     </>
   );
