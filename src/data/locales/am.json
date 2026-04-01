@@ -3,7 +3,7 @@
     "ethiopianDishes": "የኢትዮጵያ ምግቦች",
     "mainDishes": "ዋና ምግቦች",
     "drinks": "መጠጦች",
-    "desserts": "ጣፋጭ ምግቦች",
+    "desserts": "ጣፋጮች",
     "contact": "ማነጋገር",
     "home": "ቤት",
     "menu": "መሰሪያ",
@@ -12,7 +12,7 @@
   },
   "header": {
     "logo": "ስያሜ",
-    "adminPanel": " የአስተዳደር ፓነል"
+    "adminPanel": "የአስተዳደር ፓነል"
   },
   "footer": {
     "copyright": "© 2026 Ekd Tech. ሁሉም መብቶች የተጠበቁ ናቸው።"
@@ -22,37 +22,37 @@
       "ethiopian": "የኢትዮጵያ ምግቦች",
       "ethiopianDesc": "ሙሉ ዋጋ ያለው የኢትዮጵያ ጣዕመ ሮች ባህላዊ<br>ማረቅ, ጠፍጣፊ እና ደፋር አስፈላጊ ንጥረ ነገሮች።",
       "main": "ዋና ምግቦች",
-      "mainDesc": "ለከፍታ የፍቅር ንድፍ ምግቦች ይስሞ<br>ክላሲክ ፓስታ, የተጋገዙ ልዩ እና ምቾት ምግቦች.",
+      "mainDesc": "በተመረጡ የፓስታ አይነቶች፣ ጥብሶች እና ተወዳጅ ምግቦች<br>የተዘጋጁ ልዩ ዋና ምግቦቻችንን ይቋደሱ።",
       "drinks": "መጠጦች",
-      "drinksDesc": "የኛ ተፈላጊ መጠጦች ከግቤት መሸገር<br>신선한 ጃንቅ, እና ልዩ ቡናማ መጠጦች።",
-      "desserts": "ጣፋጭ ምግቦች",
-      "dessertsDesc": "በኛ ጣፋጭ ሕክምናዎች እና ማራኩ ጣፋጭ ምግቦች ይደሉ<br>ከላቁ ንጥረ ነገሮች ጋር።",
-      "starters": "ተጀማሪ",
-      "startersDesc": "ምግብዎን በኛ ማራኩ ተጀማሪ<br>እና 신선한 ምርጫዎች ጀምሩ።"
+      "drinksDesc": "በትኩስ እና በባህላዊ መጠጦቻችን<br>ራስዎን ያድሱ።",
+      "desserts": "ጣፋጮች",
+      "dessertsDesc": "ምግብዎን በንዑስ ምግብ በቅታት እና<br>ግዞ ዝርዝር መጨረስ።",
+      "starters": "መቀስቀሻዎች",
+      "startersDesc": "ምግብዎን በኛ ማራኩ አጀማምር<br>ጋር ጀምሩ።"
     },
     "ui": {
-      "ingredients": "ንጥረ ነገሮች",
+      "ingredients": "ግብዓቶች",
       "backToMenu": "ወደ መሰሪያ ተመለስ",
       "productNotFound": "ምርት አልተገኘም",
-      "noIngredientsListed": "ምንም ንጥረ ነገሮች ተዘርዝር አልችሉም",
-      "featured": "የተሞ ምግብ",
+      "noIngredientsListed": "ምንም ግብዓቶች ተዘርዝር አልችሉም",
+      "featured": "የሚዘረጋ ምግብ",
       "allDishes": "ሁሉም ምግቦች",
       "details": "ዝርዝር",
-      "addExtraIngredients": "ተጨማሪ ንጥረ ነገሮች ያክሉ",
+      "addExtraIngredients": "ተጨማሪ ግብዓቶች ያክሉ",
       "ratings": "ደረጃዎች"
     }
   },
   "qrMenu": {
-    "eyebrow": "QR Code መሰሪያ",
+    "eyebrow": "የኩአር ኮድ ሜኑ",
     "title": "የዚህን በጎ አማራጭ ምግቦች ያቀርቡ…",
-    "contact": "ተገናኙ",
+    "contact": "ያግኙን",
     "welcome": "እንኳን ደህና መጡ",
-    "call": "ደውል",
-    "write": "ጻፍ"
+    "call": "ይደውሉ",
+    "write": "ይጻፉልን"
   },
   "contact": {
     "title": "ማነጋገር",
-    "heading": "አጋጣሚ ይዤሩ",
+    "heading": "ያግኙን",
     "address": "አድራሻ",
     "workingHours": "የሥራ ሰዓት",
     "phone": "ስልክ",
@@ -67,7 +67,7 @@
     "vegan": "ዳሌ",
     "price": "ዋጋ",
     "rating": "ደረጃ",
-    "ingredients": "ንጥረ ነገሮች",
+    "ingredients": "ግብዓቶች",
     "loading": "በመጫን ላይ...",
     "success": "ስኬት!",
     "error": "ስህተት",
@@ -85,7 +85,7 @@
     "send": "ላክ",
     "reserve": "ያስያዙ",
     "firstName": "ስም",
-    "lastName": "姓氏",
+    "lastName": "የአባት ስም",
     "companyName": "ኩባንያ ስም",
     "country": "አገር",
     "city": "ከተማ",
@@ -140,11 +140,11 @@
     "faqTitle": "ጥያቄ",
     "gallery": "ምስሎች።",
     "galleryTitle": "ምስሎች",
-    "menu": "ስቴርቤሌ መሰሪያ።",
+    "menu": "ሜኑ።",
     "menuTitle": "መሰሪያ",
     "products": "ዋናዎ ምግቦች",
     "contact": "ማነጋገር",
-    "contactSubtitle": "ስቴርቤሌ ጋር ግንኙነት",
+    "contactSubtitle": "ጋር ግንኙነት",
     "sendMessage": "መልዕክት ላክ",
     "yourMessageSent": "መልዕክትዎ በተሳካ ሁኔታ ተልክቷል",
     "backToHome": "ወደ ቤት ተመለስ",
@@ -153,7 +153,7 @@
     "reservationDetails": "የቦታ ሕዝብ ዝርዝሮች"
   },
   "admin": {
-    "adminPanel": " የአስተዳደር ፓነል",
+    "adminPanel": "የአስተዳደር ፓነል",
     "enterCredentials": "ለመቀጠል ምስጢራዊ ቃላትዎን ያስገቡ",
     "username": "ተጠቃሚ ስም",
     "password": "ይለፍ ቃል",
@@ -180,7 +180,7 @@
     "name": "ስም",
     "actions": "ድርጊቶች",
     "edit": "ማስተካከል",
-    "delete": "삭제",
+    "delete": "ሰርዝ",
     "cancel": "ይህን ይቅር",
     "addCategory": "ምድብ ያክሉ",
     "dishName": "ምግብ ስም *",
