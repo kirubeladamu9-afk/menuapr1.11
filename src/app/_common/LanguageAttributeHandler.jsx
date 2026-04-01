@@ -9,7 +9,7 @@ export function LanguageAttributeHandler() {
   useEffect(() => {
     if (typeof document !== 'undefined') {
       document.documentElement.lang = language;
-      document.documentElement.dir = language === 'am' ? 'rtl' : 'ltr';
+      document.documentElement.dir = 'ltr';
     }
   }, [language]);
 
