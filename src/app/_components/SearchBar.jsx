@@ -1,15 +1,15 @@
 'use client'
 
-import { useCallback, useState } from "react";
+import { Suspense, useCallback, useState } from "react";
 import { useSearchParams } from 'next/navigation'
 import { useRouter } from 'next/navigation'
 import { useLanguage } from "@common/LanguageContext";
 
-const SearchBarModule = () => {
+const SearchBarContent = () => {
     const router = useRouter()
     const searchParams = useSearchParams()
     const { t } = useLanguage()
-    
+
     const query = searchParams.get('key') || '';
 
     const [search, setSearch] = useState(query);
@@ -18,7 +18,7 @@ const SearchBarModule = () => {
         (name, value) => {
             const params = new URLSearchParams(searchParams)
             params.set(name, value)
-        
+
             return params.toString()
         },
         [searchParams]
@@ -47,7 +47,7 @@ const SearchBarModule = () => {
             />
             <span className="sb-bar" />
             <label>{t('search.placeholder')}</label>
-            <button 
+            <button
                 onClick={() => {
                     router.push("/search" + '?' + createQueryString('key', search))
                 }}
@@ -57,4 +57,13 @@ const SearchBarModule = () => {
         </div>
     )
 }
+
+const SearchBarModule = () => {
+    return (
+        <Suspense fallback={<div className="sb-group-input sb-group-with-btn"><input type="text" placeholder=" " disabled /></div>}>
+            <SearchBarContent />
+        </Suspense>
+    )
+}
+
 export default SearchBarModule;

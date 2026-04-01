@@ -3,12 +3,12 @@
 import Link from "next/link";
 import { usePathname } from 'next/navigation';
 import { useSearchParams } from 'next/navigation';
+import { Suspense, useEffect } from "react";
 
-import { useEffect } from "react";
 import { ScrollAnimation } from "@common/scrollAnims";
 import { useLanguage } from "@common/LanguageContext";
 
-const PageBanner = ({ pageTitle, breadTitle, description, type }) => {
+const PageBannerContent = ({ pageTitle, breadTitle, description, type }) => {
   const asPath = usePathname();
   const { t } = useLanguage();
   const searchParams = useSearchParams();
@@ -26,13 +26,13 @@ const PageBanner = ({ pageTitle, breadTitle, description, type }) => {
     const query = searchParams.get('key');
     pageTitle = 'Search: '+query;
   }
-  
+
   useEffect(() => {
     ScrollAnimation();
   }, []);
-  
+
   return (
-    <>    
+    <>
       {/* banner */}
       <section className={type == 2 ? "sb-banner sb-banner-sm sb-banner-color" : "sb-banner sb-banner-xs sb-banner-color"}>
         <div className="container">
@@ -78,4 +78,13 @@ const PageBanner = ({ pageTitle, breadTitle, description, type }) => {
     </>
   );
 };
+
+const PageBanner = (props) => {
+  return (
+    <Suspense fallback={<section className="sb-banner sb-banner-xs sb-banner-color"><div className="container"></div></section>}>
+      <PageBannerContent {...props} />
+    </Suspense>
+  );
+};
+
 export default PageBanner;

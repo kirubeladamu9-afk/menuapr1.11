@@ -1,8 +1,11 @@
+'use client'
+
 import { useSearchParams } from 'next/navigation'
+import { Suspense } from 'react'
 
 import BlogItem from "@components/blog/BlogItem";
 
-async function FilteredBlogPosts( { items, columns } ) {
+const FilteredBlogPostsContent = ({ items, columns }) => {
     const searchParams = useSearchParams()
     const query = searchParams.get('key')
 
@@ -21,7 +24,7 @@ async function FilteredBlogPosts( { items, columns } ) {
     });
 
     var columnsClass = '';
-  
+
     switch (columns) {
         case 2:
             columnsClass = 'sb-item-50';
@@ -42,10 +45,19 @@ async function FilteredBlogPosts( { items, columns } ) {
                             <BlogItem item={item} />
                         </div>
                         ))}
-                    </div>                    
+                    </div>
                 </>
             }
         </>
     );
 };
+
+const FilteredBlogPosts = ({ items, columns }) => {
+    return (
+        <Suspense fallback={<div className="sb-masonry-grid"><div className="sb-grid-sizer" /></div>}>
+            <FilteredBlogPostsContent items={items} columns={columns} />
+        </Suspense>
+    );
+};
+
 export default FilteredBlogPosts;
