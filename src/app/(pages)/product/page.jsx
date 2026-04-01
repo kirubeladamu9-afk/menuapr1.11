@@ -46,7 +46,13 @@ const ProductContent = () => {
   const AttsData = useMemo(() => {
     if (!currentProduct) return [];
 
-    const ingredientMatch = currentProduct.text.match(/Ingredients:\s*([^.]+)/i);
+    // Try English first, then Amharic
+    let ingredientMatch = currentProduct.text.match(/Ingredients:\s*([^.]+)/i);
+    if (!ingredientMatch) {
+      // Try Amharic marker
+      ingredientMatch = currentProduct.text.match(/ንጥረ ነገሮች:\s*([^.]+)/);
+    }
+
     if (ingredientMatch) {
       const ingredientText = ingredientMatch[1];
       const ingredients = ingredientText.split(",").map(ing => ing.trim()).filter(ing => ing);
