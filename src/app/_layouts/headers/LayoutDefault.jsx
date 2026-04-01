@@ -5,19 +5,14 @@ import { useEffect, useState } from "react";
 import { usePathname } from 'next/navigation';
 
 import AppData from "@data/app.json";
-import CartData from "@data/cart.json";
 
-import MiniCart from "@layouts/cart/MiniCart";
 import MiniSidebar from "@layouts/sidebar/MiniSidebar";
 
 const DefaultHeader = () => {
   const [mobileMenu, setMobileMenu] = useState(false);
   const [openSubMenu, setOpenSubMenu] = useState(false);
-  const [miniCart, setMiniCart] = useState(false);
   const [miniSidebar, setMiniSidebar] = useState(false);
-  const [showQrComingSoon, setShowQrComingSoon] = useState(false);
   const asPath = usePathname();
-  const isQrMenuPage = asPath === "/qr-menu";
 
   const isPathActive = (path) => {
     return (asPath.endsWith(path) == 1 && path !== '/') || asPath === path;
@@ -32,15 +27,6 @@ const DefaultHeader = () => {
     }
   };
 
-  const handleCartButtonClick = () => {
-    if (isQrMenuPage) {
-      setShowQrComingSoon(true);
-      return;
-    }
-
-    setMiniCart(!miniCart);
-  };
-
   const handleInfoButtonClick = () => {
     setMiniSidebar(!miniSidebar);
   };
@@ -48,9 +34,7 @@ const DefaultHeader = () => {
   useEffect(() => {
     // close mobile menu
     setMobileMenu(false);
-    setMiniCart(false);
     setMiniSidebar(false);
-    setShowQrComingSoon(false);
     setOpenSubMenu(false);
   }, [asPath]);
 
@@ -90,14 +74,6 @@ const DefaultHeader = () => {
                         </ul>
                     </nav>
                     <div className="sb-buttons-frame">
-                    {/* button */}
-                    <div className={`sb-btn sb-btn-2 sb-btn-gray sb-btn-icon sb-m-0 sb-btn-cart ${(isQrMenuPage ? showQrComingSoon : miniCart) ? "sb-active" : ""}`} onClick={handleCartButtonClick}>
-                        <span className="sb-icon">
-                            <img src="/img/ui/icons/cart.svg" alt="icon" />
-                        </span>
-                        <i className="sb-cart-number">{CartData.total}</i>
-                    </div>
-                    {/* button end */}
                     {/* menu btn */}
                     <div className={`sb-menu-btn ${mobileMenu ? "sb-active" : ""}`} onClick={() => setMobileMenu(!mobileMenu)}><span></span></div>
                     {/* info btn */}
@@ -111,45 +87,6 @@ const DefaultHeader = () => {
                 <MiniSidebar />
             </div>
             {/* info bar end */}
-            {/* minicart */}
-            <div className={`sb-minicart ${miniCart ? "sb-active" : "" }`}>
-                <MiniCart />
-            </div>
-            {/* minicart end */}
-            {isQrMenuPage && showQrComingSoon && (
-                <div className="qr-coming-soon-overlay" onClick={() => setShowQrComingSoon(false)}>
-                    <div className="qr-coming-soon-dialog" onClick={(e) => e.stopPropagation()}>
-                        <button
-                            className="qr-coming-soon-close"
-                            onClick={() => setShowQrComingSoon(false)}
-                            aria-label="Close"
-                        >
-                            ✕
-                        </button>
-                        <div className="qr-coming-soon-content">
-                            <h2>Coming Soon!</h2>
-                            <p>Online ordering will be available soon. For now, please contact us directly to place your order.</p>
-                            <div className="qr-coming-soon-actions">
-                                <button
-                                    className="qr-coming-soon-btn qr-coming-soon-primary"
-                                    onClick={() => {
-                                        window.location.href = "tel:+02(044)756-X6-52";
-                                        setShowQrComingSoon(false);
-                                    }}
-                                >
-                                    Call Us
-                                </button>
-                                <button
-                                    className="qr-coming-soon-btn qr-coming-soon-secondary"
-                                    onClick={() => setShowQrComingSoon(false)}
-                                >
-                                    Close
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            )}
         </div>
         {/* top bar end */}
     </>
