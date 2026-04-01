@@ -11,6 +11,7 @@ import { useLanguage } from "@common/LanguageContext";
 const PageBanner = ({ pageTitle, breadTitle, description, type }) => {
   const asPath = usePathname();
   const { t } = useLanguage();
+  const searchParams = useSearchParams();
 
   let clearBreadTitle;
 
@@ -22,9 +23,7 @@ const PageBanner = ({ pageTitle, breadTitle, description, type }) => {
   }
 
   if ( pageTitle == 'Search: %s' ) {
-    const searchParams = useSearchParams();
     const query = searchParams.get('key');
-    
     pageTitle = 'Search: '+query;
   }
   

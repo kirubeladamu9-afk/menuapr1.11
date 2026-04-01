@@ -33,7 +33,7 @@ const DefaultHeader = () => {
   };
 
   const handleSubMenuClick = (index, e) => {
-    if ( window !== undefined ) {
+    if ( typeof window !== "undefined" ) {
         if ( window.innerWidth <= 992 ) {
             e.preventDefault();
             setOpenSubMenu(openSubMenu === index ? false : index);

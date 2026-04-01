@@ -11,7 +11,9 @@ const ProductItem = ({ item, index, marginBottom, moreType }) => {
 
   useEffect(() => {
     const cartNumberEl = document.querySelector('.sb-cart-number');
-    cartNumberEl.innerHTML = cartTotal;
+    if (cartNumberEl) {
+      cartNumberEl.innerHTML = cartTotal;
+    }
   }, [cartTotal]);
 
   const addToCart = (e) => {
@@ -19,12 +21,14 @@ const ProductItem = ({ item, index, marginBottom, moreType }) => {
     const cartNumberEl = document.querySelector('.sb-cart-number');
     setCartTotal(cartTotal + quantity);
 
-    cartNumberEl.classList.add('sb-added');
-    e.currentTarget.classList.add('sb-added');
-    
-    setTimeout(() => {
+    if (cartNumberEl) {
+      cartNumberEl.classList.add('sb-added');
+      e.currentTarget.classList.add('sb-added');
+
+      setTimeout(() => {
         cartNumberEl.classList.remove('sb-added');
-    }, 600);
+      }, 600);
+    }
   }
   
   return (
