@@ -1,6 +1,10 @@
+'use client';
+
 import Link from "next/link";
+import { useLanguage } from "@common/LanguageContext";
 
 const QrMenuHeader = () => {
+  const { t } = useLanguage();
   return (
     <header className="qr-menu-header-nav">
       <div className="qr-menu-header-content">
@@ -19,7 +23,7 @@ const QrMenuHeader = () => {
             <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
             <polyline points="9 22 9 12 15 12 15 22"></polyline>
           </svg>
-          Back to Home
+          {t('navigation.backToHome')}
         </Link>
       </div>
     </header>

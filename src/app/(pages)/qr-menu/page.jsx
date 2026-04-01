@@ -7,9 +7,11 @@ import ContactData from "@data/sections/contact-info.json";
 import QrMenuGrid from "@components/menu/QrMenuGrid";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode, Navigation } from "swiper";
+import { useLanguage } from "@common/LanguageContext";
 import "swiper/css";
 
 const QrMenuContent = () => {
+  const { t } = useLanguage();
   const searchParams = useSearchParams();
   const categoryParam = searchParams.get("category");
   const [activeCategory, setActiveCategory] = useState(categoryParam ? parseInt(categoryParam) : 0);
@@ -31,9 +33,9 @@ const QrMenuContent = () => {
       <section className="qr-hero-section">
         <div className="qr-hero-layout">
           <div className="qr-hero-copy">
-            <span className="qr-hero-eyebrow">QR Code Menu</span>
+            <span className="qr-hero-eyebrow">{t('qrMenu.eyebrow')}</span>
             <p className="qr-hero-text">
-              Browse our featured dishes and enjoy the flavors we serve every day.
+              {t('qrMenu.title')}
             </p>
           </div>
 
@@ -59,7 +61,7 @@ const QrMenuContent = () => {
                     loading={idx === 0 ? "eager" : "lazy"}
                   />
                   <div className="qr-hero-slide-overlay">
-                    <span className="qr-hero-slide-tag">Featured dish</span>
+                    <span className="qr-hero-slide-tag">{t('qrMenu.eyebrow')}</span>
                     <h2 className="qr-hero-slide-title">{item.title}</h2>
                     <p className="qr-hero-slide-text">{item.text}</p>
                   </div>
@@ -125,7 +127,7 @@ const QrMenuContent = () => {
 
       {/* Contact Section */}
       <div className="qr-contact-section">
-        <h2 className="qr-contact-title">Contact Us</h2>
+        <h2 className="qr-contact-title">{t('qrMenu.contact')}</h2>
         <div className="qr-contact-items">
           {ContactData.items.map((item, idx) => (
             <div className="qr-contact-item" key={`contact-${idx}`}>

@@ -1,20 +1,24 @@
+'use client';
+
 import AppData from "@data/app.json";
 import AboutData from "@data/sections/about-2.json";
+import { useLanguage } from "@common/LanguageContext";
 
 const MiniSidebar = () => {
+    const { t } = useLanguage();
     const aboutParagraph = AboutData.description.match(/<p>.*?<\/p>/)?.[0] || AboutData.description;
 
     return (
         <>
             <div className="sb-infobar-content">
                 <div className="sb-ib-title-frame sb-mb-30">
-                    <h4>Contact</h4><i className="fas fa-arrow-down"></i>
+                    <h4>{t('contact.title')}</h4><i className="fas fa-arrow-down"></i>
                 </div>
                 <ul className="sb-list sb-mb-30">
-                    <li><b>Address:</b><span>Addis Ababa, Ethiopia</span></li>
-                    <li><b>Working hours:</b><span>09:00 - 23:00</span></li>
-                    <li><b>Phone:</b><span>+251 919 747309</span></li>
-                    <li><b>Email:</b><span>ekdtechsolution@mail.com</span></li>
+                    <li><b>{t('contact.address')}:</b><span>{t('contact.addressValue')}</span></li>
+                    <li><b>{t('contact.workingHours')}:</b><span>{t('contact.workingHoursValue')}</span></li>
+                    <li><b>{t('contact.phone')}:</b><span>{t('contact.phoneValue')}</span></li>
+                    <li><b>{t('contact.email')}:</b><span>{t('contact.emailValue')}</span></li>
                 </ul>
                 <div className="sb-ib-title-frame sb-mb-30">
                     <h4>Instagram</h4><i className="fas fa-arrow-down"></i>

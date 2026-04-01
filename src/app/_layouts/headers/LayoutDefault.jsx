@@ -5,14 +5,28 @@ import { useEffect, useState } from "react";
 import { usePathname } from 'next/navigation';
 
 import AppData from "@data/app.json";
+import { useLanguage } from "@common/LanguageContext";
 
 import MiniSidebar from "@layouts/sidebar/MiniSidebar";
+import LanguageSwitcher from "@components/LanguageSwitcher";
 
 const DefaultHeader = () => {
+  const { t } = useLanguage();
   const [mobileMenu, setMobileMenu] = useState(false);
   const [openSubMenu, setOpenSubMenu] = useState(false);
   const [miniSidebar, setMiniSidebar] = useState(false);
   const asPath = usePathname();
+
+  const getMenuLabel = (menuItem) => {
+    const labelMap = {
+      'Ethiopian Dishes': t('navigation.ethiopianDishes'),
+      'Main Dishes': t('navigation.mainDishes'),
+      'Drinks': t('navigation.drinks'),
+      'Desserts': t('navigation.desserts'),
+      'Contact': t('navigation.contact'),
+    };
+    return labelMap[menuItem.label] || menuItem.label;
+  };
 
   const isPathActive = (path) => {
     return (asPath.endsWith(path) == 1 && path !== '/') || asPath === path;
@@ -56,7 +70,7 @@ const DefaultHeader = () => {
                             {AppData.header.menu.map((item, index) => (
                             <li className={`sb-has-children ${isPathActive(item.link) ? "sb-active" : ""}`} key={`header-menu-item-${index}`}>
                                 <Link href={item.link} onClick={(item.children.length > 0)  ? (e) => handleSubMenuClick(index, e) : null}>
-                                    {item.label}
+                                    {getMenuLabel(item)}
                                 </Link>
                                 {item.children.length > 0 && (
                                 <ul className={openSubMenu === index ? 'sb-active' : ''}>
@@ -74,6 +88,7 @@ const DefaultHeader = () => {
                         </ul>
                     </nav>
                     <div className="sb-buttons-frame">
+                    <LanguageSwitcher />
                     {/* menu btn */}
                     <div className={`sb-menu-btn ${mobileMenu ? "sb-active" : ""}`} onClick={() => setMobileMenu(!mobileMenu)}><span></span></div>
                     {/* info btn */}

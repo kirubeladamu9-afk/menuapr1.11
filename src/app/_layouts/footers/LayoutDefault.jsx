@@ -3,8 +3,10 @@
 import Link from "next/link";
 import AppData from "@data/app.json";
 import { usePathname } from 'next/navigation';
+import { useLanguage } from "@common/LanguageContext";
 
 const DefaultFooter = () => {
+  const { t } = useLanguage();
   const asPath = usePathname();
 
   return (
@@ -22,7 +24,7 @@ const DefaultFooter = () => {
                         <li key={`footer-social-item-${key}`}><a href={item.link} target="_blank" title={item.title}><i className={item.icon}></i></a></li>
                         ))}
                     </ul>
-                    <div className="sb-copy">{AppData.footer.copy}</div>
+                    <div className="sb-copy">{t('footer.copyright')}</div>
                 </div>
             </div>
         </footer>

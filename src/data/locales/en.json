@@ -1,0 +1,58 @@
+{
+  "navigation": {
+    "ethiopianDishes": "Ethiopian Dishes",
+    "mainDishes": "Main Dishes",
+    "drinks": "Drinks",
+    "desserts": "Desserts",
+    "contact": "Contact",
+    "home": "Home",
+    "menu": "Menu",
+    "about": "About",
+    "backToHome": "Back to Home"
+  },
+  "header": {
+    "logo": "Logo"
+  },
+  "footer": {
+    "copyright": "© 2026 Ekd Tech. All rights reserved."
+  },
+  "menu": {
+    "categories": {
+      "ethiopian": "Ethiopian Dishes",
+      "ethiopianDesc": "Authentic Ethiopian flavors featuring traditional<br>spiced stews, flatbreads, and bold aromatic ingredients.",
+      "main": "Main Dishes",
+      "mainDesc": "Savor our signature main courses featuring<br>classic pastas, grilled specialties, and comfort food favorites.",
+      "drinks": "Drinks",
+      "drinksDesc": "Refresh yourself with our signature beverages,<br>fresh juices, and specialty coffee drinks.",
+      "desserts": "Desserts",
+      "dessertsDesc": "Indulge in our sweet treats and delectable desserts,<br>crafted with premium ingredients."
+    }
+  },
+  "qrMenu": {
+    "eyebrow": "QR Code Menu",
+    "title": "Browse our featured dishes…",
+    "contact": "Contact Us",
+    "welcome": "Welcome",
+    "call": "Call",
+    "write": "Write"
+  },
+  "contact": {
+    "title": "Contact",
+    "heading": "Get in Touch",
+    "address": "Address",
+    "workingHours": "Working hours",
+    "phone": "Phone",
+    "email": "Email",
+    "addressValue": "Addis Ababa, Ethiopia",
+    "workingHoursValue": "09:00 - 23:00",
+    "phoneValue": "+251 919 747309",
+    "emailValue": "ekdtechsolution@mail.com"
+  },
+  "common": {
+    "hot": "Hot",
+    "vegan": "Vegan",
+    "price": "Price",
+    "rating": "Rating",
+    "ingredients": "Ingredients"
+  }
+}

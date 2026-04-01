@@ -1,0 +1,58 @@
+{
+  "navigation": {
+    "ethiopianDishes": "የኢትዮጵያ ምግቦች",
+    "mainDishes": "ዋና ምግቦች",
+    "drinks": "መጠጦች",
+    "desserts": "ጣፋጭ ምግቦች",
+    "contact": "ማነጋገር",
+    "home": "ቤት",
+    "menu": "መሰሪያ",
+    "about": "ስለ",
+    "backToHome": "ወደ ቤት ተመለስ"
+  },
+  "header": {
+    "logo": "ስያሜ"
+  },
+  "footer": {
+    "copyright": "© 2026 Ekd Tech. ሁሉም መብቶች የተጠበቁ ናቸው።"
+  },
+  "menu": {
+    "categories": {
+      "ethiopian": "የኢትዮጵያ ምግቦች",
+      "ethiopianDesc": "ሙሉ ዋጋ ያለው የኢትዮጵያ ጣዕመ ሮች ባህላዊ<br>ማረቅ, ጠፍጣፊ እና ደፋር አስፈላጊ ንጥረ ነገሮች።",
+      "main": "ዋና ምግቦች",
+      "mainDesc": "ለከፍታ የፍቅር ንድፍ ምግቦች ይስሞ<br>ክላሲክ ፓስታ, የተጋገዙ ልዩ እና ምቾት ምግቦች.",
+      "drinks": "መጠጦች",
+      "drinksDesc": "የኛ ተፈላጊ መጠጦች ከግቤት መሸገር<br>신선한 ጃንቅ, እና ልዩ ቡናማ መጠጦች።",
+      "desserts": "ጣፋጭ ምግቦች",
+      "dessertsDesc": "በኛ ጣፋጭ ሕክምናዎች እና ማራኩ ጣፋጭ ምግቦች ይደሉ<br>ከላቁ ንጥረ ነገሮች ጋር።"
+    }
+  },
+  "qrMenu": {
+    "eyebrow": "QR Code መሰሪያ",
+    "title": "የዚህን በጎ አማራጭ ምግቦች ያቀርቡ…",
+    "contact": "ተገናኙ",
+    "welcome": "እንኳን ደህና መጡ",
+    "call": "ደውል",
+    "write": "ጻፍ"
+  },
+  "contact": {
+    "title": "ማነጋገር",
+    "heading": "አጋጣሚ ይዤሩ",
+    "address": "አድራሻ",
+    "workingHours": "የሥራ ሰዓት",
+    "phone": "ስልክ",
+    "email": "ኢ-ሜይል",
+    "addressValue": "አዲስ አበባ, ኢትዮጵያ",
+    "workingHoursValue": "09:00 - 23:00",
+    "phoneValue": "+251 919 747309",
+    "emailValue": "ekdtechsolution@mail.com"
+  },
+  "common": {
+    "hot": "ሞቅ",
+    "vegan": "ዳሌ",
+    "price": "ዋጋ",
+    "rating": "ደረጃ",
+    "ingredients": "ንጥረ ነገሮች"
+  }
+}

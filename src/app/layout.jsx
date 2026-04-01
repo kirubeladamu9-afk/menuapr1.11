@@ -24,6 +24,7 @@ import '@styles/scss/style.scss';
 import "./globals.css";
 
 import ScrollbarProgress from "@layouts/scrollbar-progress/Index";
+import { LanguageProvider } from "@common/LanguageContext";
 
 import AppData from "@data/app.json";
 
@@ -54,13 +55,15 @@ const Layouts = ({
   return (
     <html lang="en" className={`${rubik.variable} ${monoton.variable}`}>
       <body>
-        {/* app wrapper */}
-        <div className="sb-app">
-          {children}
+        <LanguageProvider>
+          {/* app wrapper */}
+          <div className="sb-app">
+            {children}
 
-          <ScrollbarProgress />
-        </div>
-        {/* app wrapper end */}
+            <ScrollbarProgress />
+          </div>
+          {/* app wrapper end */}
+        </LanguageProvider>
       </body>
     </html>
   );
