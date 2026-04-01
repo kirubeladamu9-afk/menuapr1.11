@@ -3,8 +3,10 @@
 import React, { useState, useEffect } from 'react';
 import CategoriesManager from './CategoriesManager';
 import MenuItemsManager from './MenuItemsManager';
+import { useLanguage } from "@common/LanguageContext";
 
 const AdminDashboard = ({ sessionToken, onLogout }) => {
+  const { t } = useLanguage();
   const [activeTab, setActiveTab] = useState('categories');
   const [categories, setCategories] = useState([]);
   const [menuItems, setMenuItems] = useState([]);
@@ -79,21 +81,21 @@ const AdminDashboard = ({ sessionToken, onLogout }) => {
   return (
     <div className="admin-dashboard">
       <div className="admin-header">
-        <h1>Menu Management</h1>
+        <h1>{t('admin.menuManagement')}</h1>
         <button onClick={onLogout} className="admin-btn admin-btn-secondary">
-          Logout
+          {t('admin.logout')}
         </button>
       </div>
 
       {!dbInitialized && !loading && (
         <div className="admin-init-warning">
-          <p>Database tables need to be initialized. Click the button below to set up your database.</p>
+          <p>{t('admin.initializeDb')}</p>
           <button
             onClick={initializeDatabase}
             disabled={initializing}
             className="admin-btn admin-btn-primary"
           >
-            {initializing ? 'Initializing...' : 'Initialize Database'}
+            {initializing ? t('admin.initializing') : t('admin.initializeDatabase')}
           </button>
         </div>
       )}
@@ -103,21 +105,21 @@ const AdminDashboard = ({ sessionToken, onLogout }) => {
           className={`admin-tab ${activeTab === 'categories' ? 'active' : ''}`}
           onClick={() => setActiveTab('categories')}
         >
-          Categories
+          {t('admin.categories')}
         </button>
         <button
           className={`admin-tab ${activeTab === 'items' ? 'active' : ''}`}
           onClick={() => setActiveTab('items')}
         >
-          Menu Items
+          {t('admin.menuItems')}
         </button>
       </div>
 
       <div className="admin-content">
         {loading ? (
-          <div className="admin-loading">Loading...</div>
+          <div className="admin-loading">{t('common.loading')}</div>
         ) : !dbInitialized ? (
-          <div className="admin-loading">Please initialize the database first.</div>
+          <div className="admin-loading">{t('admin.please')}</div>
         ) : activeTab === 'categories' ? (
           <CategoriesManager
             categories={categories}

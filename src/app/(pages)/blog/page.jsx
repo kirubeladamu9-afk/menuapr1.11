@@ -6,6 +6,7 @@ import PopularsPostsData from "@data/sliders/popular-posts.json";
 import Pagination from '@components/Pagination';
 import PageBanner from "@components/PageBanner";
 import PopularPosts from "@components/sliders/PopularPosts";
+import { BlogHeader } from './BlogHeader';
 
 import { getPaginatedPostsData, getFeaturedPostsData } from "@library/posts";
 
@@ -32,10 +33,7 @@ async function Blog() {
           <div></div>
         </div>
         <div className="container">
-          <div className="sb-mb-60">
-            <h2 className="sb-cate-title sb-mb-30">Latest <span>publications</span></h2>
-            <p className="sb-text">Consectetur numquam poro nemo veniam<br/>eligendi rem adipisci quo modi.</p>
-          </div>
+          <BlogHeader />
 
           <BlogPaginated
             items={postsData.posts}

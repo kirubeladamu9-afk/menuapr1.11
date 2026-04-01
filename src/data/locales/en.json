@@ -11,7 +11,8 @@
     "backToHome": "Back to Home"
   },
   "header": {
-    "logo": "Logo"
+    "logo": "Logo",
+    "adminPanel": "Admin Panel"
   },
   "footer": {
     "copyright": "© 2026 Ekd Tech. All rights reserved."
@@ -25,7 +26,20 @@
       "drinks": "Drinks",
       "drinksDesc": "Refresh yourself with our signature beverages,<br>fresh juices, and specialty coffee drinks.",
       "desserts": "Desserts",
-      "dessertsDesc": "Indulge in our sweet treats and delectable desserts,<br>crafted with premium ingredients."
+      "dessertsDesc": "Indulge in our sweet treats and delectable desserts,<br>crafted with premium ingredients.",
+      "starters": "Starters",
+      "startersDesc": "Start your meal with our appetizing starters<br>and fresh selections."
+    },
+    "ui": {
+      "ingredients": "Ingredients",
+      "backToMenu": "Back to Menu",
+      "productNotFound": "Product not found",
+      "noIngredientsListed": "No ingredients listed",
+      "featured": "Featured dish",
+      "allDishes": "All dishes",
+      "details": "Details",
+      "addExtraIngredients": "Add Extra Ingredients",
+      "ratings": "ratings"
     }
   },
   "qrMenu": {
@@ -53,15 +67,132 @@
     "vegan": "Vegan",
     "price": "Price",
     "rating": "Rating",
-    "ingredients": "Ingredients"
+    "ingredients": "Ingredients",
+    "loading": "Loading...",
+    "success": "Success!",
+    "error": "Error",
+    "required": "Required",
+    "invalidEmail": "Invalid email address"
   },
-  "menu": {
-    "ui": {
-      "ingredients": "Ingredients",
-      "backToMenu": "Back to Menu",
-      "productNotFound": "Product not found",
-      "noIngredientsListed": "No ingredients listed",
-      "featured": "Featured dish"
-    }
+  "forms": {
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "phone": "Phone",
+    "time": "Time and Date",
+    "person": "Person",
+    "privacyNote": "*We promise not to disclose your personal information to third parties.",
+    "send": "Send",
+    "reserve": "Reserve",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "companyName": "Company name",
+    "country": "Country",
+    "city": "City",
+    "state": "State / Province",
+    "address": "Address",
+    "postcode": "Postcode",
+    "additionalInfo": "Additional information",
+    "orderNotes": "Order notes",
+    "paymentMethod": "Payment method",
+    "directTransfer": "Direct bank transfer",
+    "checkPayment": "Check payments",
+    "cashDelivery": "Cash on delivery",
+    "placeOrder": "Place order",
+    "billingDetails": "Billing details"
+  },
+  "search": {
+    "placeholder": "What you search?",
+    "label": "Search",
+    "results": "Search results",
+    "noResults": "No results found"
+  },
+  "sidebar": {
+    "search": "Search",
+    "categories": "Categories",
+    "archives": "Archives",
+    "authors": "Authors",
+    "keywords": "Keywords"
+  },
+  "breadcrumb": {
+    "home": "Home",
+    "blog": "Blog",
+    "shop": "Shop",
+    "products": "Products"
+  },
+  "shopping": {
+    "product": "Product",
+    "quantity": "Quantity",
+    "price": "Price",
+    "total": "Total",
+    "subtotal": "Subtotal:",
+    "estimatedShipping": "Estimated shipping:",
+    "continueShopping": "Continue shopping",
+    "checkout": "Checkout"
+  },
+  "blog": {
+    "title": "Our Blog",
+    "subtitle": "Latest publications",
+    "description": "Discover our latest culinary insights and stories"
+  },
+  "pages": {
+    "faq": "Frequently Asked Questions.",
+    "faqTitle": "FAQ",
+    "gallery": "Gallery.",
+    "galleryTitle": "Gallery",
+    "menu": "Starbelly menu.",
+    "menuTitle": "Menu",
+    "products": "Main dishes",
+    "contact": "Contact",
+    "contactSubtitle": "Get in Touch with Starbelly",
+    "sendMessage": "Send Message",
+    "yourMessageSent": "Your message has been sent successfully",
+    "backToHome": "Back to home",
+    "reservation": "Reservation",
+    "reservationSubtitle": "Mmm...! Your evening will be great!",
+    "reservationDetails": "Reservation details"
+  },
+  "admin": {
+    "adminPanel": "Admin Panel",
+    "enterCredentials": "Enter your credentials to continue",
+    "username": "Username",
+    "password": "Password",
+    "enterUsername": "Enter username",
+    "enterPassword": "Enter password",
+    "loggingIn": "Logging in...",
+    "login": "Login",
+    "menuManagement": "Menu Management",
+    "logout": "Logout",
+    "initializeDb": "Database tables need to be initialized...",
+    "initializing": "Initializing...",
+    "initializeDatabase": "Initialize Database",
+    "categories": "Categories",
+    "menuItems": "Menu Items",
+    "please": "Please initialize the database first.",
+    "categoryName": "Category Name *",
+    "slug": "Slug *",
+    "description": "Description",
+    "categoryDescription": "Category description",
+    "saving": "Saving...",
+    "update": "Update",
+    "create": "Create",
+    "noCategoriesYet": "No categories yet...",
+    "name": "Name",
+    "actions": "Actions",
+    "edit": "Edit",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "addCategory": "Add Category",
+    "dishName": "Dish Name *",
+    "price": "Price *",
+    "currency": "Currency",
+    "rating": "Rating",
+    "imageUrl": "Image URL",
+    "badge": "Badge (HTML)",
+    "addItem": "Add Item",
+    "selectCategory": "Select a category",
+    "noMenuItemsYet": "No menu items yet...",
+    "dish": "Dish",
+    "category": "Category"
   }
 }

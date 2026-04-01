@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import AppData from "@data/app.json";
@@ -6,6 +8,7 @@ import FaqData from "@data/faq.json";
 import PageBanner from "@components/PageBanner";
 import FaqGrid from "@components/faq/FaqGrid";
 import CallToActionSection from "@components/sections/CallToAction";
+import { useLanguage } from "@common/LanguageContext";
 
 export const metadata = {
   title: {
@@ -15,9 +18,11 @@ export const metadata = {
 }
 
 const FAQ = () => {
+  const { t } = useLanguage();
+
   return (
     <>
-      <PageBanner pageTitle={"Frequently Asked Questions."} breadTitle={"FAQ"} type={1} />
+      <PageBanner pageTitle={t('pages.faq')} breadTitle={t('pages.faqTitle')} type={1} />
       
       {/* faq */}
       {FaqData.categories.map((category, category_key) => (

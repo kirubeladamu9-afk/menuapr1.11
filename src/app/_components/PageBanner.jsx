@@ -6,9 +6,11 @@ import { useSearchParams } from 'next/navigation';
 
 import { useEffect } from "react";
 import { ScrollAnimation } from "@common/scrollAnims";
+import { useLanguage } from "@common/LanguageContext";
 
 const PageBanner = ({ pageTitle, breadTitle, description, type }) => {
   const asPath = usePathname();
+  const { t } = useLanguage();
 
   let clearBreadTitle;
 
@@ -48,20 +50,20 @@ const PageBanner = ({ pageTitle, breadTitle, description, type }) => {
                   <p className="sb-text sb-text-lg sb-mb-30" dangerouslySetInnerHTML={{__html : description}} />
                   }
                   <ul className="sb-breadcrumbs">
-                    <li><Link href="/">Home</Link></li>
+                    <li><Link href="/">{t('breadcrumb.home')}</Link></li>
                     {asPath.indexOf('/blog/') != -1 && asPath.indexOf('/blog/page/') == -1 &&
                     <li>
-                      <Link href="/blog">Blog</Link>
+                      <Link href="/blog">{t('breadcrumb.blog')}</Link>
                     </li>
                     }
                     {asPath.indexOf('/products') != -1 || asPath.indexOf('/cart') != -1 || asPath.indexOf('/checkout') != -1 &&
                     <li>
-                      <Link href="/shop">Shop</Link>
+                      <Link href="/shop">{t('breadcrumb.shop')}</Link>
                     </li>
                     }
                     {asPath.endsWith('/product') == 1 &&
                     <li>
-                      <Link href="/products">Products</Link>
+                      <Link href="/products">{t('breadcrumb.products')}</Link>
                     </li>
                     }
                     <li><a dangerouslySetInnerHTML={{__html : clearBreadTitle}} /></li>

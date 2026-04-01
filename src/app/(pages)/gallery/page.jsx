@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import dynamic from "next/dynamic";
 
@@ -6,6 +8,7 @@ import GalleryData from "@data/gallery.json";
 
 import PageBanner from "@components/PageBanner";
 import CallToActionSection from "@components/sections/CallToAction";
+import { useLanguage } from "@common/LanguageContext";
 
 const GalleryMasonry = dynamic( () => import("@components/gallery/GalleryMasonry"), { ssr: false } );
 
@@ -17,9 +20,11 @@ export const metadata = {
 }
 
 const Gallery1 = () => {
+  const { t } = useLanguage();
+
   return (
     <>
-      <PageBanner pageTitle={"Gallery."} breadTitle={"Gallery"} type={1} />
+      <PageBanner pageTitle={t('pages.gallery')} breadTitle={t('pages.galleryTitle')} type={1} />
       
       {/* gallery */}
       <div className="sb-p-90-60">

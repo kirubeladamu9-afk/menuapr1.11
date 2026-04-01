@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import AppData from "@data/app.json";
@@ -6,6 +8,7 @@ import MenuData from "@data/menu.json";
 import PageBanner from "@components/PageBanner";
 import MenuGrid from "@components/menu/MenuGrid";
 import PromoSection from "@components/sections/Promo";
+import { useLanguage } from "@common/LanguageContext";
 
 export const metadata = {
   title: {
@@ -15,9 +18,11 @@ export const metadata = {
 }
 
 const Menu1 = () => {
+  const { t } = useLanguage();
+
   return (
     <>
-      <PageBanner pageTitle={"Starbelly menu."} breadTitle={"Menu"} type={1} />
+      <PageBanner pageTitle={t('pages.menu')} breadTitle={t('pages.menuTitle')} type={1} />
       
       {/* menu section 1 */}
       <section className="sb-menu-section sb-p-90-60">

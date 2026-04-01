@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
+import { useLanguage } from "@common/LanguageContext";
 
 const CategoriesManager = ({ categories, onCategoryAdded }) => {
+  const { t } = useLanguage();
   const [showForm, setShowForm] = useState(false);
   const [editingId, setEditingId] = useState(null);
   const [formData, setFormData] = useState({
@@ -82,12 +84,12 @@ const CategoriesManager = ({ categories, onCategoryAdded }) => {
   return (
     <div className="admin-manager">
       <div className="admin-manager-header">
-        <h2>Categories</h2>
+        <h2>{t('admin.categories')}</h2>
         <button
           onClick={() => (showForm ? resetForm() : setShowForm(true))}
           className="admin-btn admin-btn-primary"
         >
-          {showForm ? 'Cancel' : 'Add Category'}
+          {showForm ? t('admin.cancel') : t('admin.addCategory')}
         </button>
       </div>
 
@@ -96,7 +98,7 @@ const CategoriesManager = ({ categories, onCategoryAdded }) => {
       {showForm && (
         <form onSubmit={handleSubmit} className="admin-form">
           <div className="admin-form-group">
-            <label htmlFor="name">Category Name *</label>
+            <label htmlFor="name">{t('admin.categoryName')}</label>
             <input
               type="text"
               id="name"
@@ -109,7 +111,7 @@ const CategoriesManager = ({ categories, onCategoryAdded }) => {
           </div>
 
           <div className="admin-form-group">
-            <label htmlFor="slug">Slug *</label>
+            <label htmlFor="slug">{t('admin.slug')}</label>
             <input
               type="text"
               id="slug"
@@ -122,34 +124,34 @@ const CategoriesManager = ({ categories, onCategoryAdded }) => {
           </div>
 
           <div className="admin-form-group">
-            <label htmlFor="description">Description</label>
+            <label htmlFor="description">{t('admin.description')}</label>
             <textarea
               id="description"
               name="description"
               value={formData.description}
               onChange={handleInputChange}
-              placeholder="Category description"
+              placeholder={t('admin.categoryDescription')}
               rows="3"
             />
           </div>
 
           <button type="submit" disabled={loading} className="admin-btn admin-btn-primary">
-            {loading ? 'Saving...' : editingId ? 'Update' : 'Create'}
+            {loading ? t('admin.saving') : editingId ? t('admin.update') : t('admin.create')}
           </button>
         </form>
       )}
 
       <div className="admin-list">
         {categories.length === 0 ? (
-          <p>No categories yet. Create one to get started!</p>
+          <p>{t('admin.noCategoriesYet')}</p>
         ) : (
           <table className="admin-table">
             <thead>
               <tr>
-                <th>Name</th>
-                <th>Slug</th>
-                <th>Description</th>
-                <th>Actions</th>
+                <th>{t('admin.name')}</th>
+                <th>{t('admin.slug')}</th>
+                <th>{t('admin.description')}</th>
+                <th>{t('admin.actions')}</th>
               </tr>
             </thead>
             <tbody>
@@ -163,13 +165,13 @@ const CategoriesManager = ({ categories, onCategoryAdded }) => {
                       onClick={() => handleEdit(category)}
                       className="admin-btn admin-btn-small"
                     >
-                      Edit
+                      {t('admin.edit')}
                     </button>
                     <button
                       onClick={() => handleDelete(category.id)}
                       className="admin-btn admin-btn-small admin-btn-danger"
                     >
-                      Delete
+                      {t('admin.delete')}
                     </button>
                   </td>
                 </tr>

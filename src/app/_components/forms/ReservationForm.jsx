@@ -2,8 +2,11 @@
 
 import { Formik } from 'formik';
 import AppData from "@data/app.json";
+import { useLanguage } from "@common/LanguageContext";
 
 const ReservationForm = () => {
+  const { t } = useLanguage();
+
   return (
     <>
         {/* contact form */}
@@ -12,11 +15,11 @@ const ReservationForm = () => {
         validate = { values => {
             const errors = {};
             if (!values.email) {
-                errors.email = 'Required';
+                errors.email = t('common.required');
             } else if (
                 !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
             ) {
-                errors.email = 'Invalid email address';
+                errors.email = t('common.invalidEmail');
             }
             return errors;
         }}
@@ -72,68 +75,68 @@ const ReservationForm = () => {
             <div className="row">
             <div className="col-lg-12">
                 <div className="sb-group-input">
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         placeholder=" "
-                        name="name" 
-                        required="required" 
+                        name="name"
+                        required="required"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.name} 
+                        value={values.name}
                     />
                     <span className="sb-bar"></span>
-                    <label>Name</label>
+                    <label>{t('forms.name')}</label>
                 </div>
             </div>
             <div className="col-lg-12">
                 <div className="sb-group-input">
-                    <input 
-                        type="email" 
+                    <input
+                        type="email"
                         placeholder=" "
-                        name="email" 
-                        required="required" 
+                        name="email"
+                        required="required"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.email} 
+                        value={values.email}
                     />
                     <span className="sb-bar"></span>
-                    <label>Email</label>
+                    <label>{t('forms.email')}</label>
                 </div>
             </div>
             <div className="col-lg-12">
                 <div className="sb-group-input">
-                    <input 
-                        type="tel" 
+                    <input
+                        type="tel"
                         placeholder=" "
                         name="tel"
                         required="required"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.tel} 
+                        value={values.tel}
                     />
                     <span className="sb-bar"></span>
-                    <label>Phone</label>
+                    <label>{t('forms.phone')}</label>
                 </div>
             </div>
             <div className="col-lg-12">
                 <div className="sb-group-input">
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         placeholder=" "
                         name="date"
                         required="required"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.date} 
+                        value={values.date}
                     />
                     <span className="sb-bar"></span>
-                    <label>Time and Date</label>
+                    <label>{t('forms.time')}</label>
                 </div>
             </div>
             <div className="col-lg-12">
                 <div className="sb-group-input">
-                    <input 
-                        type="number" 
+                    <input
+                        type="number"
                         placeholder=" "
                         name="person"
                         required="required"
@@ -141,10 +144,10 @@ const ReservationForm = () => {
                         onBlur={handleBlur}
                         value={values.person}
                         min={1}
-                        max={6} 
+                        max={6}
                     />
                     <span className="sb-bar"></span>
-                    <label>Person</label>
+                    <label>{t('forms.person')}</label>
                 </div>
             </div>
             </div>
@@ -154,7 +157,7 @@ const ReservationForm = () => {
                 <span className="sb-icon">
                     <img src="/img/ui/icons/arrow.svg" alt="icon" />
                 </span>
-                <span>Reserve</span>
+                <span>{t('forms.reserve')}</span>
             </button>
             {/* button end */}
         </form>

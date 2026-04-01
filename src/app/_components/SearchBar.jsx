@@ -3,10 +3,12 @@
 import { useCallback, useState } from "react";
 import { useSearchParams } from 'next/navigation'
 import { useRouter } from 'next/navigation'
+import { useLanguage } from "@common/LanguageContext";
 
 const SearchBarModule = () => {
     const router = useRouter()
     const searchParams = useSearchParams()
+    const { t } = useLanguage()
     
     const query = searchParams.get('key') || '';
 
@@ -34,7 +36,7 @@ const SearchBarModule = () => {
 
     return (
         <div className="sb-group-input sb-group-with-btn">
-            <input 
+            <input
                 type="text"
                 value={search}
                 onChange={searchChangeHandler}
@@ -44,7 +46,7 @@ const SearchBarModule = () => {
                 placeholder=" "
             />
             <span className="sb-bar" />
-            <label>What you search?</label>
+            <label>{t('search.placeholder')}</label>
             <button 
                 onClick={() => {
                     router.push("/search" + '?' + createQueryString('key', search))

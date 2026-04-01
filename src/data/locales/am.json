@@ -11,7 +11,8 @@
     "backToHome": "ወደ ቤት ተመለስ"
   },
   "header": {
-    "logo": "ስያሜ"
+    "logo": "ስያሜ",
+    "adminPanel": " የአስተዳደር ፓነል"
   },
   "footer": {
     "copyright": "© 2026 Ekd Tech. ሁሉም መብቶች የተጠበቁ ናቸው።"
@@ -25,7 +26,20 @@
       "drinks": "መጠጦች",
       "drinksDesc": "የኛ ተፈላጊ መጠጦች ከግቤት መሸገር<br>신선한 ጃንቅ, እና ልዩ ቡናማ መጠጦች።",
       "desserts": "ጣፋጭ ምግቦች",
-      "dessertsDesc": "በኛ ጣፋጭ ሕክምናዎች እና ማራኩ ጣፋጭ ምግቦች ይደሉ<br>ከላቁ ንጥረ ነገሮች ጋር።"
+      "dessertsDesc": "በኛ ጣፋጭ ሕክምናዎች እና ማራኩ ጣፋጭ ምግቦች ይደሉ<br>ከላቁ ንጥረ ነገሮች ጋር።",
+      "starters": "ተጀማሪ",
+      "startersDesc": "ምግብዎን በኛ ማራኩ ተጀማሪ<br>እና 신선한 ምርጫዎች ጀምሩ።"
+    },
+    "ui": {
+      "ingredients": "ንጥረ ነገሮች",
+      "backToMenu": "ወደ መሰሪያ ተመለስ",
+      "productNotFound": "ምርት አልተገኘም",
+      "noIngredientsListed": "ምንም ንጥረ ነገሮች ተዘርዝር አልችሉም",
+      "featured": "የተሞ ምግብ",
+      "allDishes": "ሁሉም ምግቦች",
+      "details": "ዝርዝር",
+      "addExtraIngredients": "ተጨማሪ ንጥረ ነገሮች ያክሉ",
+      "ratings": "ደረጃዎች"
     }
   },
   "qrMenu": {
@@ -53,15 +67,132 @@
     "vegan": "ዳሌ",
     "price": "ዋጋ",
     "rating": "ደረጃ",
-    "ingredients": "ንጥረ ነገሮች"
+    "ingredients": "ንጥረ ነገሮች",
+    "loading": "በመጫን ላይ...",
+    "success": "ስኬት!",
+    "error": "ስህተት",
+    "required": "ያስፈልጋል",
+    "invalidEmail": "ትክክል ያልሆነ ኢሜይል አድራሻ"
   },
-  "menu": {
-    "ui": {
-      "ingredients": "ንጥረ ነገሮች",
-      "backToMenu": "ወደ መሰሪያ ተመለስ",
-      "productNotFound": "ምርት አልተገኘም",
-      "noIngredientsListed": "ምንም ንጥረ ነገሮች ተዘርዝር አልችሉም",
-      "featured": "የተሞ ምግብ"
-    }
+  "forms": {
+    "name": "ስም",
+    "email": "ኢ-ሜይል",
+    "message": "መልዕክት",
+    "phone": "ስልክ",
+    "time": "ሰዓት እና ቀን",
+    "person": "ሰው",
+    "privacyNote": "*ግላዊ መረጃዎን ለሦስተኛ ወገኖች አንለያይ ብለን ተስፋ ይዤናል።",
+    "send": "ላክ",
+    "reserve": "ያስያዙ",
+    "firstName": "ስም",
+    "lastName": "姓氏",
+    "companyName": "ኩባንያ ስም",
+    "country": "አገር",
+    "city": "ከተማ",
+    "state": "ክልል / ግዛት",
+    "address": "አድራሻ",
+    "postcode": "ፖስታ ኮድ",
+    "additionalInfo": "ተጨማሪ መረጃ",
+    "orderNotes": "ትዕዛዝ ማስታወሻዎች",
+    "paymentMethod": "የክፍያ ዘዴ",
+    "directTransfer": "ቀጥተኛ ባንክ ዝውውር",
+    "checkPayment": "ደብዳቤ ክፍያ",
+    "cashDelivery": "ገንዘብ በመሰረቃት",
+    "placeOrder": "ትዕዛዝ ያስቀምጡ",
+    "billingDetails": "የክፍያ ዝርዝሮች"
+  },
+  "search": {
+    "placeholder": "ምን ትፈልገው?",
+    "label": "ፍለጋ",
+    "results": "የፍለጋ ውጤቶች",
+    "noResults": "ምንም ውጤቶች አልተገኙም"
+  },
+  "sidebar": {
+    "search": "ፍለጋ",
+    "categories": "ምድቦች",
+    "archives": "ማህደሮች",
+    "authors": "ደራሲዎች",
+    "keywords": "ቁልፍ ቃላት"
+  },
+  "breadcrumb": {
+    "home": "ቤት",
+    "blog": "ብሎግ",
+    "shop": "መሸጫ",
+    "products": "ምርቶች"
+  },
+  "shopping": {
+    "product": "ምርት",
+    "quantity": "መጠን",
+    "price": "ዋጋ",
+    "total": "ጠቅላላ",
+    "subtotal": "ንኡስ ጠቅላላ:",
+    "estimatedShipping": "ግምታዊ ሚና:",
+    "continueShopping": "ሙሉ ግዣ ይቀጥሉ",
+    "checkout": "ለውጥ"
+  },
+  "blog": {
+    "title": "የኛ ብሎግ",
+    "subtitle": "የሚያሳዩ መጀመሪያ",
+    "description": "የሚያሳዩ አይነት ቁበት ጉብኙት"
+  },
+  "pages": {
+    "faq": "በተደጋጋሚ የሚጠየቁ ጥያቄዎች።",
+    "faqTitle": "ጥያቄ",
+    "gallery": "ምስሎች።",
+    "galleryTitle": "ምስሎች",
+    "menu": "ስቴርቤሌ መሰሪያ።",
+    "menuTitle": "መሰሪያ",
+    "products": "ዋናዎ ምግቦች",
+    "contact": "ማነጋገር",
+    "contactSubtitle": "ስቴርቤሌ ጋር ግንኙነት",
+    "sendMessage": "መልዕክት ላክ",
+    "yourMessageSent": "መልዕክትዎ በተሳካ ሁኔታ ተልክቷል",
+    "backToHome": "ወደ ቤት ተመለስ",
+    "reservation": "የቦታ ሕዝብ",
+    "reservationSubtitle": "Mmm...! ምሽትዎ ታላቅ ይሆናል!",
+    "reservationDetails": "የቦታ ሕዝብ ዝርዝሮች"
+  },
+  "admin": {
+    "adminPanel": " የአስተዳደር ፓነል",
+    "enterCredentials": "ለመቀጠል ምስጢራዊ ቃላትዎን ያስገቡ",
+    "username": "ተጠቃሚ ስም",
+    "password": "ይለፍ ቃል",
+    "enterUsername": "ተጠቃሚ ስም ያስገቡ",
+    "enterPassword": "የይለፍ ቃልዎን ያስገቡ",
+    "loggingIn": "በመግባት ላይ...",
+    "login": "መግባት",
+    "menuManagement": "መሰሪያ ሥነ-ሥራ",
+    "logout": "መውጣት",
+    "initializeDb": "የሚስስ ሠንጠረዦች መሰረት ማስቀመጥ ያስፈልጋል...",
+    "initializing": "በመፍጠር ላይ...",
+    "initializeDatabase": "ሚስስ ማስቀመጥ",
+    "categories": "ምድቦች",
+    "menuItems": "ምግብ ንጥሎች",
+    "please": "የሚስስ ሠንጠረዦች መሰረት መጀመር ይችሉ።",
+    "categoryName": "ምድብ ስም *",
+    "slug": "Slug *",
+    "description": "ገለጻ",
+    "categoryDescription": "ምድብ ገለጻ",
+    "saving": "በማስቀመጥ ላይ...",
+    "update": "ማሻሻል",
+    "create": "ፍጠር",
+    "noCategoriesYet": "ምንም ምድብ ገና...",
+    "name": "ስም",
+    "actions": "ድርጊቶች",
+    "edit": "ማስተካከል",
+    "delete": "삭제",
+    "cancel": "ይህን ይቅር",
+    "addCategory": "ምድብ ያክሉ",
+    "dishName": "ምግብ ስም *",
+    "price": "ዋጋ *",
+    "currency": "ምንዋ",
+    "rating": "ደረጃ",
+    "imageUrl": "ምስል URL",
+    "badge": "ባጂ (HTML)",
+    "addItem": "ንጥል ያክሉ",
+    "selectCategory": "ምድብ ይምረጡ",
+    "noMenuItemsYet": "ምንም ምግብ ንጥሎች ገና...",
+    "dish": "ምግብ",
+    "category": "ምድብ"
   }
 }

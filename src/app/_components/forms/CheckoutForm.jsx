@@ -2,8 +2,11 @@
 
 import { Formik } from 'formik';
 import AppData from "@data/app.json";
+import { useLanguage } from "@common/LanguageContext";
 
 const CheckoutForm = () => {
+  const { t } = useLanguage();
+
   return (
     <>
         {/* contact form */}
@@ -12,11 +15,11 @@ const CheckoutForm = () => {
         validate = { values => {
             const errors = {};
             if (!values.email) {
-                errors.email = 'Required';
+                errors.email = t('common.required');
             } else if (
                 !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
             ) {
-                errors.email = 'Invalid email address';
+                errors.email = t('common.invalidEmail');
             }
             return errors;
         }}
@@ -76,189 +79,189 @@ const CheckoutForm = () => {
         }) => (
         <form onSubmit={handleSubmit} id="checkoutForm" action={AppData.settings.formspreeURL} className="sb-checkout-form">
             <div className="sb-mb-30">
-                <h3>Billing details</h3>
+                <h3>{t('forms.billingDetails')}</h3>
             </div>
             <div className="row">
                 <div className="col-lg-6">
                 <div className="sb-group-input">
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         placeholder=" "
-                        name="firstname" 
-                        required="required" 
+                        name="firstname"
+                        required="required"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.firstname} 
+                        value={values.firstname}
                     />
                     <span className="sb-bar"></span>
-                    <label>First name</label>
+                    <label>{t('forms.firstName')}</label>
                 </div>
                 </div>
                 <div className="col-lg-6">
                 <div className="sb-group-input">
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         placeholder=" "
-                        name="lastname" 
-                        required="required" 
+                        name="lastname"
+                        required="required"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.lastname} 
+                        value={values.lastname}
                     />
                     <span className="sb-bar"></span>
-                    <label>Last name</label>
+                    <label>{t('forms.lastName')}</label>
                 </div>
                 </div>
                 <div className="col-lg-6">
                 <div className="sb-group-input">
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         placeholder=" "
                         name="company"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.company} 
+                        value={values.company}
                     />
                     <span className="sb-bar"></span>
-                    <label>Company name</label>
+                    <label>{t('forms.companyName')}</label>
                 </div>
                 </div>
                 <div className="col-lg-6">
                 <div className="sb-group-input">
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         placeholder=" "
                         name="country"
                         required="required"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.country} 
+                        value={values.country}
                     />
                     <span className="sb-bar"></span>
-                    <label>Country</label>
+                    <label>{t('forms.country')}</label>
                 </div>
                 </div>
                 <div className="col-lg-6">
                 <div className="sb-group-input">
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         placeholder=" "
                         name="city"
                         required="required"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.city} 
+                        value={values.city}
                     />
                     <span className="sb-bar"></span>
-                    <label>City</label>
+                    <label>{t('forms.city')}</label>
                 </div>
                 </div>
                 <div className="col-lg-6">
                 <div className="sb-group-input">
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         placeholder=" "
                         name="state"
                         required="required"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.state} 
+                        value={values.state}
                     />
                     <span className="sb-bar"></span>
-                    <label>State / Province</label>
+                    <label>{t('forms.state')}</label>
                 </div>
                 </div>
                 <div className="col-lg-6">
                 <div className="sb-group-input">
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         placeholder=" "
                         name="address"
                         required="required"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.address} 
+                        value={values.address}
                     />
                     <span className="sb-bar"></span>
-                    <label>Address</label>
+                    <label>{t('forms.address')}</label>
                 </div>
                 </div>
                 <div className="col-lg-6">
                 <div className="sb-group-input">
-                    <input 
-                        type="text" 
+                    <input
+                        type="text"
                         placeholder=" "
                         name="postcode"
                         required="required"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.postcode} 
+                        value={values.postcode}
                     />
                     <span className="sb-bar"></span>
-                    <label>Postcode</label>
+                    <label>{t('forms.postcode')}</label>
                 </div>
                 </div>
                 <div className="col-lg-6">
                 <div className="sb-group-input">
-                    <input 
-                        type="tel" 
+                    <input
+                        type="tel"
                         placeholder=" "
                         name="tel"
                         required="required"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.tel} 
+                        value={values.tel}
                     />
                     <span className="sb-bar"></span>
-                    <label>Phone</label>
+                    <label>{t('forms.phone')}</label>
                 </div>
                 </div>
                 <div className="col-lg-6">
                 <div className="sb-group-input">
-                    <input 
-                        type="email" 
+                    <input
+                        type="email"
                         placeholder=" "
                         name="email"
                         required="required"
                         onChange={handleChange}
                         onBlur={handleBlur}
-                        value={values.email} 
+                        value={values.email}
                     />
                     <span className="sb-bar"></span>
-                    <label>Email</label>
+                    <label>{t('forms.email')}</label>
                 </div>
                 </div>
             </div>
             <div className="sb-mb-30">
-                <h3>Additional information</h3>
+                <h3>{t('forms.additionalInfo')}</h3>
             </div>
             <div className="sb-group-input">
-                <textarea 
+                <textarea
                     placeholder=" "
-                    name="message" 
+                    name="message"
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    value={values.message} 
+                    value={values.message}
                 />
                 <span className="sb-bar"></span>
-                <label>Order notes</label>
+                <label>{t('forms.orderNotes')}</label>
             </div>
             <div className="sb-mb-30">
-                <h3 className="sb-mb-30">Payment method</h3>
+                <h3 className="sb-mb-30">{t('forms.paymentMethod')}</h3>
                 <ul>
                     <li className="sb-radio">
                         <input type="radio" id="option-1" name="payment_method" defaultChecked value="1" />
-                        <label htmlFor="option-1">Direct bank transfer</label>
+                        <label htmlFor="option-1">{t('forms.directTransfer')}</label>
                         <div className="sb-check"></div>
                     </li>
                     <li className="sb-radio">
                         <input type="radio" id="option-2" name="payment_method" value="2" />
-                        <label htmlFor="option-2">Check payments</label>
+                        <label htmlFor="option-2">{t('forms.checkPayment')}</label>
                         <div className="sb-check"></div>
                     </li>
                     <li className="sb-radio">
                         <input type="radio" id="option-3" name="payment_method" value="3" />
-                        <label htmlFor="option-3">Cash on delivery</label>
+                        <label htmlFor="option-3">{t('forms.cashDelivery')}</label>
                         <div className="sb-check"></div>
                     </li>
                 </ul>
@@ -268,7 +271,7 @@ const CheckoutForm = () => {
                 <span className="sb-icon">
                     <img src="/img/ui/icons/arrow.svg" alt="icon" />
                 </span>
-                <span>Place order</span>
+                <span>{t('forms.placeOrder')}</span>
             </button>
             {/* button end */}
 

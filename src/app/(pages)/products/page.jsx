@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import AppData from "@data/app.json";
@@ -6,6 +8,7 @@ import ProductsData from "@data/products.json";
 import PageBanner from "@components/PageBanner";
 import ProductsGrid from "@components/products/ProductsGrid";
 import PromoSection from "@components/sections/Promo";
+import { useLanguage } from "@common/LanguageContext";
 
 export const metadata = {
   title: {
@@ -15,9 +18,11 @@ export const metadata = {
 }
 
 const Products = () => {
+  const { t } = useLanguage();
+
   return (
     <>
-      <PageBanner pageTitle={"Main dishes"} breadTitle={"Main dishes"} type={1} />
+      <PageBanner pageTitle={t('pages.products')} breadTitle={t('pages.products')} type={1} />
 
       {/* shop list */}
       <section className="sb-menu-section sb-p-90-60">

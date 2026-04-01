@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import AppData from "@data/app.json";
@@ -7,6 +9,7 @@ import PageBanner from "@components/PageBanner";
 import CheckoutForm from "@components/forms/CheckoutForm";
 
 import Link from "next/link";
+import { useLanguage } from "@common/LanguageContext";
 
 export const metadata = {
   title: {
@@ -16,9 +19,11 @@ export const metadata = {
 }
 
 const Checkout = () => {
+  const { t } = useLanguage();
+
   return (
     <>
-      <PageBanner pageTitle={"Checkout"} breadTitle={"Checkout"} type={1} />
+      <PageBanner pageTitle={t('shopping.checkout')} breadTitle={t('shopping.checkout')} type={1} />
 
       {/* checkout */}
       <section className="sb-p-90-90">
@@ -33,8 +38,8 @@ const Checkout = () => {
                   <div className="sb-cart-table">
                     <div className="sb-cart-table-header">
                       <div className="row">
-                        <div className="col-lg-9">Product</div>
-                        <div className="col-lg-3 text-right">Total</div>
+                        <div className="col-lg-9">{t('shopping.product')}</div>
+                        <div className="col-lg-3 text-right">{t('shopping.total')}</div>
                       </div>
                     </div>
 
@@ -53,7 +58,7 @@ const Checkout = () => {
                           </Link>
                         </div>
                         <div className="col-lg-3 text-md-right">
-                          <div className="sb-price-2"><span>Total: </span>{item.currency}{item.price}</div>
+                          <div className="sb-price-2"><span>{t('shopping.total')}: </span>{item.currency}{item.price}</div>
                         </div>
                       </div>
                     </div>
@@ -63,7 +68,7 @@ const Checkout = () => {
                       <div className="sb-sum">
                         <div className="row">
                           <div className="col-6">
-                            <div className="sb-total-title">Subtotal:</div>
+                            <div className="sb-total-title">{t('shopping.subtotal')}</div>
                           </div>
                           <div className="col-6">
                             <div className="sb-price-1 text-right">$32.99</div>
@@ -73,7 +78,7 @@ const Checkout = () => {
                       <div className="sb-realy-sum">
                         <div className="row">
                           <div className="col-6">
-                            <div className="sb-total-title">Total:</div>
+                            <div className="sb-total-title">{t('shopping.total')}</div>
                           </div>
                           <div className="col-6">
                             <div className="sb-price-2 text-right">$37.99</div>

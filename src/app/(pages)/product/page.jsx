@@ -126,7 +126,7 @@ const ProductContent = () => {
                   <li><i className="fas fa-star"></i></li>
                   <li><i className="fas fa-star"></i></li>
                   <li><i className="fas fa-star"></i></li>
-                  <li><span>({currentProduct.rating} ratings)</span></li>
+                  <li><span>({currentProduct.rating} {t('menu.ui.ratings')})</span></li>
                 </ul>
                 <p className="sb-product-text sb-mb-30">{currentProduct.text.split("Ingredients:")[0].trim()}</p>
                 <ProductButtons />

@@ -2,8 +2,11 @@
 
 import { Formik } from 'formik';
 import AppData from "@data/app.json";
+import { useLanguage } from "@common/LanguageContext";
 
 const ContactForm = () => {
+  const { t } = useLanguage();
+
   return (
     <>
         {/* contact form */}
@@ -12,11 +15,11 @@ const ContactForm = () => {
         validate = { values => {
             const errors = {};
             if (!values.email) {
-                errors.email = 'Required';
+                errors.email = t('common.required');
             } else if (
                 !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
             ) {
-                errors.email = 'Invalid email address';
+                errors.email = t('common.invalidEmail');
             }
             return errors;
         }}
@@ -68,51 +71,51 @@ const ContactForm = () => {
         }) => (
         <form onSubmit={handleSubmit} id="contactForm" action={AppData.settings.formspreeURL}>
             <div className="sb-group-input">
-                <input 
-                    type="text" 
+                <input
+                    type="text"
                     placeholder=" "
-                    name="name" 
-                    required="required" 
+                    name="name"
+                    required="required"
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    value={values.name} 
+                    value={values.name}
                 />
                 <span className="sb-bar"></span>
-                <label>Name</label>
+                <label>{t('forms.name')}</label>
             </div>
             <div className="sb-group-input">
-                <input 
-                    type="email" 
+                <input
+                    type="email"
                     placeholder=" "
                     name="email"
                     required="required"
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    value={values.email} 
+                    value={values.email}
                 />
                 <span className="sb-bar"></span>
-                <label>Email</label>
+                <label>{t('forms.email')}</label>
             </div>
             <div className="sb-group-input">
-                <textarea 
+                <textarea
                     placeholder=" "
-                    name="message" 
+                    name="message"
                     required="required"
                     onChange={handleChange}
                     onBlur={handleBlur}
-                    value={values.message} 
+                    value={values.message}
                 />
                 <span className="sb-bar"></span>
-                <label>Message</label>
+                <label>{t('forms.message')}</label>
             </div>
-            <p className="sb-text sb-text-xs sb-mb-30">*We promise not to disclose your <br/>personal information to third parties.</p>
-            
+            <p className="sb-text sb-text-xs sb-mb-30">{t('forms.privacyNote')}</p>
+
             {/* button */}
             <button type="submit" className="sb-btn sb-cf-submit sb-show-success">
                 <span className="sb-icon">
                     <img src="/img/ui/icons/arrow.svg" alt="icon" />
                 </span>
-                <span>Send</span>
+                <span>{t('forms.send')}</span>
             </button>
             {/* button end */}
         </form>
