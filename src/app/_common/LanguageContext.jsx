@@ -12,12 +12,12 @@ const translations = {
 };
 
 export function LanguageProvider({ children }) {
-  const [language, setLanguage] = useState('am');
+  const [language, setLanguage] = useState('en');
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
     // Get language from localStorage on mount
-    const savedLanguage = localStorage.getItem('language') || 'am';
+    const savedLanguage = localStorage.getItem('language') || 'en';
     setLanguage(savedLanguage);
     setMounted(true);
   }, []);
