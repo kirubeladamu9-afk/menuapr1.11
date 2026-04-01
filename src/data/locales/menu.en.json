@@ -22,11 +22,11 @@
     }
   ],
   "dishes": {
-    "beyaynetu": {
+    "beyaynetu-fasting-combo": {
       "title": "Beyaynetu (Fasting Combo)",
       "text": "A colorful platter of assorted vegan dishes served on injera, perfect for fasting and sharing. Ingredients: Injera, shiro, misir wat, gomen, tikil gomen, salad."
     },
-    "misir-wot": {
+    "misir-wat": {
       "title": "Misir Wat",
       "text": "Spicy red lentil stew cooked with berbere, onions, and garlic. Ingredients: Red lentils, onion, garlic, berbere, oil."
     },
@@ -34,7 +34,7 @@
       "title": "Gomen Besiga",
       "text": "Collard greens cooked with tender beef and Ethiopian spices. Ingredients: Collard greens, beef, onion, garlic, oil."
     },
-    "firfir": {
+    "firfir-injera-stir-fry": {
       "title": "Firfir (Injera Stir Fry)",
       "text": "Shredded injera mixed with spicy berbere sauce, often served with meat or vegetarian. Ingredients: Injera (torn), berbere sauce, onion, oil."
     },
@@ -126,7 +126,7 @@
       "title": "Pancakes with Honey",
       "text": "Soft pancakes served with honey or syrup. Ingredients: Flour, milk, eggs, honey, butter."
     },
-    "sambusa": {
+    "sambusa-ethiopian-appetizer": {
       "title": "Sambusa (Ethiopian Appetizer)",
       "text": "Crispy pastry filled with spiced lentils or minced meat, deep-fried to golden perfection. Ingredients: Sambusa wraps, lentils or minced meat, onion, garlic, oil, spices."
     },
