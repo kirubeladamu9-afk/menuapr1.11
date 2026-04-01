@@ -142,6 +142,7 @@ const ProductContent = () => {
           </div>
 
           <div className="sb-ingredients-section">
+            <h3 className="sb-mb-20">{t('menu.ui.ingredients')}</h3>
             <div className="sb-tab">
               <ProductAtts />
             </div>
