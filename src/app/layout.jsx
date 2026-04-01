@@ -34,7 +34,7 @@ export const metadata = {
 	},
   description: AppData.settings.siteDescription,
   icons: {
-    icon: AppData.header.logo.image,
+    icon: "/img/ui/logo-favicon.png",
   },
 }
 
