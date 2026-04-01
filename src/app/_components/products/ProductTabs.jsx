@@ -9,7 +9,7 @@ const ProductTabs = ({items, active}) => {
   const [filterKey, setFilterKey] = useState(active);
   
   useEffect(() => {
-      //setTimeout(() => {
+      setTimeout(() => {
           isotope.current = new Isotope(".sb-masonry-grid", {
               itemSelector: ".sb-grid-item",
               percentPosition: true,
@@ -18,7 +18,7 @@ const ProductTabs = ({items, active}) => {
               },
               transitionDuration: '0.5s',
           });
-      //}, 500);
+      }, 500);
   }, []);
 
   useEffect(() => {
