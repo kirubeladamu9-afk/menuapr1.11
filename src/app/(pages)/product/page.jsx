@@ -42,26 +42,35 @@ const ProductContent = () => {
     const ingredientMatch = currentProduct.text.match(/Ingredients:\s*([^.]+)/i);
     if (ingredientMatch) {
       const ingredientText = ingredientMatch[1];
-      const ingredients = ingredientText.split(",").map(ing => ing.trim());
+      const ingredients = ingredientText.split(",").map(ing => ing.trim()).filter(ing => ing);
 
-      return ingredients.map((ingredient, idx) => ({
-        label: ingredient.split("–")[0].trim(),
-        value: ingredient.split("–")[1]?.trim() || ""
-      }));
+      return ingredients.map((ingredient, idx) => {
+        const parts = ingredient.split("–");
+        return {
+          label: parts[0].trim(),
+          value: parts[1]?.trim() || ""
+        };
+      });
     }
 
     return [];
   }, [currentProduct]);
 
   const ProductAtts = () => {
-    return (
-      <>
+    if (AttsData.length === 0) {
+      return (
         <ul className="sb-list">
-          {AttsData.map((item, key) => (
-          <li key={`product-reviews-item-${key}`}><b>{item.label}</b><span>{item.value}</span></li>
-          ))}
+          <li><b>No ingredients listed</b><span></span></li>
         </ul>
-      </>
+      );
+    }
+
+    return (
+      <ul className="sb-list">
+        {AttsData.map((item, key) => (
+        <li key={`product-reviews-item-${key}`}><b>{item.label}</b><span>{item.value}</span></li>
+        ))}
+      </ul>
     );
   };
 
