@@ -152,6 +152,10 @@
     "reservationSubtitle": "Mmm...! Your evening will be great!",
     "reservationDetails": "Reservation details"
   },
+  "about": {
+    "title": "About Us",
+    "description": "At our restaurant, we bring together the rich traditions of Ethiopian cuisine and the diverse flavors of international dishes to create a unique and memorable dining experience. We are passionate about using fresh, high-quality ingredients and authentic recipes, carefully prepared to deliver both taste and comfort in every bite. Whether you're enjoying a traditional injera platter, a modern grilled dish, or a refreshing drink, our goal is to provide exceptional food, warm hospitality, and a welcoming atmosphere for families, friends, and special occasions."
+  },
   "admin": {
     "adminPanel": "Admin Panel",
     "enterCredentials": "Enter your credentials to continue",

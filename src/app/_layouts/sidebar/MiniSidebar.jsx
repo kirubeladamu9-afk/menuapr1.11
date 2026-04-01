@@ -6,7 +6,6 @@ import { useLanguage } from "@common/LanguageContext";
 
 const MiniSidebar = () => {
     const { t } = useLanguage();
-    const aboutParagraph = AboutData.description.match(/<p>.*?<\/p>/)?.[0] || AboutData.description;
 
     return (
         <>
@@ -30,14 +29,16 @@ const MiniSidebar = () => {
                 </ul>
                 <hr />
                 <div className="sb-ib-title-frame sb-mb-30">
-                    <h4>About Us</h4><i className="fas fa-arrow-down"></i>
+                    <h4>{t('about.title')}</h4><i className="fas fa-arrow-down"></i>
                 </div>
                 <div className="sb-infobar-about sb-mb-30">
                     <div className="sb-infobar-about-visual sb-mb-20">
                         <img src={AboutData.image.url} alt={AboutData.image.alt} />
                     </div>
                     <div className="sb-infobar-about-copy">
-                        <div className="sb-text sb-text-sm" dangerouslySetInnerHTML={{ __html: aboutParagraph }} />
+                        <div className="sb-text sb-text-sm">
+                            <p>{t('about.description')}</p>
+                        </div>
                     </div>
                 </div>
             </div>
