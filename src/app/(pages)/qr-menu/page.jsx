@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useEffect, Suspense } from "react";
+import React, { useState, useEffect, Suspense, useMemo } from "react";
 import { useSearchParams } from "next/navigation";
 import MenuData from "@data/menu.json";
 import ContactData from "@data/sections/contact-info.json";
@@ -8,14 +8,23 @@ import QrMenuGrid from "@components/menu/QrMenuGrid";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, FreeMode, Navigation } from "swiper";
 import { useLanguage } from "@common/LanguageContext";
+import { useTranslatedMenu } from "@common/useTranslatedMenu";
 import "swiper/css";
 
 const QrMenuContent = () => {
   const { t } = useLanguage();
+  const { getTranslatedMenuData } = useTranslatedMenu();
   const searchParams = useSearchParams();
+
+  const translatedMenuData = useMemo(() => {
+    return getTranslatedMenuData();
+  }, [getTranslatedMenuData]);
   const categoryParam = searchParams.get("category");
   const [activeCategory, setActiveCategory] = useState(categoryParam ? parseInt(categoryParam) : 0);
-  const heroSlides = MenuData.categories.map((category) => category.items[0]).filter(Boolean).slice(0, 4);
+  const heroSlides = useMemo(() =>
+    translatedMenuData.categories.map((category) => category.items[0]).filter(Boolean).slice(0, 4),
+    [translatedMenuData]
+  );
 
   useEffect(() => {
     if (categoryParam) {
@@ -84,7 +93,7 @@ const QrMenuContent = () => {
           preventClicksPropagation={false}
           className="qr-tabs-swiper"
         >
-          {MenuData.categories.map((category, idx) => (
+          {translatedMenuData.categories.map((category, idx) => (
             <SwiperSlide key={`tab-${idx}`} className="qr-tab-slide">
               <button
                 className={`qr-category-tab ${
@@ -102,24 +111,24 @@ const QrMenuContent = () => {
 
       {/* Menu Content */}
       <div className="qr-menu-content">
-        {MenuData.categories[activeCategory] && (
+        {translatedMenuData.categories[activeCategory] && (
           <section className="qr-category-section">
             <div className="qr-category-header">
               <h2 className="qr-category-title">
-                {MenuData.categories[activeCategory].name}
+                {translatedMenuData.categories[activeCategory].name}
               </h2>
-              {MenuData.categories[activeCategory].description && (
+              {translatedMenuData.categories[activeCategory].description && (
                 <p
                   className="qr-category-description"
                   dangerouslySetInnerHTML={{
                     __html:
-                      MenuData.categories[activeCategory].description,
+                      translatedMenuData.categories[activeCategory].description,
                   }}
                 />
               )}
             </div>
             <QrMenuGrid
-              items={MenuData.categories[activeCategory].items}
+              items={translatedMenuData.categories[activeCategory].items}
             />
           </section>
         )}

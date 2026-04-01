@@ -1,0 +1,157 @@
+{
+  "categories": [
+    {
+      "name": "Ethiopian Dishes",
+      "description": "Authentic Ethiopian flavors featuring traditional<br>spiced stews, flatbreads, and bold aromatic ingredients."
+    },
+    {
+      "name": "Main Dishes",
+      "description": "Savor our signature main courses featuring<br>classic pastas, grilled specialties, and comfort food favorites."
+    },
+    {
+      "name": "Drinks",
+      "description": "Refresh yourself with our selection of<br>traditional and fresh beverages."
+    },
+    {
+      "name": "Desserts",
+      "description": "Finish your meal with our delightful desserts<br>ranging from rich cakes to fresh fruit."
+    },
+    {
+      "name": "Starters",
+      "description": "Begin your meal with our selection of appetizers<br>featuring crispy sambusas, fresh salads, and warm soups."
+    }
+  ],
+  "dishes": {
+    "beyaynetu": {
+      "title": "Beyaynetu (Fasting Combo)",
+      "text": "A colorful platter of assorted vegan dishes served on injera, perfect for fasting and sharing. Ingredients: Injera, shiro, misir wat, gomen, tikil gomen, salad."
+    },
+    "misir-wot": {
+      "title": "Misir Wat",
+      "text": "Spicy red lentil stew cooked with berbere, onions, and garlic. Ingredients: Red lentils, onion, garlic, berbere, oil."
+    },
+    "gomen-besiga": {
+      "title": "Gomen Besiga",
+      "text": "Collard greens cooked with tender beef and Ethiopian spices. Ingredients: Collard greens, beef, onion, garlic, oil."
+    },
+    "firfir": {
+      "title": "Firfir (Injera Stir Fry)",
+      "text": "Shredded injera mixed with spicy berbere sauce, often served with meat or vegetarian. Ingredients: Injera (torn), berbere sauce, onion, oil."
+    },
+    "dulet": {
+      "title": "Dulet",
+      "text": "Finely chopped tripe, liver, and beef mixed with spices and chili. Ingredients: Beef tripe, liver, minced beef, onion, chili."
+    },
+    "chechebsa": {
+      "title": "Chechebsa",
+      "text": "Traditional Oromo breakfast dish made from flatbread pieces mixed with butter and berbere. Ingredients: Flatbread, niter kibbeh, berbere, honey."
+    },
+    "genfo": {
+      "title": "Genfo",
+      "text": "Thick porridge served with spiced butter and berbere sauce. Ingredients: Barley flour, water, niter kibbeh, berbere sauce."
+    },
+    "shiro": {
+      "title": "Shiro",
+      "text": "Creamy chickpea flour paste with onions, ginger, and Ethiopian spices. Ingredients: Chickpea flour, onion, ginger, garlic, oil."
+    },
+    "chicken-alfredo-pasta": {
+      "title": "Chicken Alfredo Pasta",
+      "text": "Creamy pasta dish with grilled chicken and rich Alfredo sauce. Ingredients: Fettuccine pasta, chicken breast, cream, parmesan cheese, garlic."
+    },
+    "margherita-pizza": {
+      "title": "Margherita Pizza",
+      "text": "Classic Italian pizza with tomato sauce, mozzarella, and fresh basil. Ingredients: Pizza dough, tomato sauce, mozzarella, basil leaves."
+    },
+    "french-fries-with-chicken-wings": {
+      "title": "French Fries with Chicken Wings",
+      "text": "Crispy fries served with spicy fried chicken wings. Ingredients: Potatoes, chicken wings, flour, oil, spices."
+    },
+    "club-sandwich": {
+      "title": "Club Sandwich",
+      "text": "Triple-layer sandwich with chicken, bacon, lettuce, and tomato. Ingredients: Bread, chicken, bacon, lettuce, mayonnaise."
+    },
+    "fish-and-chips": {
+      "title": "Fish and Chips",
+      "text": "Deep-fried fish served with crispy fries and tartar sauce. Ingredients: Fish fillet, potatoes, flour, oil, lemon."
+    },
+    "caesar-salad": {
+      "title": "Caesar Salad",
+      "text": "Fresh salad with lettuce, croutons, cheese, and creamy dressing. Ingredients: Lettuce, croutons, parmesan, Caesar dressing."
+    },
+    "beef-shawarma-wrap": {
+      "title": "Beef Shawarma Wrap",
+      "text": "Middle Eastern wrap filled with spiced beef and vegetables. Ingredients: Flatbread, beef strips, garlic sauce, tomato, lettuce."
+    },
+    "rice-with-grilled-fish": {
+      "title": "Rice with Grilled Fish",
+      "text": "Steamed rice served with seasoned grilled fish and vegetables. Ingredients: Rice, fish, lemon, garlic, vegetables."
+    },
+    "ethiopian-coffee": {
+      "title": "Ethiopian Coffee",
+      "text": "Traditional coffee brewed from freshly roasted beans with rich aroma. Ingredients: Coffee beans, water, sugar (optional)."
+    },
+    "mango-juice": {
+      "title": "Mango Juice",
+      "text": "Fresh and sweet mango blended into a refreshing drink. Ingredients: Mango, water, sugar."
+    },
+    "avocado-juice": {
+      "title": "Avocado Juice",
+      "text": "Creamy and nutritious blended avocado drink. Ingredients: Avocado, milk, sugar."
+    },
+    "soft-drinks": {
+      "title": "Soft Drinks",
+      "text": "Chilled carbonated beverages served cold. Ingredients: Soda, ice."
+    },
+    "lemon-mint-juice": {
+      "title": "Lemon Mint Juice",
+      "text": "Refreshing drink with lemon and fresh mint. Ingredients: Lemon, mint leaves, water, sugar."
+    },
+    "chocolate-cake": {
+      "title": "Chocolate Cake",
+      "text": "Rich and moist chocolate cake topped with creamy frosting. Ingredients: Flour, cocoa powder, sugar, eggs, butter."
+    },
+    "fruit-salad": {
+      "title": "Fruit Salad",
+      "text": "Fresh seasonal fruits mixed together with light syrup. Ingredients: Apple, banana, mango, orange, honey."
+    },
+    "ice-cream": {
+      "title": "Ice Cream",
+      "text": "Creamy frozen dessert available in different flavors. Ingredients: Milk, cream, sugar, flavoring."
+    },
+    "baklava": {
+      "title": "Baklava",
+      "text": "Sweet pastry layered with nuts and honey syrup. Ingredients: Phyllo dough, nuts, honey, butter."
+    },
+    "pancakes-with-honey": {
+      "title": "Pancakes with Honey",
+      "text": "Soft pancakes served with honey or syrup. Ingredients: Flour, milk, eggs, honey, butter."
+    },
+    "sambusa": {
+      "title": "Sambusa (Ethiopian Appetizer)",
+      "text": "Crispy pastry filled with spiced lentils or minced meat, deep-fried to golden perfection. Ingredients: Sambusa wraps, lentils or minced meat, onion, garlic, oil, spices."
+    },
+    "chicken-soup": {
+      "title": "Chicken Soup",
+      "text": "Warm and comforting soup with tender chicken, vegetables, and herbs. Ingredients: Chicken, carrot, potato, garlic, water, salt & pepper."
+    },
+    "garlic-bread": {
+      "title": "Garlic Bread",
+      "text": "Toasted bread topped with garlic butter and herbs. Ingredients: Bread, butter, garlic, parsley."
+    },
+    "spring-rolls": {
+      "title": "Spring Rolls",
+      "text": "Crispy rolls stuffed with vegetables or chicken. Ingredients: Spring roll wrappers, vegetables, chicken (optional), oil, soy sauce."
+    },
+    "avocado-salad": {
+      "title": "Avocado Salad",
+      "text": "Fresh avocado mixed with vegetables and light dressing. Ingredients: Avocado, tomato, onion, lemon juice, olive oil."
+    }
+  },
+  "ui": {
+    "ingredients": "Ingredients",
+    "backToMenu": "Back to Menu",
+    "productNotFound": "Product not found",
+    "noIngredientsListed": "No ingredients listed",
+    "featured": "Featured dish"
+  }
+}

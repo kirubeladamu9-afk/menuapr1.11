@@ -54,5 +54,14 @@
     "price": "ዋጋ",
     "rating": "ደረጃ",
     "ingredients": "ንጥረ ነገሮች"
+  },
+  "menu": {
+    "ui": {
+      "ingredients": "ንጥረ ነገሮች",
+      "backToMenu": "ወደ መሰሪያ ተመለስ",
+      "productNotFound": "ምርት አልተገኘም",
+      "noIngredientsListed": "ምንም ንጥረ ነገሮች ተዘርዝር አልችሉም",
+      "featured": "የተሞ ምግብ"
+    }
   }
 }

@@ -11,28 +11,36 @@ import ProductsData from "@data/products.json";
 
 import ProductImage from "@components/products/ProductImage";
 import ProductButtons from "@components/products/ProductButtons";
+import { useLanguage } from "@common/LanguageContext";
+import { useTranslatedMenu } from "@common/useTranslatedMenu";
 
 const ProductsSlider = dynamicImport( () => import("@components/sliders/Products"), { ssr: false } );
 
 const ProductContent = () => {
+  const { t } = useLanguage();
+  const { getTranslatedMenuData } = useTranslatedMenu();
   const searchParams = useSearchParams();
   const productId = searchParams.get("id");
   const productIdx = searchParams.get("idx");
 
-  // Find the product from menu data
+  const translatedMenuData = useMemo(() => {
+    return getTranslatedMenuData();
+  }, [getTranslatedMenuData]);
+
+  // Find the product from translated menu data
   const currentProduct = useMemo(() => {
     if (!productId) return null;
 
-    for (let category of MenuData.categories) {
+    for (let category of translatedMenuData.categories) {
       for (let item of category.items) {
-        const itemSlug = item.title.toLowerCase().replace(/\s+/g, "-");
+        const itemSlug = item.title.toLowerCase().replace(/\s+/g, "-").replace(/[()]/g, "");
         if (itemSlug === productId) {
           return item;
         }
       }
     }
     return null;
-  }, [productId]);
+  }, [productId, translatedMenuData]);
 
   // Parse ingredients from description
   const AttsData = useMemo(() => {
@@ -59,7 +67,7 @@ const ProductContent = () => {
     if (AttsData.length === 0) {
       return (
         <ul className="sb-list">
-          <li><b>No ingredients listed</b><span></span></li>
+          <li><b>{t('menu.ui.noIngredientsListed')}</b><span></span></li>
         </ul>
       );
     }
@@ -76,7 +84,7 @@ const ProductContent = () => {
   const tabs = [
     {
       "slug": "ingredients",
-      "name": "Ingredients"
+      "name": t('menu.ui.ingredients')
     }
   ];
 
@@ -86,9 +94,9 @@ const ProductContent = () => {
       <section className="sb-p-90-0 sb-product-page">
         <div className="container">
           <Link href="/qr-menu" className="sb-back-btn sb-mb-30">
-            <i className="fas fa-arrow-left"></i> Back to Menu
+            <i className="fas fa-arrow-left"></i> {t('menu.ui.backToMenu')}
           </Link>
-          <p>Product not found</p>
+          <p>{t('menu.ui.productNotFound')}</p>
         </div>
       </section>
     );
@@ -100,7 +108,7 @@ const ProductContent = () => {
       <section className="sb-p-90-0 sb-product-page">
         <div className="container">
           <Link href="/qr-menu" className="sb-back-btn sb-mb-30">
-            <i className="fas fa-arrow-left"></i> Back to Menu
+            <i className="fas fa-arrow-left"></i> {t('menu.ui.backToMenu')}
           </Link>
           <div className="row align-items-center">
             <div className="col-lg-6">
