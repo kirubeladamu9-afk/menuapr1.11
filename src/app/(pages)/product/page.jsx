@@ -51,7 +51,7 @@ const ProductContent = () => {
     let ingredientMatch = currentProduct.text.match(/Ingredients:\s*([^.]*)/i);
     if (!ingredientMatch) {
       // Try Amharic marker
-      ingredientMatch = currentProduct.text.match(/ንጥረ ነገሮች:\s*([^.]*)/);
+      ingredientMatch = currentProduct.text.match(/ግብዓቶች:\s*([^.]*)/);
     }
 
     if (ingredientMatch) {
