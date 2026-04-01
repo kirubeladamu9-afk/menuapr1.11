@@ -10,13 +10,6 @@ import ProductsGrid from "@components/products/ProductsGrid";
 import PromoSection from "@components/sections/Promo";
 import { useLanguage } from "@common/LanguageContext";
 
-export const metadata = {
-  title: {
-		default: "Products",
-	},
-  description: AppData.settings.siteDescription,
-}
-
 const Products = () => {
   const { t } = useLanguage();
 
