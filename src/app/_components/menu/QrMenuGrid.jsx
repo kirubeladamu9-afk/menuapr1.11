@@ -5,7 +5,8 @@ import Link from "next/link";
 
 const QrMenuGrid = memo(({ items }) => {
   const getProductUrl = useCallback((item, index) => {
-    const slug = item.title.toLowerCase().replace(/\s+/g, "-").replace(/[()]/g, "");
+    const titleForSlug = item.originalTitle || item.title;
+    const slug = titleForSlug.toLowerCase().replace(/\s+/g, "-").replace(/[()]/g, "");
     return `/product?id=${slug}&idx=${index}`;
   }, []);
 

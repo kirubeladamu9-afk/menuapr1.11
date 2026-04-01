@@ -46,6 +46,7 @@ export function useTranslatedMenu() {
             const dishTranslation = translateDish(item.title);
             return {
               ...item,
+              originalTitle: item.title,
               title: dishTranslation.title || item.title,
               text: dishTranslation.text || item.text,
             };

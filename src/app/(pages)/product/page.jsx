@@ -33,7 +33,8 @@ const ProductContent = () => {
 
     for (let category of translatedMenuData.categories) {
       for (let item of category.items) {
-        const itemSlug = item.title.toLowerCase().replace(/\s+/g, "-").replace(/[()]/g, "");
+        const titleForSlug = item.originalTitle || item.title;
+        const itemSlug = titleForSlug.toLowerCase().replace(/\s+/g, "-").replace(/[()]/g, "");
         if (itemSlug === productId) {
           return item;
         }
@@ -47,10 +48,10 @@ const ProductContent = () => {
     if (!currentProduct) return [];
 
     // Try English first, then Amharic
-    let ingredientMatch = currentProduct.text.match(/Ingredients:\s*([^.]+)/i);
+    let ingredientMatch = currentProduct.text.match(/Ingredients:\s*([^.]*)/i);
     if (!ingredientMatch) {
       // Try Amharic marker
-      ingredientMatch = currentProduct.text.match(/ንጥረ ነገሮች:\s*([^.]+)/);
+      ingredientMatch = currentProduct.text.match(/ንጥረ ነገሮች:\s*([^.]*)/);
     }
 
     if (ingredientMatch) {
@@ -134,7 +135,7 @@ const ProductContent = () => {
                   <li><i className="fas fa-star"></i></li>
                   <li><span>({currentProduct.rating} {t('menu.ui.ratings')})</span></li>
                 </ul>
-                <p className="sb-product-text sb-mb-30">{currentProduct.text.split("Ingredients:")[0].trim()}</p>
+                <p className="sb-product-text sb-mb-30">{currentProduct.text.split(/Ingredients:|ንጥረ ነገሮች:/i)[0].trim()}</p>
                 <ProductButtons />
               </div>
             </div>
