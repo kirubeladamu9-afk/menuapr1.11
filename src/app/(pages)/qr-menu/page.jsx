@@ -140,7 +140,7 @@ const QrMenuContent = () => {
         <div className="qr-contact-items">
           {ContactData.items.map((item, idx) => (
             <div className="qr-contact-item" key={`contact-${idx}`}>
-              <h3 className="qr-contact-item-title">{item.title}</h3>
+              <h3 className="qr-contact-item-title">{t(`qrMenu.${item.title.toLowerCase()}`)}</h3>
               <p className="qr-contact-item-text">{item.text}</p>
             </div>
           ))}
