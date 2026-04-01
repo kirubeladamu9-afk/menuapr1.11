@@ -11,13 +11,6 @@ import CheckoutForm from "@components/forms/CheckoutForm";
 import Link from "next/link";
 import { useLanguage } from "@common/LanguageContext";
 
-export const metadata = {
-  title: {
-		default: "Order checkout",
-	},
-  description: AppData.settings.siteDescription,
-}
-
 const Checkout = () => {
   const { t } = useLanguage();
 

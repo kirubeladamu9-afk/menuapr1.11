@@ -10,13 +10,6 @@ import MenuGrid from "@components/menu/MenuGrid";
 import PromoSection from "@components/sections/Promo";
 import { useLanguage } from "@common/LanguageContext";
 
-export const metadata = {
-  title: {
-		default: "Menu",
-	},
-  description: AppData.settings.siteDescription,
-}
-
 const Menu1 = () => {
   const { t } = useLanguage();
 

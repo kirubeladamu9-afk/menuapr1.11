@@ -11,13 +11,6 @@ import CartItem from "@components/products/CartItem"
 import Link from "next/link";
 import { useLanguage } from "@common/LanguageContext";
 
-export const metadata = {
-  title: {
-		default: "Shopping Cart",
-	},
-  description: AppData.settings.siteDescription,
-}
-
 const Cart = () => {
   const { t } = useLanguage();
 

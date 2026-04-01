@@ -12,13 +12,6 @@ import { useLanguage } from "@common/LanguageContext";
 
 const GalleryMasonry = dynamic( () => import("@components/gallery/GalleryMasonry"), { ssr: false } );
 
-export const metadata = {
-  title: {
-		default: "Gallery",
-	},
-  description: AppData.settings.siteDescription,
-}
-
 const Gallery1 = () => {
   const { t } = useLanguage();
 

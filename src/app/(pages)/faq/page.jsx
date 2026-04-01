@@ -10,13 +10,6 @@ import FaqGrid from "@components/faq/FaqGrid";
 import CallToActionSection from "@components/sections/CallToAction";
 import { useLanguage } from "@common/LanguageContext";
 
-export const metadata = {
-  title: {
-		default: "FAQ",
-	},
-  description: AppData.settings.siteDescription,
-}
-
 const FAQ = () => {
   const { t } = useLanguage();
 
