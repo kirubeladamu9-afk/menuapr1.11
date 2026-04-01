@@ -13,7 +13,6 @@ import ProductImage from "@components/products/ProductImage";
 import ProductButtons from "@components/products/ProductButtons";
 
 const ProductsSlider = dynamicImport( () => import("@components/sliders/Products"), { ssr: false } );
-const ProductTabs = dynamicImport( () => import("@components/products/ProductTabs"), { ssr: false } );
 
 const ProductContent = () => {
   const searchParams = useSearchParams();
@@ -127,21 +126,10 @@ const ProductContent = () => {
             </div>
           </div>
 
-          <ProductTabs
-            items={tabs}
-            active={"ingredients"}
-          />
-
-          <div className="sb-masonry-grid sb-tabs">
-            <div className="sb-grid-sizer" />
-
-            {tabs.map((tab, key) => (
-            <div className={`sb-grid-item sb-${tab.slug}-tab`} key={`product-tab-${key}`}>
-              <div className="sb-tab">
-                {tab.slug == 'ingredients' && <ProductAtts />}
-              </div>
+          <div className="sb-ingredients-section">
+            <div className="sb-tab">
+              <ProductAtts />
             </div>
-            ))}
           </div>
 
         </div>

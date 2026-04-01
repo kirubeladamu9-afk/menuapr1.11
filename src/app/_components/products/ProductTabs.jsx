@@ -7,27 +7,46 @@ const ProductTabs = ({items, active}) => {
   // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState(active);
-  
+  const [isotopeReady, setIsotopeReady] = useState(false);
+
   useEffect(() => {
-      setTimeout(() => {
-          isotope.current = new Isotope(".sb-masonry-grid", {
-              itemSelector: ".sb-grid-item",
-              percentPosition: true,
-              masonry: {
-                  columnWidth: '.sb-grid-sizer'
-              },
-              transitionDuration: '0.5s',
-          });
-      }, 500);
+      const initIsotope = () => {
+          const gridElement = document.querySelector(".sb-masonry-grid");
+          if (!gridElement) {
+              setTimeout(initIsotope, 100);
+              return;
+          }
+
+          try {
+              isotope.current = new Isotope(gridElement, {
+                  itemSelector: ".sb-grid-item",
+                  percentPosition: true,
+                  masonry: {
+                      columnWidth: '.sb-grid-sizer'
+                  },
+                  transitionDuration: '0.5s',
+              });
+              setIsotopeReady(true);
+          } catch (e) {
+              console.error('Isotope initialization error:', e);
+          }
+      };
+
+      const timer = setTimeout(initIsotope, 300);
+      return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
-      if (isotope.current) {
-          filterKey === "*"
-          ? isotope.current.arrange({ filter: `*` })
-          : isotope.current.arrange({ filter: `.sb-${filterKey}-tab` });
+      if (isotope.current && isotopeReady) {
+          try {
+              filterKey === "*"
+              ? isotope.current.arrange({ filter: `*` })
+              : isotope.current.arrange({ filter: `.sb-${filterKey}-tab` });
+          } catch (e) {
+              console.error('Isotope arrangement error:', e);
+          }
       }
-  }, [filterKey]);
+  }, [filterKey, isotopeReady]);
   
   const handleFilterKeyChange = (key, e) => {
       e.preventDefault();

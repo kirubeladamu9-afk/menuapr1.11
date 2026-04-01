@@ -33,9 +33,19 @@ export const metadata = {
 		template: "%s | " + AppData.settings.siteName,
 	},
   description: AppData.settings.siteDescription,
-  icons: {
-    icon: "/img/ui/logo-favicon.png",
-  },
+  icons: [
+    {
+      rel: "icon",
+      type: "image/png",
+      sizes: "32x32",
+      url: "/img/ui/logo-favicon.png",
+    },
+    {
+      rel: "apple-touch-icon",
+      sizes: "180x180",
+      url: "/img/ui/logo-favicon.png",
+    },
+  ],
 }
 
 const Layouts = ({
