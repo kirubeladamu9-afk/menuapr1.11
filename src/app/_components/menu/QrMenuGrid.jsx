@@ -1,14 +1,33 @@
 "use client";
 
-import { useCallback, memo } from "react";
+import { useCallback, memo, useState } from "react";
 import Link from "next/link";
+import CartData from "@data/cart.json";
 
 const QrMenuGrid = memo(({ items }) => {
+  const [cartTotal, setCartTotal] = useState(CartData.total);
+
   const getProductUrl = useCallback((item, index) => {
     const titleForSlug = item.originalTitle || item.title;
     const slug = titleForSlug.toLowerCase().replace(/\s+/g, "-").replace(/[()]/g, "");
     return `/product?id=${slug}&idx=${index}`;
   }, []);
+
+  const handleAddToCart = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    const cartNumberEl = document.querySelector('.sb-cart-number');
+    setCartTotal(cartTotal + 1);
+
+    if (cartNumberEl) {
+      cartNumberEl.classList.add('sb-added');
+      e.currentTarget.classList.add('sb-added');
+
+      setTimeout(() => {
+        cartNumberEl.classList.remove('sb-added');
+      }, 600);
+    }
+  };
 
   return (
     <>
@@ -50,6 +69,16 @@ const QrMenuGrid = memo(({ items }) => {
                   <span>({item.rating})</span>
                 </div>
               )}
+
+              <div className="qr-item-actions">
+                <Link href={getProductUrl(item, key)} className="qr-item-details-btn">
+                  <span className="qr-item-details-text">Details</span>
+                </Link>
+                <a href="#." className="qr-item-order-btn sb-atc" onClick={handleAddToCart}>
+                  <span className="qr-item-order-text">Order Now</span>
+                  <span className="qr-item-ordered-text">Added</span>
+                </a>
+              </div>
             </div>
           </div>
         ))}
