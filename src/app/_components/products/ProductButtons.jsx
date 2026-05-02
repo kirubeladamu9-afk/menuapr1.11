@@ -1,44 +1,28 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import CartData from "@data/cart.json";
+import { useState } from "react";
+import ComingSoonModal from "@components/modals/ComingSoonModal";
 
 const ProductButtons = () => {
-  const [cartTotal, setCartTotal] = useState(CartData.total);
-  const [quantity, setQuantity] = useState(1);
+  const [showComingSoon, setShowComingSoon] = useState(false);
 
-  useEffect(() => {
-    const cartNumberEl = document.querySelector('.sb-cart-number');
-    if (cartNumberEl) {
-      cartNumberEl.innerHTML = cartTotal;
-    }
-  }, [cartTotal]);
-
-  const addToCart = (e) => {
+  const handleOrderNow = (e) => {
     e.preventDefault();
-    const cartNumberEl = document.querySelector('.sb-cart-number');
-    setCartTotal(cartTotal + quantity);
-
-    if (cartNumberEl) {
-      cartNumberEl.classList.add('sb-added');
-      e.currentTarget.classList.add('sb-added');
-
-      setTimeout(() => {
-        cartNumberEl.classList.remove('sb-added');
-      }, 600);
-    }
-  }
+    setShowComingSoon(true);
+  };
 
   return (
-    <div className="sb-card-buttons-frame sb-mb-30">
-      <a href="#." className="sb-btn sb-atc" onClick={(e) => addToCart(e)}>
-        <span className="sb-icon">
-          <img src="/img/ui/icons/cart.svg" alt="icon" />
-        </span>
-        <span className="sb-add-to-cart-text">Order Now</span>
-        <span className="sb-added-text">Added</span>
-      </a>
-    </div>
+    <>
+      <ComingSoonModal isOpen={showComingSoon} onClose={() => setShowComingSoon(false)} />
+      <div className="sb-card-buttons-frame sb-mb-30">
+        <a href="#." className="sb-btn sb-atc" onClick={handleOrderNow}>
+          <span className="sb-icon">
+            <img src="/img/ui/icons/cart.svg" alt="icon" />
+          </span>
+          <span className="sb-add-to-cart-text">Order Now</span>
+        </a>
+      </div>
+    </>
   );
 };
 export default ProductButtons;

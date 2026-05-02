@@ -3,9 +3,11 @@
 import { useCallback, memo, useState } from "react";
 import Link from "next/link";
 import CartData from "@data/cart.json";
+import ComingSoonModal from "@components/modals/ComingSoonModal";
 
 const QrMenuGrid = memo(({ items }) => {
   const [cartTotal, setCartTotal] = useState(CartData.total);
+  const [showComingSoon, setShowComingSoon] = useState(false);
 
   const getProductUrl = useCallback((item, index) => {
     const titleForSlug = item.originalTitle || item.title;
@@ -16,21 +18,12 @@ const QrMenuGrid = memo(({ items }) => {
   const handleAddToCart = (e) => {
     e.preventDefault();
     e.stopPropagation();
-    const cartNumberEl = document.querySelector('.sb-cart-number');
-    setCartTotal(cartTotal + 1);
-
-    if (cartNumberEl) {
-      cartNumberEl.classList.add('sb-added');
-      e.currentTarget.classList.add('sb-added');
-
-      setTimeout(() => {
-        cartNumberEl.classList.remove('sb-added');
-      }, 600);
-    }
+    setShowComingSoon(true);
   };
 
   return (
     <>
+      <ComingSoonModal isOpen={showComingSoon} onClose={() => setShowComingSoon(false)} />
       <div className="qr-menu-items">
         {items.map((item, key) => (
           <div className="qr-menu-item" key={`qr-menu-item-${key}`}>
