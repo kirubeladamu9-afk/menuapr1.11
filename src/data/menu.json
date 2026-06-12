@@ -11,7 +11,7 @@
           "price": "450",
           "currency": "$",
           "rating": 5,
-          "text": "Thoughtfully prepared menus for ceremonies, receptions, and unforgettable celebrations. Includes Ethiopian and western fusion dishes. Service: Full setup, serving, and cleanup included."
+          "text": "Thoughtfully prepared menus for ceremonies, receptions, and unforgettable celebrations. Includes Ethiopian and western fusion dishes. Service: Full setup, serving, and cleanup included. Ingredients: Doro Wot (chicken, berbere spice, garlic, ginger, onions), Misir Wot (red lentils, berbere, butter), Gomen (collard greens, garlic, ginger), Injera (teff flour, water, salt), Ethiopian honey, rosemary"
         },
         {
           "image": "https://ekd-caterings.vercel.app/assets/img/gallery/wedding (2).jpg",
@@ -19,7 +19,7 @@
           "price": "380",
           "currency": "$",
           "rating": 5,
-          "text": "Served with style for intimate receptions and grand wedding nights. Authentic Doro Wot and habesha favorites alongside international options. Service: Full catering with elegant presentation."
+          "text": "Served with style for intimate receptions and grand wedding nights. Authentic Doro Wot and habesha favorites alongside international options. Service: Full catering with elegant presentation. Ingredients: Chicken, prime beef, shallots, garlic, ginger, chili peppers, cardamom, cinnamon, cloves, fenugreek, coriander, niter kibbeh (spiced butter), Ethiopian mustard"
         },
         {
           "image": "https://ekd-caterings.vercel.app/assets/img/gallery/wedding (3).jpg",
@@ -27,7 +27,7 @@
           "price": "420",
           "currency": "$",
           "rating": 5,
-          "text": "A warm menu selection designed for memorable wedding moments. Fusion of Ethiopian and international cuisine tailored to your guests. Service: Custom menu planning available.",
+          "text": "A warm menu selection designed for memorable wedding moments. Fusion of Ethiopian and international cuisine tailored to your guests. Service: Custom menu planning available. Ingredients: Lamb, onions, tomatoes, Ethiopian paprika, cumin, turmeric, bay leaves, fresh cilantro, lemon, black cardamom, garlic cloves, Ethiopian honey wine",
           "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
         }
       ]
@@ -43,7 +43,7 @@
           "price": "120",
           "currency": "$",
           "rating": 5,
-          "text": "Polished meal service for meetings, team lunches, and company events. Meals delivered branded and on time. Service: Delivery only or full setup available."
+          "text": "Polished meal service for meetings, team lunches, and company events. Meals delivered branded and on time. Service: Delivery only or full setup available. Ingredients: Tibs (sautéed meat with vegetables), shallots, tomatoes, green peppers, jalapeños, butter, fresh lime juice, salt, black pepper"
         },
         {
           "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate (2).jpg",
@@ -51,7 +51,7 @@
           "price": "85",
           "currency": "$",
           "rating": 5,
-          "text": "Reliable catering for productive sessions and client-facing occasions. Hot meals delivered in under 30 minutes. Service: Delivery included, setup optional.",
+          "text": "Reliable catering for productive sessions and client-facing occasions. Hot meals delivered in under 30 minutes. Service: Delivery included, setup optional. Ingredients: Split peas (shiro), onions, garlic, ginger, chili peppers, niter kibbeh, Injera, Ethiopian mustard seeds",
           "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
         },
         {
@@ -60,7 +60,7 @@
           "price": "200",
           "currency": "$",
           "rating": 5,
-          "text": "Refined catering for launches, awards nights, and special business events. Full-service with elegant plating and professional staff. Service: Full catering with cleanup."
+          "text": "Refined catering for launches, awards nights, and special business events. Full-service with elegant plating and professional staff. Service: Full catering with cleanup. Ingredients: Prime beef, mushrooms, cream sauce, roasted vegetables, Brussels sprouts, herb-roasted potatoes, garlic butter, Madeira wine"
         },
         {
           "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate (3).jpg",
@@ -68,7 +68,7 @@
           "price": "75",
           "currency": "$",
           "rating": 5,
-          "text": "Balanced, varied menus for recurring team meals and seasonal office gatherings. Ethiopian and international options. Service: Scheduled delivery plans available."
+          "text": "Balanced, varied menus for recurring team meals and seasonal office gatherings. Ethiopian and international options. Service: Scheduled delivery plans available. Ingredients: Kale, spinach, chickpeas, lentils, Ethiopian cardamom, black cumin, fresh herbs, seasonal vegetables, sunflower oil"
         }
       ]
     },
@@ -83,7 +83,7 @@
           "price": "180",
           "currency": "$",
           "rating": 5,
-          "text": "Fresh dishes and sweet treats made for joyful gatherings. Includes custom cake options. Service: Full catering with setup and cleanup."
+          "text": "Fresh dishes and sweet treats made for joyful gatherings. Includes custom cake options. Service: Full catering with setup and cleanup. Ingredients: Chicken, spices, onions, garlic, injera, mixed vegetables, chocolate cake, vanilla frosting, butter, eggs, flour, sugar"
         },
         {
           "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday (2).jpg",
@@ -91,7 +91,7 @@
           "price": "120",
           "currency": "$",
           "rating": 5,
-          "text": "Fun, flavorful food that keeps every guest happy. Kid-friendly menus with colorful presentation. Service: Delivery or full setup available."
+          "text": "Fun, flavorful food that keeps every guest happy. Kid-friendly menus with colorful presentation. Service: Delivery or full setup available. Ingredients: Pasta, mild chicken sauce, vegetables, cheese, fruit platters, juice, child-safe spices, butter, olive oil"
         },
         {
           "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday (3).jpg",
@@ -99,7 +99,7 @@
           "price": "95",
           "currency": "$",
           "rating": 5,
-          "text": "Crowd-pleasing bites and dessert options for birthday celebrations. Cakes, cookies, and custom treats. Service: Delivery or event setup.",
+          "text": "Crowd-pleasing bites and dessert options for birthday celebrations. Cakes, cookies, and custom treats. Service: Delivery or event setup. Ingredients: All-purpose flour, eggs, sugar, butter, vanilla extract, chocolate, berries, cream, honey, nuts, coconut",
           "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Custom</div>"
         },
         {
@@ -108,7 +108,7 @@
           "price": "80",
           "currency": "$",
           "rating": 5,
-          "text": "Colorful cakes and treats to finish the party on a high note. Includes anniversaries, graduations, baby showers, and bridal showers. Service: Custom orders welcome."
+          "text": "Colorful cakes and treats to finish the party on a high note. Includes anniversaries, graduations, baby showers, and bridal showers. Service: Custom orders welcome. Ingredients: Flour, sugar, eggs, butter, cream cheese frosting, food coloring, fondant, fresh berries, chocolate ganache, vanilla beans"
         }
       ]
     },
@@ -123,7 +123,7 @@
           "price": "65",
           "currency": "$",
           "rating": 5,
-          "text": "Wholesome plant-based dishes prepared for seasonal fasting. Rich in flavor with traditional Ethiopian ingredients. Service: Delivery or full catering setup.",
+          "text": "Wholesome plant-based dishes prepared for seasonal fasting. Rich in flavor with traditional Ethiopian ingredients. Service: Delivery or full catering setup. Ingredients: Red lentils, split peas, chickpeas, onions, garlic, ginger, Ethiopian spices, injera, collard greens, sunflower oil, salt",
           "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
         },
         {
@@ -132,7 +132,7 @@
           "price": "110",
           "currency": "$",
           "rating": 5,
-          "text": "Balanced fasting-friendly and festive meals for Christmas, Genna, New Year's, Epiphany, and more. Service: Full catering with traditional dining setup available.",
+          "text": "Balanced fasting-friendly and festive meals for Christmas, Genna, New Year's, Epiphany, and more. Service: Full catering with traditional dining setup available. Ingredients: Beef, lamb, lentils, barley, seasonal vegetables, spices, niter kibbeh, Ethiopian honey wine, fresh herbs, injera",
           "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
         }
       ]
@@ -148,7 +148,7 @@
           "price": "150",
           "currency": "$",
           "rating": 5,
-          "text": "Elegant finger foods, canap\u00e9s, and beverages for cocktail parties and product launches. Professional staff and refined presentation. Service: Full catering with staff included."
+          "text": "Elegant finger foods, canap\u00e9s, and beverages for cocktail parties and product launches. Professional staff and refined presentation. Service: Full catering with staff included. Ingredients: Smoked salmon, prosciutto, cheese selection, crackers, phyllo dough, herbs, lemon, olive oil, sparkling wine, mixers"
         },
         {
           "image": "https://ekd-caterings.vercel.app/assets/img/home-2/service/servive-01.jpg",
@@ -156,7 +156,7 @@
           "price": "135",
           "currency": "$",
           "rating": 5,
-          "text": "A curated mix of Ethiopian bites and international appetizers for upscale social events. Custom menu planning available. Service: Setup, serving, and cleanup included.",
+          "text": "A curated mix of Ethiopian bites and international appetizers for upscale social events. Custom menu planning available. Service: Setup, serving, and cleanup included. Ingredients: Beef tibs, shallots, Ethiopian spices, injera wraps, cured meats, grapes, olives, herbs, garlic aioli, fresh lime",
           "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
         }
       ]
