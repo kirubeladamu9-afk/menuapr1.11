@@ -20,27 +20,27 @@
         "menu": [
             {
                 "label": "Wedding Catering",
-                "link": "/wedding-catering",
+                "link": "/qr-menu?category=0",
                 "children": []
             },
             {
                 "label": "Corporate Events",
-                "link": "/corporate-events",
+                "link": "/qr-menu?category=1",
                 "children": []
             },
             {
                 "label": "Private Parties",
-                "link": "/private-parties",
+                "link": "/qr-menu?category=2",
                 "children": []
             },
             {
                 "label": "Holiday Celebrations",
-                "link": "/holiday-celebrations",
+                "link": "/qr-menu?category=3",
                 "children": []
             },
             {
                 "label": "Cocktail Services",
-                "link": "/cocktail-services",
+                "link": "/qr-menu?category=4",
                 "children": []
             },
             {
