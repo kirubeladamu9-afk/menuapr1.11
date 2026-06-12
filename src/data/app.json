@@ -19,27 +19,27 @@
         },
         "menu": [
             {
-                "label": "Wedding",
+                "label": "Wedding Catering",
                 "link": "/wedding-catering",
                 "children": []
             },
             {
-                "label": "Corporate",
+                "label": "Corporate Events",
                 "link": "/corporate-events",
                 "children": []
             },
             {
-                "label": "Parties",
+                "label": "Private Parties",
                 "link": "/private-parties",
                 "children": []
             },
             {
-                "label": "Holiday",
+                "label": "Holiday Celebrations",
                 "link": "/holiday-celebrations",
                 "children": []
             },
             {
-                "label": "Cocktail",
+                "label": "Cocktail Services",
                 "link": "/cocktail-services",
                 "children": []
             },

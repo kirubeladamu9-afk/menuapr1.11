@@ -16,8 +16,8 @@ export function LanguageProvider({ children }) {
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // English is always the default active language
-    setLanguage('en');
+    const savedLanguage = localStorage.getItem('language') || 'en';
+    setLanguage(savedLanguage);
     setMounted(true);
   }, []);
 
