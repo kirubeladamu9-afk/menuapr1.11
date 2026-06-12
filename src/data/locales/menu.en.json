@@ -1,23 +1,23 @@
 {
   "categories": [
     {
-      "name": "Ethiopian Dishes",
+      "name": "Wedding",
       "description": "Authentic Ethiopian flavors featuring traditional<br>spiced stews, flatbreads, and bold aromatic ingredients."
     },
     {
-      "name": "Main Dishes",
+      "name": "Corporate",
       "description": "Savor our signature main courses featuring<br>classic pastas, grilled specialties, and comfort food favorites."
     },
     {
-      "name": "Drinks",
+      "name": "Parties",
       "description": "Refresh yourself with our selection of<br>traditional and fresh beverages."
     },
     {
-      "name": "Desserts",
+      "name": "Holiday",
       "description": "Finish your meal with our delightful desserts<br>ranging from rich cakes to fresh fruit."
     },
     {
-      "name": "Starters",
+      "name": "Cocktail",
       "description": "Begin your meal with our selection of appetizers<br>featuring crispy sambusas, fresh salads, and warm soups."
     }
   ],
