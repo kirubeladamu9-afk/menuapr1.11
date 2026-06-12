@@ -1,165 +1,165 @@
 {
-  "categories": [
-    {
-      "name": "Wedding Catering",
-      "slug": "wedding-catering",
-      "description": "Elegant full-service catering for ceremonies,<br>receptions, and unforgettable wedding celebrations.",
-      "items": [
+    "categories": [
         {
-          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/wedding.jpg",
-          "title": "Elegant Wedding Banquet",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "Thoughtfully prepared menus for ceremonies, receptions, and unforgettable celebrations. Includes Ethiopian and western fusion dishes. Service: Full setup, serving, and cleanup included."
+            "name": "Wedding Catering",
+            "slug": "wedding-catering",
+            "description": "Elegant full-service catering for ceremonies,<br>receptions, and unforgettable wedding celebrations.",
+            "items": [
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/gallery/wedding.jpg",
+                    "title": "Elegant Wedding Banquet",
+                    "price": "450",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Thoughtfully prepared menus for ceremonies, receptions, and unforgettable celebrations. Includes Ethiopian and western fusion dishes. Service: Full setup, serving, and cleanup included."
+                },
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/gallery/wedding (2).jpg",
+                    "title": "Reception Dining",
+                    "price": "380",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Served with style for intimate receptions and grand wedding nights. Authentic Doro Wot and habesha favorites alongside international options. Service: Full catering with elegant presentation."
+                },
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/gallery/wedding (3).jpg",
+                    "title": "Ceremony Feast",
+                    "price": "420",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "A warm menu selection designed for memorable wedding moments. Fusion of Ethiopian and international cuisine tailored to your guests. Service: Custom menu planning available.",
+                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
+                }
+            ]
         },
         {
-          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/wedding (2).jpg",
-          "title": "Reception Dining",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "Served with style for intimate receptions and grand wedding nights. Authentic Doro Wot and habesha favorites alongside international options. Service: Full catering with elegant presentation."
+            "name": "Corporate Events",
+            "slug": "corporate-events",
+            "description": "Polished, reliable meal service for meetings,<br>team lunches, and company events.",
+            "items": [
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate.jpg",
+                    "title": "Executive Catering",
+                    "price": "120",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Polished meal service for meetings, team lunches, and company events. Meals delivered branded and on time. Service: Delivery only or full setup available."
+                },
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate (2).jpg",
+                    "title": "Business Lunch Package",
+                    "price": "85",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Reliable catering for productive sessions and client-facing occasions. Hot meals delivered in under 30 minutes. Service: Delivery included, setup optional.",
+                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
+                },
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate4.jpg",
+                    "title": "Corporate Gala",
+                    "price": "200",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Refined catering for launches, awards nights, and special business events. Full-service with elegant plating and professional staff. Service: Full catering with cleanup."
+                },
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate (3).jpg",
+                    "title": "Seasonal Corporate Dining",
+                    "price": "75",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Balanced, varied menus for recurring team meals and seasonal office gatherings. Ethiopian and international options. Service: Scheduled delivery plans available."
+                }
+            ]
         },
         {
-          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/wedding (3).jpg",
-          "title": "Ceremony Feast",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "A warm menu selection designed for memorable wedding moments. Fusion of Ethiopian and international cuisine tailored to your guests. Service: Custom menu planning available.",
-          "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
+            "name": "Private Parties",
+            "slug": "private-parties",
+            "description": "Fresh dishes and sweet treats made for<br>joyful birthdays, graduations, and private gatherings.",
+            "items": [
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday.jpg",
+                    "title": "Birthday Celebration Package",
+                    "price": "180",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Fresh dishes and sweet treats made for joyful gatherings. Includes custom cake options. Service: Full catering with setup and cleanup."
+                },
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday (2).jpg",
+                    "title": "Kids' Party Catering",
+                    "price": "120",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Fun, flavorful food that keeps every guest happy. Kid-friendly menus with colorful presentation. Service: Delivery or full setup available."
+                },
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday (3).jpg",
+                    "title": "Sweet Tables & Desserts",
+                    "price": "95",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Crowd-pleasing bites and dessert options for birthday celebrations. Cakes, cookies, and custom treats. Service: Delivery or event setup.",
+                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Custom</div>"
+                },
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday (4).jpg",
+                    "title": "Celebration Desserts",
+                    "price": "80",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Colorful cakes and treats to finish the party on a high note. Includes anniversaries, graduations, baby showers, and bridal showers. Service: Custom orders welcome."
+                }
+            ]
+        },
+        {
+            "name": "Holiday Celebrations",
+            "slug": "holiday-celebrations",
+            "description": "Wholesome, flavorful menus for Christmas, Genna,<br>New Year's, Epiphany, and all festive occasions.",
+            "items": [
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/gallery/fasting.jpg",
+                    "title": "Fasting Meal Package",
+                    "price": "65",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Wholesome plant-based dishes prepared for seasonal fasting. Rich in flavor with traditional Ethiopian ingredients. Service: Delivery or full catering setup.",
+                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
+                },
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate (3).jpg",
+                    "title": "Seasonal Holiday Catering",
+                    "price": "110",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Balanced fasting-friendly and festive meals for Christmas, Genna, New Year's, Epiphany, and more. Service: Full catering with traditional dining setup available.",
+                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
+                }
+            ]
+        },
+        {
+            "name": "Cocktail Services",
+            "slug": "cocktail-services",
+            "description": "Sophisticated catering for cocktail parties,<br>launches, and upscale social gatherings.",
+            "items": [
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/home-2/service/servive-03.jpg",
+                    "title": "Rooftop Cocktail Package",
+                    "price": "150",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "Elegant finger foods, canap\u00e9s, and beverages for cocktail parties and product launches. Professional staff and refined presentation. Service: Full catering with staff included."
+                },
+                {
+                    "image": "https://ekd-caterings.vercel.app/assets/img/home-2/service/servive-01.jpg",
+                    "title": "Fusion Cocktail Menu",
+                    "price": "135",
+                    "currency": "$",
+                    "rating": 5,
+                    "text": "A curated mix of Ethiopian bites and international appetizers for upscale social events. Custom menu planning available. Service: Setup, serving, and cleanup included.",
+                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
+                }
+            ]
         }
-      ]
-    },
-    {
-      "name": "Corporate Events",
-      "slug": "corporate-events",
-      "description": "Polished, reliable meal service for meetings,<br>team lunches, and company events.",
-      "items": [
-        {
-          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate.jpg",
-          "title": "Executive Catering",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "Polished meal service for meetings, team lunches, and company events. Meals delivered branded and on time. Service: Delivery only or full setup available."
-        },
-        {
-          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate (2).jpg",
-          "title": "Business Lunch Package",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "Reliable catering for productive sessions and client-facing occasions. Hot meals delivered in under 30 minutes. Service: Delivery included, setup optional.",
-          "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
-        },
-        {
-          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate4.jpg",
-          "title": "Corporate Gala",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "Refined catering for launches, awards nights, and special business events. Full-service with elegant plating and professional staff. Service: Full catering with cleanup."
-        },
-        {
-          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate (3).jpg",
-          "title": "Seasonal Corporate Dining",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "Balanced, varied menus for recurring team meals and seasonal office gatherings. Ethiopian and international options. Service: Scheduled delivery plans available."
-        }
-      ]
-    },
-    {
-      "name": "Private Parties",
-      "slug": "private-parties",
-      "description": "Fresh dishes and sweet treats made for<br>joyful birthdays, graduations, and private gatherings.",
-      "items": [
-        {
-          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday.jpg",
-          "title": "Birthday Celebration Package",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "Fresh dishes and sweet treats made for joyful gatherings. Includes custom cake options. Service: Full catering with setup and cleanup."
-        },
-        {
-          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday (2).jpg",
-          "title": "Kids' Party Catering",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "Fun, flavorful food that keeps every guest happy. Kid-friendly menus with colorful presentation. Service: Delivery or full setup available."
-        },
-        {
-          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday (3).jpg",
-          "title": "Sweet Tables & Desserts",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "Crowd-pleasing bites and dessert options for birthday celebrations. Cakes, cookies, and custom treats. Service: Delivery or event setup.",
-          "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Custom</div>"
-        },
-        {
-          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday (4).jpg",
-          "title": "Celebration Desserts",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "Colorful cakes and treats to finish the party on a high note. Includes anniversaries, graduations, baby showers, and bridal showers. Service: Custom orders welcome."
-        }
-      ]
-    },
-    {
-      "name": "Holiday Celebrations",
-      "slug": "holiday-celebrations",
-      "description": "Wholesome, flavorful menus for Christmas, Genna,<br>New Year's, Epiphany, and all festive occasions.",
-      "items": [
-        {
-          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/fasting.jpg",
-          "title": "Fasting Meal Package",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "Wholesome plant-based dishes prepared for seasonal fasting. Rich in flavor with traditional Ethiopian ingredients. Service: Delivery or full catering setup.",
-          "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-        },
-        {
-          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate (3).jpg",
-          "title": "Seasonal Holiday Catering",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "Balanced fasting-friendly and festive meals for Christmas, Genna, New Year's, Epiphany, and more. Service: Full catering with traditional dining setup available.",
-          "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
-        }
-      ]
-    },
-    {
-      "name": "Cocktail Services",
-      "slug": "cocktail-services",
-      "description": "Sophisticated catering for cocktail parties,<br>launches, and upscale social gatherings.",
-      "items": [
-        {
-          "image": "https://ekd-caterings.vercel.app/assets/img/home-2/service/servive-03.jpg",
-          "title": "Rooftop Cocktail Package",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "Elegant finger foods, canapés, and beverages for cocktail parties and product launches. Professional staff and refined presentation. Service: Full catering with staff included."
-        },
-        {
-          "image": "https://ekd-caterings.vercel.app/assets/img/home-2/service/servive-01.jpg",
-          "title": "Fusion Cocktail Menu",
-          "price": "Contact Us",
-          "currency": "",
-          "rating": 5,
-          "text": "A curated mix of Ethiopian bites and international appetizers for upscale social events. Custom menu planning available. Service: Setup, serving, and cleanup included.",
-          "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
-        }
-      ]
-    }
-  ]
+    ]
 }
