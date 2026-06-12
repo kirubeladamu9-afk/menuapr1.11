@@ -1,9 +1,10 @@
 {
   "navigation": {
-    "ethiopianDishes": "የኢትዮጵያ ምግቦች",
-    "mainDishes": "ዋና ምግቦች",
-    "drinks": "መጠጦች",
-    "desserts": "ጣፋጮች",
+    "weddingCatering": "ላይ ምግብ አገልግሎት",
+    "corporateEvents": "ኩባንያ ዝግጅቶች",
+    "privateParties": "የግል ድግስ",
+    "holidayCelebrations": "በአለም ወላጆች ዘመን ዓለም ዝግጅቶች",
+    "cocktailServices": "ኮክቴል አገልግሎት",
     "contact": "ማነጋገር",
     "home": "ቤት",
     "menu": "መሰሪያ",

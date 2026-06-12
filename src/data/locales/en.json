@@ -1,9 +1,10 @@
 {
   "navigation": {
-    "ethiopianDishes": "Ethiopian Dishes",
-    "mainDishes": "Main Dishes",
-    "drinks": "Drinks",
-    "desserts": "Desserts",
+    "weddingCatering": "Wedding Catering",
+    "corporateEvents": "Corporate Events",
+    "privateParties": "Private Parties",
+    "holidayCelebrations": "Holiday Celebrations",
+    "cocktailServices": "Cocktail Services",
     "contact": "Contact",
     "home": "Home",
     "menu": "Menu",

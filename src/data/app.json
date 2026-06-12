@@ -19,23 +19,28 @@
         },
         "menu": [
             {
-                "label": "Ethiopian Dishes",
-                "link": "/qr-menu?category=0",
+                "label": "Wedding Catering",
+                "link": "/wedding-catering",
                 "children": []
             },
             {
-                "label": "Main Dishes",
-                "link": "/qr-menu?category=1",
+                "label": "Corporate Events",
+                "link": "/corporate-events",
                 "children": []
             },
             {
-                "label": "Drinks",
-                "link": "/qr-menu?category=2",
+                "label": "Private Parties",
+                "link": "/private-parties",
                 "children": []
             },
             {
-                "label": "Desserts",
-                "link": "/qr-menu?category=3",
+                "label": "Holiday Celebrations",
+                "link": "/holiday-celebrations",
+                "children": []
+            },
+            {
+                "label": "Cocktail Services",
+                "link": "/cocktail-services",
                 "children": []
             },
             {
