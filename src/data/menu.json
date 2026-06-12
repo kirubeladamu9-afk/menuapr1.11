@@ -1,300 +1,165 @@
 {
-    "categories": [
+  "categories": [
+    {
+      "name": "Wedding Catering",
+      "slug": "wedding-catering",
+      "description": "Elegant full-service catering for ceremonies,<br>receptions, and unforgettable wedding celebrations.",
+      "items": [
         {
-            "name": "Ethiopian Dishes",
-            "slug": "ethiopian-dishes",
-            "description": "Authentic Ethiopian flavors featuring traditional<br>spiced stews, flatbreads, and bold aromatic ingredients.",
-            "items": [
-                {
-                    "image": "/img/ethiopian-dishes/beyaynetu.webp",
-                    "title": "Beyaynetu (Fasting Combo)",
-                    "price": "18",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "A colorful platter of assorted vegan dishes served on injera, perfect for fasting and sharing. Ingredients: Injera, shiro, misir wat, gomen, tikil gomen, salad."
-                },
-                {
-                    "image": "/img/ethiopian-dishes/misir-wot.webp",
-                    "title": "Misir Wat",
-                    "price": "12",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Spicy red lentil stew cooked with berbere, onions, and garlic. Ingredients: Red lentils, onion, garlic, berbere, oil.",
-                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
-                },
-                {
-                    "image": "/img/ethiopian-dishes/gomen-besiga.webp",
-                    "title": "Gomen Besiga",
-                    "price": "15",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Collard greens cooked with tender beef and Ethiopian spices. Ingredients: Collard greens, beef, onion, garlic, oil."
-                },
-                {
-                    "image": "/img/ethiopian-dishes/firfir.webp",
-                    "title": "Firfir (Injera Stir Fry)",
-                    "price": "14",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Shredded injera mixed with spicy berbere sauce, often served with meat or vegetarian. Ingredients: Injera (torn), berbere sauce, onion, oil.",
-                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
-                },
-                {
-                    "image": "/img/ethiopian-dishes/dulet.webp",
-                    "title": "Dulet",
-                    "price": "16",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Finely chopped tripe, liver, and beef mixed with spices and chili. Ingredients: Beef tripe, liver, minced beef, onion, chili.",
-                    "badge": "<div class='sb-badge sb-hot'><i class='fas fa-pepper-hot'></i> Hot</div>"
-                },
-                {
-                    "image": "/img/ethiopian-dishes/chechebsa.webp",
-                    "title": "Chechebsa",
-                    "price": "13",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Traditional Oromo breakfast dish made from flatbread pieces mixed with butter and berbere. Ingredients: Flatbread, niter kibbeh, berbere, honey."
-                },
-                {
-                    "image": "/img/ethiopian-dishes/genfo.webp",
-                    "title": "Genfo",
-                    "price": "12",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Thick porridge served with spiced butter and berbere sauce. Ingredients: Barley flour, water, niter kibbeh, berbere sauce."
-                },
-                {
-                    "image": "/img/ethiopian-dishes/shiro.webp",
-                    "title": "Shiro",
-                    "price": "11",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Creamy chickpea flour paste with onions, ginger, and Ethiopian spices. Ingredients: Chickpea flour, onion, ginger, garlic, oil.",
-                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-                }
-            ]
+          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/wedding.jpg",
+          "title": "Elegant Wedding Banquet",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "Thoughtfully prepared menus for ceremonies, receptions, and unforgettable celebrations. Includes Ethiopian and western fusion dishes. Service: Full setup, serving, and cleanup included."
         },
         {
-            "name": "Main Dishes",
-            "slug": "main-dishes",
-            "description": "Savor our signature main courses featuring<br>classic pastas, grilled specialties, and comfort food favorites.",
-            "items": [
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F9920537934f544d6aea2a2f8a17dfcef?format=webp&width=800&height=1200",
-                    "title": "Chicken Alfredo Pasta",
-                    "price": "14",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Creamy pasta dish with grilled chicken and rich Alfredo sauce. Ingredients: Fettuccine pasta, chicken breast, cream, parmesan cheese, garlic."
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F231a74c042124fcca43ef53e46e3c152?format=webp&width=800&height=1200",
-                    "title": "Margherita Pizza",
-                    "price": "13",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Classic Italian pizza with tomato sauce, mozzarella, and fresh basil. Ingredients: Pizza dough, tomato sauce, mozzarella, basil leaves."
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Fe91e63106f1a46289f6843565443c638?format=webp&width=800&height=1200",
-                    "title": "French Fries with Chicken Wings",
-                    "price": "15",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Crispy fries served with spicy fried chicken wings. Ingredients: Potatoes, chicken wings, flour, oil, spices."
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Faed12bfff69646cbb9c72e0e599839ed?format=webp&width=800&height=1200",
-                    "title": "Club Sandwich",
-                    "price": "12",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Triple-layer sandwich with chicken, bacon, lettuce, and tomato. Ingredients: Bread, chicken, bacon, lettuce, mayonnaise."
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F547536aba40146588dbdfded737924ca?format=webp&width=800&height=1200",
-                    "title": "Fish and Chips",
-                    "price": "14",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Deep-fried fish served with crispy fries and tartar sauce. Ingredients: Fish fillet, potatoes, flour, oil, lemon."
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F84ba71aca2d34747a20bdb44f6ea3223?format=webp&width=800&height=1200",
-                    "title": "Caesar Salad",
-                    "price": "11",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Fresh salad with lettuce, croutons, cheese, and creamy dressing. Ingredients: Lettuce, croutons, parmesan, Caesar dressing.",
-                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Ff7b07756fd5a4082a34ea6d0cea6af60?format=webp&width=800&height=1200",
-                    "title": "Beef Shawarma Wrap",
-                    "price": "13",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Middle Eastern wrap filled with spiced beef and vegetables. Ingredients: Flatbread, beef strips, garlic sauce, tomato, lettuce."
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Fbe892b0108644a5090757bafbb87250e?format=webp&width=800&height=1200",
-                    "title": "Rice with Grilled Fish",
-                    "price": "16",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Steamed rice served with seasoned grilled fish and vegetables. Ingredients: Rice, fish, lemon, garlic, vegetables."
-                }
-            ]
+          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/wedding (2).jpg",
+          "title": "Reception Dining",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "Served with style for intimate receptions and grand wedding nights. Authentic Doro Wot and habesha favorites alongside international options. Service: Full catering with elegant presentation."
         },
         {
-            "name": "Drinks",
-            "slug": "drinks",
-            "description": "Refresh yourself with our selection of<br>traditional and fresh beverages.",
-            "items": [
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F996d676ad2e2409f87c6909d2d8d285b?format=webp&width=800&height=1200",
-                    "title": "Ethiopian Coffee",
-                    "price": "5",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Traditional coffee brewed from freshly roasted beans with rich aroma. Ingredients: Coffee beans, water, sugar (optional).",
-                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Faa8a57cad70d4d5cacd8e9195de02de7?format=webp&width=800&height=1200",
-                    "title": "Mango Juice",
-                    "price": "4",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Fresh and sweet mango blended into a refreshing drink. Ingredients: Mango, water, sugar.",
-                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Ffce080b4e7054f95ad3b29f207c936f0?format=webp&width=800&height=1200",
-                    "title": "Avocado Juice",
-                    "price": "6",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Creamy and nutritious blended avocado drink. Ingredients: Avocado, milk, sugar.",
-                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-                },
-                {
-                    "image": "/img/ethiopian-dishes/soft-drinks.webp",
-                    "title": "Soft Drinks",
-                    "price": "3",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Chilled carbonated beverages served cold. Ingredients: Soda, ice."
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Fbe3ca46e2a4a4568b9cf9d89b0719c13?format=webp&width=800&height=1200",
-                    "title": "Lemon Mint Juice",
-                    "price": "4",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Refreshing drink with lemon and fresh mint. Ingredients: Lemon, mint leaves, water, sugar.",
-                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-                }
-            ]
-        },
-        {
-            "name": "Desserts",
-            "slug": "desserts",
-            "description": "Finish your meal with our delightful desserts<br>ranging from rich cakes to fresh fruit.",
-            "items": [
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F001df2a840564b1ca504f78c784cc0ea?format=webp&width=800&height=1200",
-                    "title": "Chocolate Cake",
-                    "price": "7",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Rich and moist chocolate cake topped with creamy frosting. Ingredients: Flour, cocoa powder, sugar, eggs, butter."
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F49e1f5fd47e04bdc96088ab5e1a1b43b?format=webp&width=800&height=1200",
-                    "title": "Fruit Salad",
-                    "price": "6",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Fresh seasonal fruits mixed together with light syrup. Ingredients: Apple, banana, mango, orange, honey.",
-                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2Fc8f6e03b380249dba8011587ecb57f85?format=webp&width=800&height=1200",
-                    "title": "Ice Cream",
-                    "price": "5",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Creamy frozen dessert available in different flavors. Ingredients: Milk, cream, sugar, flavoring."
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F242fc256c55341dfb402e60dc42039dc?format=webp&width=800&height=1200",
-                    "title": "Baklava",
-                    "price": "8",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Sweet pastry layered with nuts and honey syrup. Ingredients: Phyllo dough, nuts, honey, butter."
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F6283e60cec744d66a83cd5132a1d9af0?format=webp&width=800&height=1200",
-                    "title": "Pancakes with Honey",
-                    "price": "6",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Soft pancakes served with honey or syrup. Ingredients: Flour, milk, eggs, honey, butter.",
-                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-                }
-            ]
-        },
-        {
-            "name": "Starters",
-            "slug": "starters",
-            "description": "Begin your meal with our selection of appetizers<br>featuring crispy sambusas, fresh salads, and warm soups.",
-            "items": [
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F5453e89080fd4e10a88225b7c9f045a5?format=webp&width=800&height=1200",
-                    "title": "Sambusa (Ethiopian Appetizer)",
-                    "price": "9",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Crispy pastry filled with spiced lentils or minced meat, deep-fried to golden perfection. Ingredients: Sambusa wraps, lentils or minced meat, onion, garlic, oil, spices."
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F97b3fc55dfec4ddd839643534d189e59?format=webp&width=800&height=1200",
-                    "title": "Chicken Soup",
-                    "price": "8",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Warm and comforting soup with tender chicken, vegetables, and herbs. Ingredients: Chicken, carrot, potato, garlic, water, salt & pepper."
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F1ba7d8f664aa46309358b5fc50525482?format=webp&width=800&height=1200",
-                    "title": "Garlic Bread",
-                    "price": "7",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Toasted bread topped with garlic butter and herbs. Ingredients: Bread, butter, garlic, parsley.",
-                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F4fac9702c0ed482495c4def503f0715b?format=webp&width=800&height=1200",
-                    "title": "Spring Rolls",
-                    "price": "9",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Crispy rolls stuffed with vegetables or chicken. Ingredients: Spring roll wrappers, vegetables, chicken (optional), oil, soy sauce."
-                },
-                {
-                    "image": "https://cdn.builder.io/api/v1/image/assets%2F29893d6cf8e844a89fa55e5768a6ebd1%2F484b15c8862841f5a22accc3349fa6bd?format=webp&width=800&height=1200",
-                    "title": "Avocado Salad",
-                    "price": "10",
-                    "currency": "$",
-                    "rating": 5,
-                    "text": "Fresh avocado mixed with vegetables and light dressing. Ingredients: Avocado, tomato, onion, lemon juice, olive oil.",
-                    "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
-                }
-            ]
+          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/wedding (3).jpg",
+          "title": "Ceremony Feast",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "A warm menu selection designed for memorable wedding moments. Fusion of Ethiopian and international cuisine tailored to your guests. Service: Custom menu planning available.",
+          "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
         }
-    ]
+      ]
+    },
+    {
+      "name": "Corporate Events",
+      "slug": "corporate-events",
+      "description": "Polished, reliable meal service for meetings,<br>team lunches, and company events.",
+      "items": [
+        {
+          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate.jpg",
+          "title": "Executive Catering",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "Polished meal service for meetings, team lunches, and company events. Meals delivered branded and on time. Service: Delivery only or full setup available."
+        },
+        {
+          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate (2).jpg",
+          "title": "Business Lunch Package",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "Reliable catering for productive sessions and client-facing occasions. Hot meals delivered in under 30 minutes. Service: Delivery included, setup optional.",
+          "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
+        },
+        {
+          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate4.jpg",
+          "title": "Corporate Gala",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "Refined catering for launches, awards nights, and special business events. Full-service with elegant plating and professional staff. Service: Full catering with cleanup."
+        },
+        {
+          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate (3).jpg",
+          "title": "Seasonal Corporate Dining",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "Balanced, varied menus for recurring team meals and seasonal office gatherings. Ethiopian and international options. Service: Scheduled delivery plans available."
+        }
+      ]
+    },
+    {
+      "name": "Private Parties",
+      "slug": "private-parties",
+      "description": "Fresh dishes and sweet treats made for<br>joyful birthdays, graduations, and private gatherings.",
+      "items": [
+        {
+          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday.jpg",
+          "title": "Birthday Celebration Package",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "Fresh dishes and sweet treats made for joyful gatherings. Includes custom cake options. Service: Full catering with setup and cleanup."
+        },
+        {
+          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday (2).jpg",
+          "title": "Kids' Party Catering",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "Fun, flavorful food that keeps every guest happy. Kid-friendly menus with colorful presentation. Service: Delivery or full setup available."
+        },
+        {
+          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday (3).jpg",
+          "title": "Sweet Tables & Desserts",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "Crowd-pleasing bites and dessert options for birthday celebrations. Cakes, cookies, and custom treats. Service: Delivery or event setup.",
+          "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Custom</div>"
+        },
+        {
+          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/birthday (4).jpg",
+          "title": "Celebration Desserts",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "Colorful cakes and treats to finish the party on a high note. Includes anniversaries, graduations, baby showers, and bridal showers. Service: Custom orders welcome."
+        }
+      ]
+    },
+    {
+      "name": "Holiday Celebrations",
+      "slug": "holiday-celebrations",
+      "description": "Wholesome, flavorful menus for Christmas, Genna,<br>New Year's, Epiphany, and all festive occasions.",
+      "items": [
+        {
+          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/fasting.jpg",
+          "title": "Fasting Meal Package",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "Wholesome plant-based dishes prepared for seasonal fasting. Rich in flavor with traditional Ethiopian ingredients. Service: Delivery or full catering setup.",
+          "badge": "<div class='sb-badge sb-vegan'><i class='fas fa-leaf'></i> Vegan</div>"
+        },
+        {
+          "image": "https://ekd-caterings.vercel.app/assets/img/gallery/corporate (3).jpg",
+          "title": "Seasonal Holiday Catering",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "Balanced fasting-friendly and festive meals for Christmas, Genna, New Year's, Epiphany, and more. Service: Full catering with traditional dining setup available.",
+          "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
+        }
+      ]
+    },
+    {
+      "name": "Cocktail Services",
+      "slug": "cocktail-services",
+      "description": "Sophisticated catering for cocktail parties,<br>launches, and upscale social gatherings.",
+      "items": [
+        {
+          "image": "https://ekd-caterings.vercel.app/assets/img/home-2/service/servive-03.jpg",
+          "title": "Rooftop Cocktail Package",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "Elegant finger foods, canapés, and beverages for cocktail parties and product launches. Professional staff and refined presentation. Service: Full catering with staff included."
+        },
+        {
+          "image": "https://ekd-caterings.vercel.app/assets/img/home-2/service/servive-01.jpg",
+          "title": "Fusion Cocktail Menu",
+          "price": "Contact Us",
+          "currency": "",
+          "rating": 5,
+          "text": "A curated mix of Ethiopian bites and international appetizers for upscale social events. Custom menu planning available. Service: Setup, serving, and cleanup included.",
+          "badge": "<div class='sb-badge sb-hot'><i class='fas fa-star'></i> Popular</div>"
+        }
+      ]
+    }
+  ]
 }
