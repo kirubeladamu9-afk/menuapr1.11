@@ -27,21 +27,40 @@ const ProductContent = () => {
     return getTranslatedMenuData();
   }, [getTranslatedMenuData]);
 
-  // Find the product from translated menu data
-  const currentProduct = useMemo(() => {
-    if (!productId) return null;
+  // Find the product from translated menu data and its category
+  const { currentProduct, currentCategory, categoryIndex } = useMemo(() => {
+    if (!productId) return { currentProduct: null, currentCategory: null, categoryIndex: -1 };
 
-    for (let category of translatedMenuData.categories) {
+    for (let idx = 0; idx < translatedMenuData.categories.length; idx++) {
+      const category = translatedMenuData.categories[idx];
       for (let item of category.items) {
         const titleForSlug = item.originalTitle || item.title;
         const itemSlug = titleForSlug.toLowerCase().replace(/\s+/g, "-").replace(/[()]/g, "");
         if (itemSlug === productId) {
-          return item;
+          return { currentProduct: item, currentCategory: category, categoryIndex: idx };
         }
       }
     }
-    return null;
+    return { currentProduct: null, currentCategory: null, categoryIndex: -1 };
   }, [productId, translatedMenuData]);
+
+  // Get related products from same category
+  const relatedProducts = useMemo(() => {
+    if (!currentCategory || !currentProduct) return [];
+
+    return currentCategory.items
+      .filter(item => item.title !== currentProduct.title)
+      .slice(0, 4)
+      .map(item => ({
+        image: item.image,
+        title: item.title,
+        price: item.price,
+        currency: item.currency,
+        rating: item.rating,
+        text: item.text,
+        badge: item.badge || ""
+      }));
+  }, [currentCategory, currentProduct]);
 
   // Parse ingredients from description
   const AttsData = useMemo(() => {
@@ -162,15 +181,17 @@ const Products = () => {
         <ProductContent />
       </Suspense>
 
-      <ProductsSlider
-        items={ProductsData.items}
-        title={'It is usually bought together with this product'}
-        description={'Consectetur numquam poro nemo veniam<br>eligendi rem adipisci quo modi.'}
-        button={0}
-        slidesPerView={4}
-        itemType={'product'}
-        hideAddToCart={true}
-      />
+      {relatedProducts.length > 0 && (
+        <ProductsSlider
+          items={relatedProducts}
+          title={t('menu.ui.usuallyBoughtTogether')}
+          description={`Other items from the ${currentCategory?.name || ''} menu`}
+          button={0}
+          slidesPerView={4}
+          itemType={'product'}
+          hideAddToCart={true}
+        />
+      )}
     </>
   );
 };

@@ -19,33 +19,34 @@
     "copyright": "© 2026 Ekd Tech. All rights reserved."
   },
   "menu": {
-    "categories": {
-      "weddingCatering": "Wedding Catering",
-      "weddingCateringDesc": "Elegant full-service catering for ceremonies,<br>receptions, and unforgettable wedding celebrations.",
-      "corporateEvents": "Corporate Events",
-      "corporateEventsDesc": "Polished, reliable meal service for meetings,<br>team lunches, and company events.",
-      "privateParties": "Private Parties",
-      "privatePartiesDesc": "Fresh dishes and sweet treats made for<br>joyful birthdays, graduations, and private gatherings.",
-      "holidayCelebrations": "Holiday Celebrations",
-      "holidayCelebrationsDesc": "Wholesome, flavorful menus for Christmas, Genna,<br>New Year's, Epiphany, and all festive occasions.",
-      "cocktailServices": "Cocktail Services",
-      "cocktailServicesDesc": "Sophisticated catering for cocktail parties,<br>launches, and upscale social gatherings."
-    },
     "ui": {
       "ingredients": "Ingredients",
       "backToMenu": "Back to Menu",
       "productNotFound": "Product not found",
       "noIngredientsListed": "No ingredients listed",
-      "featured": "Featured service",
-      "allDishes": "All services",
+      "featured": "Featured dish",
+      "allDishes": "All dishes",
       "details": "Details",
       "addExtraIngredients": "Add Extra Ingredients",
-      "ratings": "ratings"
+      "ratings": "ratings",
+      "usuallyBoughtTogether": "It is usually bought together with this product"
+    },
+    "categories": {
+      "ethiopian": "Ethiopian Dishes",
+      "ethiopianDesc": "Authentic Ethiopian flavors featuring traditional<br>spiced stews, flatbreads, and bold aromatic ingredients.",
+      "main": "Main Dishes",
+      "mainDesc": "Savor our signature main courses featuring<br>classic pastas, grilled specialties, and comfort food favorites.",
+      "drinks": "Drinks",
+      "drinksDesc": "Refresh yourself with our signature beverages,<br>fresh juices, and specialty coffee drinks.",
+      "desserts": "Desserts",
+      "dessertsDesc": "Indulge in our sweet treats and delectable desserts,<br>crafted with premium ingredients.",
+      "starters": "Starters",
+      "startersDesc": "Start your meal with our appetizing starters<br>and fresh selections."
     }
   },
   "qrMenu": {
     "eyebrow": "QR Code Menu",
-    "title": "Browse our catering services…",
+    "title": "Browse our featured dishes…",
     "contact": "Contact Us",
     "welcome": "Welcome",
     "call": "Call",
@@ -58,9 +59,9 @@
     "workingHours": "Working hours",
     "phone": "Phone",
     "email": "Email",
-    "addressValue": "Legahar, Addis Ababa, Ethiopia",
-    "workingHoursValue": "Mon - Sat: 08:00 - 20:00",
-    "phoneValue": "+251 919 747 309",
+    "addressValue": "Addis Ababa, Ethiopia",
+    "workingHoursValue": "09:00 - 23:00",
+    "phoneValue": "+251 919 747309",
     "emailValue": "ekdtechsolution@mail.com"
   },
   "common": {
@@ -141,21 +142,21 @@
     "faqTitle": "FAQ",
     "gallery": "Gallery.",
     "galleryTitle": "Gallery",
-    "menu": "EKD Catering menu.",
+    "menu": "Starbelly menu.",
     "menuTitle": "Menu",
-    "products": "Catering Services",
+    "products": "Main dishes",
     "contact": "Contact",
-    "contactSubtitle": "Get in Touch with EKD Catering",
+    "contactSubtitle": "Get in Touch with Starbelly",
     "sendMessage": "Send Message",
     "yourMessageSent": "Your message has been sent successfully",
     "backToHome": "Back to home",
     "reservation": "Reservation",
-    "reservationSubtitle": "Let us make your event unforgettable!",
+    "reservationSubtitle": "Mmm...! Your evening will be great!",
     "reservationDetails": "Reservation details"
   },
   "about": {
     "title": "About Us",
-    "description": "EKD Catering Services provides full-service catering for weddings, corporate events, private celebrations, and custom menus across Addis Ababa. We are obsessed with freshness — our Berbere is blended in-house, our vegetables are sourced daily from local markets, and our butter is always real. You tell us the date, the guest count, and the style of food you want. We handle the rest."
+    "description": "At our restaurant, we bring together the rich traditions of Ethiopian cuisine and the diverse flavors of international dishes to create a unique and memorable dining experience. We are passionate about using fresh, high-quality ingredients and authentic recipes, carefully prepared to deliver both taste and comfort in every bite. Whether you're enjoying a traditional injera platter, a modern grilled dish, or a refreshing drink, our goal is to provide exceptional food, warm hospitality, and a welcoming atmosphere for families, friends, and special occasions."
   },
   "admin": {
     "adminPanel": "Admin Panel",
