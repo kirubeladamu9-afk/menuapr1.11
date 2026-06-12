@@ -67,10 +67,10 @@ const ProductContent = () => {
     if (!currentProduct) return [];
 
     // Try English first, then Amharic
-    let ingredientMatch = currentProduct.text.match(/Ingredients:\s*([^.]*)/i);
+    let ingredientMatch = currentProduct.text.match(/Ingredients:\s*([^.]+)(?:\.|$)/i);
     if (!ingredientMatch) {
       // Try Amharic marker
-      ingredientMatch = currentProduct.text.match(/ግብዓቶች:\s*([^.]*)/);
+      ingredientMatch = currentProduct.text.match(/ግብዓቶች:\s*([^.]+)(?:\.|$)/);
     }
 
     if (ingredientMatch) {
@@ -78,7 +78,7 @@ const ProductContent = () => {
       const ingredients = ingredientText.split(",").map(ing => ing.trim()).filter(ing => ing);
 
       return ingredients.map((ingredient, idx) => {
-        const parts = ingredient.split("–");
+        const parts = ingredient.split(/–|:/);
         return {
           label: parts[0].trim(),
           value: parts[1]?.trim() || ""
