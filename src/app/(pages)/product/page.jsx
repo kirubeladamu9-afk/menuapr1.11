@@ -170,16 +170,6 @@ const ProductContent = () => {
         </div>
       </section>
       {/* product end */}
-    </>
-  );
-};
-
-const Products = () => {
-  return (
-    <>
-      <Suspense fallback={<div className="container"><p>Loading...</p></div>}>
-        <ProductContent />
-      </Suspense>
 
       {relatedProducts.length > 0 && (
         <ProductsSlider
@@ -193,6 +183,14 @@ const Products = () => {
         />
       )}
     </>
+  );
+};
+
+const Products = () => {
+  return (
+    <Suspense fallback={<div className="container"><p>Loading...</p></div>}>
+      <ProductContent />
+    </Suspense>
   );
 };
 
