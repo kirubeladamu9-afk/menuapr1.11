@@ -1,10 +1,10 @@
 {
   "navigation": {
-    "weddingCatering": "Wedding Catering",
-    "corporateEvents": "Corporate Events",
-    "privateParties": "Private Parties",
-    "holidayCelebrations": "Holiday Celebrations",
-    "cocktailServices": "Cocktail Services",
+    "weddingCatering": "Wedding",
+    "corporateEvents": "Corporate",
+    "privateParties": "Parties",
+    "holidayCelebrations": "Holiday",
+    "cocktailServices": "Cocktail",
     "contact": "Contact",
     "home": "Home",
     "menu": "Menu",
