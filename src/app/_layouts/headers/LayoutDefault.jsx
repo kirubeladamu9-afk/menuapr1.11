@@ -19,10 +19,11 @@ const DefaultHeader = () => {
 
   const getMenuLabel = (menuItem) => {
     const labelMap = {
-      'Ethiopian Dishes': t('navigation.ethiopianDishes'),
-      'Main Dishes': t('navigation.mainDishes'),
-      'Drinks': t('navigation.drinks'),
-      'Desserts': t('navigation.desserts'),
+      'Wedding Catering': t('navigation.weddingCatering'),
+      'Corporate Events': t('navigation.corporateEvents'),
+      'Private Parties': t('navigation.privateParties'),
+      'Holiday Celebrations': t('navigation.holidayCelebrations'),
+      'Cocktail Services': t('navigation.cocktailServices'),
       'Contact': t('navigation.contact'),
     };
     return labelMap[menuItem.label] || menuItem.label;
