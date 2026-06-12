@@ -1430,6 +1430,8 @@ tabs
 .sb-tab {
   width: 100%;
   margin-bottom: 90px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 
   & .sb-list {
     display: grid;
@@ -1437,17 +1439,44 @@ tabs
     grid-template-rows: repeat(4, auto);
     grid-auto-flow: column;
     grid-column-gap: 30px;
+    min-width: 100%;
+    width: fit-content;
+
+    & li {
+      padding: 12px 0;
+      min-width: 250px;
+      word-break: break-word;
+
+      & b {
+        flex: 0 1 auto;
+        margin-right: 15px;
+        word-wrap: break-word;
+      }
+
+      & span {
+        flex-shrink: 0;
+        margin-left: auto;
+      }
+    }
   }
 }
 @media (max-width: 768px) {
   .sb-tab {
     width: 100%;
     margin-bottom: 90px;
+    overflow-x: auto;
 
     & .sb-list {
       grid-template-columns: repeat(1, 100%);
       grid-template-rows: repeat(100, auto);
       grid-column-gap: 0;
+      min-width: 100%;
+      width: 100%;
+
+      & li {
+        padding: 12px 0;
+        min-width: auto;
+      }
     }
   }
 }
