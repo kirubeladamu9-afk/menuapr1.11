@@ -150,12 +150,17 @@ const QrMenuContent = () => {
   );
 };
 
-const QrMenu = () => {
+const QrMenuWrapper = () => {
+  const { t } = useLanguage();
   return (
-    <Suspense fallback={<div className="container"><p>Loading menu...</p></div>}>
+    <Suspense fallback={<div className="container"><p>{t('common.loading')}</p></div>}>
       <QrMenuContent />
     </Suspense>
   );
+};
+
+const QrMenu = () => {
+  return <QrMenuWrapper />;
 };
 
 export const dynamic = "force-dynamic";
