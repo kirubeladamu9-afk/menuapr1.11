@@ -32,7 +32,7 @@ const ProductsSlider = ( {items, title, description, button = {}, slidesPerView,
         <div className="container">
             <div className="sb-group-title sb-mb-30">
             <div className="sb-left sb-mb-30">
-                <h2 className="sb-mb-30" dangerouslySetInnerHTML={{__html : title ? title : Data.title}} />
+                <h2 className="sb-mb-30">{title ? title : Data.title}</h2>
                 <p className="sb-text" dangerouslySetInnerHTML={{__html : description ? description : Data.description}} />
             </div>
             <div className="sb-right sb-mb-30">
