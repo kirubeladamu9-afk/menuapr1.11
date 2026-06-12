@@ -66,10 +66,14 @@ const ProductContent = () => {
   const AttsData = useMemo(() => {
     if (!currentProduct) return [];
 
-    // Try English first, then Amharic
+    // Try English first, then Amharic (with both : and ፦)
     let ingredientMatch = currentProduct.text.match(/Ingredients:\s*([^.]+)(?:\.|$)/i);
     if (!ingredientMatch) {
-      // Try Amharic marker
+      // Try Amharic marker with ፦
+      ingredientMatch = currentProduct.text.match(/ግብዓቶች፦\s*([^.]+)(?:\.|$)/);
+    }
+    if (!ingredientMatch) {
+      // Try Amharic marker with :
       ingredientMatch = currentProduct.text.match(/ግብዓቶች:\s*([^.]+)(?:\.|$)/);
     }
 
